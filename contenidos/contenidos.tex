@@ -1,0 +1,142 @@
+\documentclass{article}
+
+% ----------------------- PAQUETES ---------------------- %
+% Set the font (output) encodings
+\usepackage[T1]{fontenc}					% encoding de la fuente
+\usepackage[spanish]{babel}				% paquete para los acentos en español
+\usepackage{graphicx}							% paquete para poder usar graficos
+\usepackage{float}								% paquete para poder usar \begin {figure}[H]
+\usepackage{xurl}					% https://stackoverflow.com/questions/4146606/wrap-url-ignores-margin-in-bibtex-using-pdflatex
+\usepackage{hyperref}							% paquete para hacer hyperreferencias a links
+\usepackage{fancyhdr}							% paquete para poner cosas en footer y header
+\usepackage{wrapfig}							% paquete para hacer wrapfigure
+\usepackage{titling}							% paquete para modificar el espaciado de los titulos
+\usepackage{titlesec}							% paquete para modificar como se ven los titulos
+\usepackage{todonotes}						% paquete para hacer todos
+\usepackage{subfiles}							% paquete para hacer subfiles
+
+
+% ------------------------------------------------------- %
+
+% ---------------------- CONFIGURACION ------------------ %
+
+\graphicspath{{images/}}
+% ----------------- Configuracion de hyperref ----------- %
+\hypersetup{								
+	colorlinks=true,
+	linkcolor=black,			%modo claro
+	%linkcolor=white,		%modo oscuro
+	filecolor=brown,		
+	urlcolor=blue,
+	}
+% ------------------------------------------------------- %
+%-------------- Formatos de los titulos --------------%
+\titleformat{\section}
+	{\bfseries \LARGE}
+	{}
+	{0em}
+	{}[\titlerule]
+
+\titleformat{\subsection}
+	{\bfseries \Large}
+	{}
+	{0em}
+	{}
+
+\titleformat{\subsubsection}
+	{\bfseries \large}
+	{}
+	{0em}
+	{}
+
+\titlespacing{\section} %me permite controlar el espaciado de la seccion que le indico
+	{0em}
+	{0em}
+	{1.5em}
+
+\titlespacing{\subsection}
+{0em} %sangria
+{3em} %separacion con lo que hay arriba
+{0.5em} %separacion con lo que hay abajo
+%----------------------------------------------------- %
+
+%---------- headers y footers con fancyhdr ----------- %
+\pagestyle{fancy}
+	%limpio el estilo
+	\fancyhf{}
+	
+	%header
+	\renewcommand{\headrulewidth}{1pt} %La linea horizontal
+	\lhead{Contenidos del Club de Programación}
+	\chead{}
+	\rhead{Instituto Tecnológico San Bonifacio}
+
+	%footer
+	\renewcommand{\footrulewidth}{1pt} %La linea horizontal
+	\lfoot{}
+	\cfoot{\today}
+	\rfoot{}
+% ----------------- FIN DE CONFIGURACION ------------- %
+
+\title{Contenidos del club de Programación}
+\date{\today}
+\author{Espacio de Innovacion Joven}
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\section{Contenidos de club}
+
+\subsection{Conocimientos Básicos de Informática}
+\begin{itemize}
+	\item ¿Qué componentes básicos tiene una computadora?
+	\item ¿Qué es un sistema operativo?
+	\item ¿Qué tipos de archivos hay?
+\end{itemize}
+
+\subsection{Sistema Operativo GNU/Linux}
+\begin{itemize}
+	\item ¿Qué es Linux?
+	\item Instalación de Linux Mint
+	\item Como usar la terminal -- Comandos básicos y su funcionamiento.
+	\item Uso de gparted, ls, cd, pwd y less
+	\item Uso de argumentos en los comandos
+	\item Como usar el gestor de paquetes apt.
+\end{itemize}
+
+\thispagestyle{fancy}
+\subsection{Fundamentos de la Programación en Python}
+\begin{itemize}
+	\item Variables.
+	\item Operadores.
+	\item Condicionales.
+	\item Listas, tuplas y diccionarios.
+	\item Bucles.
+	\item Funciones.
+	\item Generadores
+	\item Excepciones
+	\item Programación orientada a Objetos
+	      \begin{itemize}
+		      \item Bases
+		      \item Herencia
+		      \item Polimorfismo
+	      \end{itemize}
+	\item Interfaces gráficas
+\end{itemize}
+
+\subsection{Uso de Git}
+\begin{itemize}
+	\item Bases de git
+	\item Inicialización de un Repositorio.
+	\item Uso del sistema de Commits.
+	\item Creación de branches.
+\end{itemize}
+
+\subsection{Creación de documentos con \LaTeX}
+\begin{itemize}
+	\item Bases
+	\item Práctica: Hacer un Curriculum Vitae
+	\item Práctica: Creación de un Trabajo Práctico
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,101 @@
+\documentclass{article}
+
+% ----------------------- PAQUETES ---------------------- %
+% Set the font (output) encodings
+\usepackage[T1]{fontenc}					% encoding de la fuente
+\usepackage[spanish]{babel}				% paquete para los acentos en español
+\usepackage{graphicx}							% paquete para poder usar graficos
+\usepackage{float}								% paquete para poder usar \begin {figure}[H]
+\usepackage{xurl}					% https://stackoverflow.com/questions/4146606/wrap-url-ignores-margin-in-bibtex-using-pdflatex
+\usepackage{hyperref}							% paquete para hacer hyperreferencias a links
+\usepackage{fancyhdr}							% paquete para poner cosas en footer y header
+\usepackage{wrapfig}							% paquete para hacer wrapfigure
+\usepackage{titling}							% paquete para modificar el espaciado de los titulos
+\usepackage{titlesec}							% paquete para modificar como se ven los titulos
+\usepackage{todonotes}						% paquete para hacer todos
+\usepackage{subfiles}							% paquete para hacer subfiles
+
+
+% ------------------------------------------------------- %
+
+% ---------------------- CONFIGURACION ------------------ %
+
+\graphicspath{{images/}}
+% ----------------- Configuracion de hyperref ----------- %
+\hypersetup{								
+	colorlinks=true,
+	linkcolor=black,			%modo claro
+	%linkcolor=white,		%modo oscuro
+	filecolor=brown,		
+	urlcolor=blue,
+	}
+% ------------------------------------------------------- %
+%-------------- Formatos de los titulos --------------%
+\titleformat{\section}
+	{\bfseries \LARGE}
+	{}
+	{0em}
+	{}[\titlerule]
+
+\titleformat{\subsection}
+	{\bfseries \Large}
+	{}
+	{0em}
+	{}
+
+\titleformat{\subsubsection}
+	{\bfseries \large}
+	{}
+	{0em}
+	{}
+
+\titlespacing{\section} %me permite controlar el espaciado de la seccion que le indico
+	{0em}
+	{0em}
+	{1.5em}
+
+\titlespacing{\subsection}
+{0em} %sangria
+{3em} %separacion con lo que hay arriba
+{0.5em} %separacion con lo que hay abajo
+%----------------------------------------------------- %
+
+%---------- headers y footers con fancyhdr ----------- %
+\pagestyle{fancy}
+	%limpio el estilo
+	\fancyhf{}
+	
+	%header
+	\renewcommand{\headrulewidth}{1pt} %La linea horizontal
+	\lhead{Requisitos del Club de Programación}
+	\chead{}
+	\rhead{Instituto Tecnológico San Bonifacio}
+
+	%footer
+	\renewcommand{\footrulewidth}{1pt} %La linea horizontal
+	\lfoot{}
+	\cfoot{\today}
+	\rfoot{}
+% ----------------- FIN DE CONFIGURACION ------------- %
+
+\title{Requisitos del club de Programación}
+\date{\today}
+\author{Espacio de Innovacion Joven}
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+\section{Requisitos para participar en el club}
+\begin{itemize}
+	\item Ser estudiante regular del colegio.
+	\item No asistir en horario de otra materia sin autorización
+	\item Cumplir con el código de convivencia.\\
+	      Este incluye:
+	      \begin{itemize}
+		      \item No hacer ningún tipo de actividad que pueda afectar la convivencia.
+		      \item Cuidar del equipo de trabajo.
+		      \item No molestar a otros compañeros que estén trabajando.
+	      \end{itemize}
+\end{itemize}
+
+
+\end{document}
