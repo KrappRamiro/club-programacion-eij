@@ -101,4 +101,32 @@ sudo comando_a_ejecutar_aqui
 
 ## Python
 
-### print()
+### `print()`
+
+`print` es una **función** _(concepto que todavia no vimos, pero ya vamos a ver)_ que
+imprime lo que tenga entre `()` en la terminal. Si entre los `()` ponemos texto entre
+comillas `" "` va a imprimir ese texto. Si no ponemos las comillas `" "`,
+va a entender que queremos imprimir una variable
+
+#### Ejemplos de uso:
+
+##### Imprimir Hola gente
+
+```py
+print("Hola gente!")
+```
+
+Resultado en la terminal:
+
+```
+Hola gente!
+```
+
+##### Imprimir el valor de una variable
+
+```py
+saludo = "Hola gente"
+print(saludo)
+```
+
+##### Imprimir multiples cosas - Ejemplo 1
