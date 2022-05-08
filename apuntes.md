@@ -108,6 +108,9 @@ imprime lo que tenga entre `()` en la terminal. Si entre los `()` ponemos texto 
 comillas `" "` va a imprimir ese texto. Si no ponemos las comillas `" "`,
 va a entender que queremos imprimir una variable
 
+Nota: Al texto entre `" "` se lo suele llamar strings. Si leen la palabra String, sepan
+que se refiere a un texto
+
 #### Ejemplos de uso:
 
 ##### Imprimir Hola gente
@@ -116,7 +119,7 @@ va a entender que queremos imprimir una variable
 print("Hola gente!")
 ```
 
-Resultado en la terminal:
+###### Resultado:
 
 ```
 Hola gente!
@@ -129,4 +132,46 @@ saludo = "Hola gente"
 print(saludo)
 ```
 
-##### Imprimir multiples cosas - Ejemplo 1
+###### Resultado:
+
+```
+Hola gente
+```
+
+##### Imprimir multiples cosas - Ejemplo usando concatenización
+
+Nota: La concatenizacion tiene un gran problema, y es que solamente te permite
+imprimir texto, no te permite imprimir cosas como números.
+La solución a esto la vamos a ver en el siguiente ejemplo, que usa fstrings
+
+```py
+nombre = "Juan Carlos"
+juego_favorito = "Skyrim"
+print("Hola, me llamo " + nombre + " y mi juego favorito es " + juego_favorito )
+```
+
+###### Resultado:
+
+```
+Hola, me llamo Juan Carlos y mi juego favorito es Skyrim
+```
+
+##### Imprimir multiples cosas - Ejemplo usando fstrings
+
+Si queremos imprimir multiples cosas en un print, la mejor forma de hacerlo es usando
+algo llamado fstrings
+
+Por favor, notar la `f` que está entre `(` y el `"`
+
+```py
+nombre = "Juan Carlos"
+edad = 13
+juego_favorito = "Skyrim"
+print(f"Hola, me llamo {nombre}, tengo {edad} años y mi juego favorito es {juego_favorito}")
+```
+
+###### Resultado:
+
+```
+Hola, me llamo Juan Carlos, tengo 13 años y mi juego favorito es Skyrim
+```
