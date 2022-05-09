@@ -410,6 +410,94 @@ Ayudandonos de la funcion `int()`, le podemos decir al input que guarde
 lo que ingresamos como si fuera una variable de tipo numerico.
 
 **Nota:** `int()` lo guarda como si fuera un numero entero.
-Si queremos que sea un número con coma, tenemos que usar `float()`
+Si queremos que sea un número con coma, tenemos que usar `float()`, resultando en
+`float(input())`
 
 ### `if` (condicionales)
+
+A veces un programa va a tener que tomar decisiones.
+Estas decisiones pueden ejecutar diferentes piezas de código, dependiendo de
+ciertas condiciones.
+
+El `if` es una herramienta que nos permite como programadores hacer preguntas,
+y actuar en consecuencia a las respuestas que obtenemos.
+
+En python el `if` es usado para hacer preguntar condicionales, y controlar lo que se
+llama como **control del flujo**
+
+[if-else-flow](https://cdn.educba.com/academy/wp-content/uploads/2019/08/If-Else-Statement-Flow-Diagram-2.png)
+
+#### Sintaxis
+
+```py
+if condicion:
+	# Lo que esta aca adentro se ejecuta si es verdadero
+else:
+	# Lo que esta aca adentro se ejecuta si es falso
+```
+
+#### Operadores
+
+En python, el `if` permite checkear cosas de distintas formas, usando **operadores**
+
+- `==` Checkea igualdad
+- `!=` Checkea desigualdad
+- `<` Checkea si es menor
+- `<=` Checkea si es menor o igual
+- `>` Checkea si es mayor
+- `>=` Checkea si es mayor o igual
+
+#### Ejemplos
+
+##### Ejemplo de checkear un bool
+
+```py
+boton_presionado = True
+lamparita_prendida = False
+
+if boton_presionado == True:
+	# Este codigo de aca SOLAMENTE se ejecuta si boton_presionado es True !!!
+	lamparita_prendida = True
+else:
+	# Este codigo de aca SOLAMENTE se ejecuta si boton_presionado es False !!!
+	lamparita_prendida = False
+
+print(f"El estado de la lamparita es: {lamparita_prendida}")
+```
+
+En este ejemplo, al final del codigo, `lamparita_prendida` va a ser `True`.
+Si nosotros alteramos nuestro código para que `boton_presionado` sea `False`,
+al final del codigo `lamparita_prendida` va a ser `False`
+
+##### Ejemplo de checkear si un numero es mayor a 10
+
+```py
+numero = int(input("Ingrese un número: "))
+
+if numero > 10:
+	print("El numero es mayor a 10")
+else:
+	print("El numero es menor a 10")
+```
+
+##### Ejemplo de checkear si un número es igual a 10
+
+```py
+numero = int(input("Ingrese un número: "))
+
+if numero == 10:
+	print("El numero es 10")
+else:
+	print("El numero es distinto de 10")
+```
+
+##### Ejemplo de checkear si un número es distinto de 10
+
+```py
+numero = int(input("Ingrese un número: "))
+
+if numero != 10:
+	print("El numero es distinto de 10")
+else:
+	print("El numero es 10")
+```
