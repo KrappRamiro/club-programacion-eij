@@ -593,3 +593,36 @@ Los if encadenados tienen un problema, y es que **en algunos casos**, si son muc
 if encadenados suelen generar lo que se conoce como "código hadouken", que es algo así:
 
 ![Codigo hadouken](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F1*AO_u4vKKyCYM0iepVant4Q.png&f=1&nofb=1)
+
+### Uso de `or` y `and` - Checkeo de multiples cosas en un if
+
+Cuando uno usa un `if`, puede checkear por multiples cosas, usando `or` y `and`
+
+- `or` checkea si alguna de las condiciones son verdaderas
+- `and` checkea si todas de las condiciones son verdaderas
+
+#### Ejemplo con `or`
+
+```py
+numero = int(input("Ingresa un número: "))
+
+if numero == 1 or numero == 2:
+	print("El numero que introduciste es 1 o es 2, alguno de los dos es")
+```
+
+#### Ejemplo con `and`
+
+Este ejemplo usa el operador `%`. Lo que hace el operador `%` es checkear cual es el
+resto de un numero cuando lo dividis por otro.
+<br>
+En el codigo, para ver si el numero es par lo que se hace es dividir numero por
+dos, y ver si el resto es 0.
+<br>
+Luego, se checkea si es impar, viendo que el resto de cuando lo dividis por 2 no sea 0
+
+```py
+if numero < 10 and numero % 2 == 0:
+	print("El numero es mayor a 10 y es par")
+elif numero % 2 != 0:
+	print("El numero es impar")
+```
