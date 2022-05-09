@@ -425,7 +425,7 @@ y actuar en consecuencia a las respuestas que obtenemos.
 En python el `if` es usado para hacer preguntar condicionales, y controlar lo que se
 llama como **control del flujo**
 
-[if-else-flow](https://cdn.educba.com/academy/wp-content/uploads/2019/08/If-Else-Statement-Flow-Diagram-2.png)
+![if-else-flow](https://cdn.educba.com/academy/wp-content/uploads/2019/08/If-Else-Statement-Flow-Diagram-2.png)
 
 #### Sintaxis
 
@@ -580,4 +580,4 @@ if x > 10:
 Los if encadenados tienen un problema, y es que **en algunos casos**, si son muchos
 if encadenados suelen generar lo que se conoce como "código hadouken", que es algo así:
 
-[Codigo hadouken](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F1*AO_u4vKKyCYM0iepVant4Q.png&f=1&nofb=1)
+![Codigo hadouken](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F1*AO_u4vKKyCYM0iepVant4Q.png&f=1&nofb=1)
