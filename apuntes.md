@@ -2,6 +2,25 @@
 
 Por: Krapp Ramiro
 
+---
+
+## Nota del autor
+
+Personalmente, **recomiendo encarecidamente con toda mi alma** googlear todo lo posible.
+Si no entendés algo del apunte, googlealo, puede ser que en internet
+lo encuentres mejor explicado, o encuentres más información.
+
+**No hay nada de malo en googlear, TODO LO CONTRARIO**, internet
+es la **MEJOR HERRAMIENTA** que un programador puede tener.
+
+¿Tenés un error en tu código? Googlealo
+<br>
+¿Necesitás más información sobre un tema en específico? Googlealo
+
+_Ante cualquier problema, google es tu mejor amigo_
+
+---
+
 ## El sistema de archivos de Linux
 
 La carpeta home `~` es la carpeta del usuario, donde el usuario tiene todos sus
@@ -211,9 +230,7 @@ nombre_de_la_variable = valor_de_la_variable
 #### Tipos de variables / Tipos de datos
 
 En Python no todas las variables son iguales, sino que hay tipos. Una variable de un tipo
-solamente puede almacenar valores de su mismo tipo.
-
-Este concepto tambien es conocido como el tipo de dato, o datatype.
+solamente puede almacenar valores de su mismo tipo. Este concepto tambien es conocido como el **tipo de dato**, o **datatype.**
 
 Para tirar un **ejemplo** tonto, imaginemos que estamos jugando un videojuego en el que hay
 dos tipos de personajes, _los elementales de agua, y los elementales de fuego._
@@ -223,7 +240,7 @@ los elementales de **fuego** solamente pueden usar hechizos de **fuego**.
 
 Bueno, en python pasa algo parecido con los tipos de dato.
 
-Principalmente, hay tres tipos de dato:
+**Principalmente, hay tres tipos de dato:**
 
 - Variables de texto (Strings)
 - Variables numericas (integers, floats)
@@ -327,5 +344,72 @@ num_3 = num_1 + num_2
 `num_3` ahora vale `8`
 
 ### `input()`
+
+`input()` es una funcion que nos permite recibir datos del usuario en forma de string.
+
+Esta funcion espera que escribas algo en la terminal y que toques enter. Cuando tocaste
+enter, guarda lo que escribiste en una variable que le hayas indicado
+
+#### Sintaxis
+
+```py
+mi_variable = input("Mensaje a mostrar al usuario")
+```
+
+#### Ejemplos:
+
+##### Ejemplo 1 - Ingreso de nombre de usuario
+
+Un ejemplo muy sencillo puede ser un programa que pida al usuario que ingrese su nombre,
+y que luego imprima en pantalla el nombre del usuario.
+
+```py
+nombre_usuario = input("Ingresa tu nombre: ")
+print(f"El nombre del usuario es: {nombre_usuario}")
+```
+
+Cuando nosotros ejecutemos este código, nos va a aparecer en la terminal:
+
+```
+Ingresa tu nombre:
+```
+
+con un cursor parpadeando. Esto significa que el programa esta esperando que nosotros
+escribamos texto y apretemos enter para enviar ese texto que escribrimos.
+
+Imaginemos que escribimos _Juancito_.
+<br>
+Inmediatamente despues de que tocamos enter,
+"Juancito" se va a guardar en `nombre_usuario`, por lo que podemos decir que
+`nombre_usuario = "Juancito`
+
+Al final, se termina ejecutando el `print()`, el cual va a mostrar en pantalla:
+
+```
+El nombre del usuario es: Juancito
+```
+
+---
+
+##### Ejemplo 2 - Ingreso de edad del usuario
+
+Cuando queremos dejar de introducir texto, para empezar a introducir numeros, la cosa
+cambia un poco.
+Como se había dicho antes, `input()` guarda lo ingresado como texto (String)
+
+Si queremos cambiar este funcionamiento, lo único que hay que hacer
+es **especificar que queremos que se guarde como un int**.
+¿Cómo? Asi:
+
+```py
+edad_usuario = int(input("Ingresa tu edad: "))
+print(f"La edad del usuario es {edad_usuario}")
+```
+
+Ayudandonos de la funcion `int()`, le podemos decir al input que guarde
+lo que ingresamos como si fuera una variable de tipo numerico.
+
+**Nota:** `int()` lo guarda como si fuera un numero entero.
+Si queremos que sea un número con coma, tenemos que usar `float()`
 
 ### `if` (condicionales)
