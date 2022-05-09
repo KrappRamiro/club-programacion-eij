@@ -501,3 +501,83 @@ if numero != 10:
 else:
 	print("El numero es 10")
 ```
+
+##### Ejemplo de checkear si un alumno esta aprobado
+
+```py
+nota_alumno = int(input("Ingrese la nota del alumno"))
+
+if nota_alumno >= 7:
+	print("El alumno está aprobado :D ")
+else:
+	print("El alumno esta desaprobado :( ")
+```
+
+### Uso de `elif` (`else if`)
+
+Si se quieren checkear para multiples casos, se puede usar algo
+llamado `elif` (que significa `else if`)
+
+El `elif` es la forma de decir "si la condicion anterior no fue verdadera,
+intenta con esta condicion"
+
+##### Ejemplo mejorado de checkear si un alumno esta aprobado
+
+```py
+nota_alumno = int(input("Ingrese la nota del alumno": ))
+
+if nota_alumno == 10:
+	# Se entra aca solamente si la nota es 10
+	print("El alumno tiene nota perfecta!")
+	aprobacion = True
+
+# Lo que esta a partir de este punto solamente se ejecuta si el if anterior no se cumplió
+elif nota_alumno >= 7:
+	# Se entra aca si la nota es mayor o igual a 7
+	print("El alumno está aprobado :D ")
+	aprobacion = True
+
+#De vuelta,
+#Lo que esta a partir de este punto solamente se ejecuta si el if anterior no se cumplió
+elif nota_alumno >= 5:
+	# Se entra aca si la nota es mayor o igual a 5
+	print("El alumno esta desaprobado, pero puede recuperarse :( ")
+	aprobacion = False
+
+#De vuelta,
+#Lo que esta a partir de este punto solamente se ejecuta si el if anterior no se cumplió
+elif nota_alumno >= 1:
+	# Se entra aca si la nota es mayor o igual a 1
+	print("El alumno esta terriblemente desaprobado, F")
+	aprobacion = False
+
+#De vuelta,
+#Lo que esta a partir de este punto solamente se ejecuta si el if anterior no se cumplió
+elif nota_alumno == 0:
+	# Se entra aca si la nota es igual a 0
+	print("RIP, nos vimos en diciembre")
+	aprobacion = False
+
+print(f"Aprobacion: {aprobacion}")
+```
+
+### `if` encadenados
+
+Los if se pueden uno atras del otro, formando una cadena (a esto tambien se le
+llaman if en cascada)
+
+```py
+x = int(input("Ingresa un numero entero: "))
+
+if x > 10:
+	print("El número es mayor a 10")
+	if x > 20:
+		print("Y tambien mayor que 20!")
+	else:
+		print("Pero no es mayor que 20.")
+```
+
+Los if encadenados tienen un problema, y es que **en algunos casos**, si son muchos
+if encadenados suelen generar lo que se conoce como "código hadouken", que es algo así:
+
+[Codigo hadouken](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F1*AO_u4vKKyCYM0iepVant4Q.png&f=1&nofb=1)
