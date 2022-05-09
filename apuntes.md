@@ -129,6 +129,18 @@ O sea, si yo escribo `print()`, no va a ser lo mismo que `Print()`, `PRINT()` o 
 
 ---
 
+### Comentarios:
+
+Los comentarios en python se escriben poniendo un `#` al principio del comentario
+
+```py
+# Esto es un comentario
+print("Esto no es un comentario")
+```
+
+Los comentarios son **fundamentales** para explicar el funcionamiento del código,
+un buen programador comenta su código con frecuencia.
+
 ### `print()`
 
 `print` es una **función** _(concepto que todavia no vimos, pero ya vamos a ver)_ que
