@@ -101,9 +101,14 @@ sudo comando_a_ejecutar_aqui
 
 ## Python
 
-**Atencion**: Todo lo que vayas a escribir es **Caps-sensitive**, eso significa que
-se hace distinción entre minusculas y mayúsculas.
+---
+
+**Atencion**:
+<br> Todo lo que vayas a leer y escribir es **Caps-sensitive**, eso significa
+que se hace distinción entre minusculas y mayúsculas.
 O sea, si yo escribo `print()`, no va a ser lo mismo que `Print()`, `PRINT()` o `pRiNt()`.
+
+---
 
 ### `print()`
 
@@ -114,6 +119,18 @@ va a entender que queremos imprimir una variable
 
 Nota: Al texto entre `" "` se lo suele llamar strings. Si leen la palabra String, sepan
 que se refiere a un texto
+
+#### Sintaxis
+
+```py
+print("texto a imprimir")
+```
+
+o
+
+```py
+print(variable_a_imprimir)
+```
 
 #### Ejemplos de uso:
 
@@ -144,7 +161,7 @@ Hola gente
 
 ##### Imprimir multiples cosas - Ejemplo usando concatenización
 
-Nota 2: La concatenizacion tiene un gran problema, y es que solamente te permite
+Nota: La concatenizacion tiene un gran problema, y es que solamente te permite
 imprimir texto, no te permite imprimir cosas como números.
 La solución a esto la vamos a ver en el siguiente ejemplo, que usa fstrings
 
@@ -187,7 +204,9 @@ en la memoria, a los cuales despues vamos a poder acceder y modificar.
 
 #### Sintaxis:
 
+```py
 nombre_de_la_variable = valor_de_la_variable
+```
 
 #### Tipos de variables / Tipos de datos
 
@@ -267,6 +286,8 @@ si la lamparita esta prendida, y actuar en base al estado de la lamparita.
 **Dato curioso:** A veces, se suele representar `True` como `1`, y `False` como `0`.
 Personalmente, no lo veo muy recomendable, porque suele traer problemas,
 lo mejor es usar `True` y `False`.
+
+---
 
 #### Ejemplos de uso de variables
 
