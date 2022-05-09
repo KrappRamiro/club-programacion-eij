@@ -101,6 +101,10 @@ sudo comando_a_ejecutar_aqui
 
 ## Python
 
+**Atencion**: Todo lo que vayas a escribir es **Caps-sensitive**, eso significa que
+se hace distinción entre minusculas y mayúsculas.
+O sea, si yo escribo `print()`, no va a ser lo mismo que `Print()`, `PRINT()` o `pRiNt()`.
+
 ### `print()`
 
 `print` es una **función** _(concepto que todavia no vimos, pero ya vamos a ver)_ que
@@ -140,7 +144,7 @@ Hola gente
 
 ##### Imprimir multiples cosas - Ejemplo usando concatenización
 
-Nota: La concatenizacion tiene un gran problema, y es que solamente te permite
+Nota 2: La concatenizacion tiene un gran problema, y es que solamente te permite
 imprimir texto, no te permite imprimir cosas como números.
 La solución a esto la vamos a ver en el siguiente ejemplo, que usa fstrings
 
@@ -175,3 +179,132 @@ print(f"Hola, me llamo {nombre}, tengo {edad} años y mi juego favorito es {jueg
 ```
 Hola, me llamo Juan Carlos, tengo 13 años y mi juego favorito es Skyrim
 ```
+
+### Variables
+
+Las variables son una de nuestras mejores herramientas. Estas nos permiten almacenar datos
+en la memoria, a los cuales despues vamos a poder acceder y modificar.
+
+#### Sintaxis:
+
+nombre_de_la_variable = valor_de_la_variable
+
+#### Tipos de variables / Tipos de datos
+
+En Python no todas las variables son iguales, sino que hay tipos. Una variable de un tipo
+solamente puede almacenar valores de su mismo tipo.
+
+Este concepto tambien es conocido como el tipo de dato, o datatype.
+
+Para tirar un **ejemplo** tonto, imaginemos que estamos jugando un videojuego en el que hay
+dos tipos de personajes, _los elementales de agua, y los elementales de fuego._
+<br>
+Los elementales de **agua** solamente pueden usar hechizos de **agua**, y
+los elementales de **fuego** solamente pueden usar hechizos de **fuego**.
+
+Bueno, en python pasa algo parecido con los tipos de dato.
+
+Principalmente, hay tres tipos de dato:
+
+- Variables de texto (Strings)
+- Variables numericas (integers, floats)
+- Variables lógicas (bools)
+
+##### Variables de texto (`String`)
+
+Las **variables de texto**, generalmente llamadas **String**, son variables que pueden
+almacenar texto en ellas.
+
+###### Ejemplo:
+
+```py
+mi_nombre = "Ramiro"
+```
+
+##### Variables numericas (`int y float`)
+
+Las **variables numéricas** son variables que almacenan números (¿qué sorpresa no?).
+<br>
+En la programación se diferencian entre numeros enteros (1, 2, 3, -1, -2, -3, 0)
+y numeros con coma (1.342, -1.5, -0.999, 0.666).
+<br>
+
+- A los números enteros se les dice integer, pero se les conoce normalmente como **int**
+- A los numeros con coma se les dice **float**
+
+**Nota:** Cuando programamos usamos el `.` para indicar donde empieza la coma en un float,
+porque en programacion la coma `,` se usa para armar **listas**,
+que es un concepto que viene más adelante.
+
+###### Ejemplo
+
+```py
+porciones_pizza = 8 # Esta variable es de tipo int
+pi = 3.14 # Esta variable es de tipo float
+```
+
+##### Variables lógicas (`bool`)
+
+Las **variables lógicas** son variables que pueden almacenar solamente **DOS** valores,
+**Verdadero** (`True`) o **Falso** (`False`).
+
+A estas variables tambien se les suele llamar **variables booleanas**, esto es porque el creador se apellidaba Bool, mira que había apellidos raros :/
+
+La forma más facil de entender a las variables lógicas es imaginarse que en nuestro código
+queremos guardar el estado de una lamparita
+
+###### Ejemplo
+
+```py
+lamparita_prendida = True  # La lamparita esta prendida
+lamparita_prendida = False # La lamparita esta apagada
+```
+
+A simple vista, no parecen tener mucho uso, pero cuando usemos `if`
+nos van a ser **fundamentales**. Por qué? porque con `if` podríamos checkear
+si la lamparita esta prendida, y actuar en base al estado de la lamparita.
+
+**Dato curioso:** A veces, se suele representar `True` como `1`, y `False` como `0`.
+Personalmente, no lo veo muy recomendable, porque suele traer problemas,
+lo mejor es usar `True` y `False`.
+
+#### Ejemplos de uso de variables
+
+##### Guardar un texto en una variable
+
+Como es texto, uso `" "`
+
+```py
+mi_nombre = "Ramiro"
+```
+
+##### Guardar un numero en una variable
+
+Como **NO** es texto, sino que es un numero, **NO** uso `" "`
+
+```py
+mi_edad = 18
+```
+
+##### Guardar la suma de dos numeros en una variable
+
+```py
+suma = 3+15
+```
+
+`suma` ahora vale `18`
+
+##### Guardar la suma de dos variables en una tercera variable
+
+```py
+num_1 = 3
+num_2 = 5
+
+num_3 = num_1 + num_2
+```
+
+`num_3` ahora vale `8`
+
+### `input()`
+
+### `if` (condicionales)
