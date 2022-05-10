@@ -362,9 +362,9 @@ Habría que hacer `int(input())`
 
 #### Ejercicio 1
 
-¿Qué pasa cuando `flechazo_cabeza` es `True`?
+1. ¿Qué pasa cuando `flechazo_cabeza` es `True`?
 
-¿Qué pasaría si `flechazo_cabeza` fuera `False`?
+2. ¿Qué pasaría si `flechazo_cabeza` fuera `False`?
 
 ```py
 flechazo_cabeza = True
@@ -390,15 +390,17 @@ Si `flechazo_cabeza` fuera `False`, se imprimiría en pantalla el "la flecha no 
 
 ---
 
-#### Ejercicio 2
+#### Ejercicio 4
 
-¿Qué pasa cuando `zona_impacto` es `"cabeza"`?
+1. ¿Qué pasa cuando `zona_impacto` es `"cabeza"`?
 
-¿Qué pasa cuando `zona_impacto` es `"pecho"`?
+2. ¿Qué pasa cuando `zona_impacto` es `"pecho"`?
 
-¿Qué pasa cuando `zona_impacto` es `"brazo"`?
+3. ¿Qué pasa cuando `zona_impacto` es `"brazo"`?
 
-¿Hay alguna diferencia cuando es `"brazo"`, que cuando es `"pierna"`?
+4. ¿Hay alguna diferencia cuando es `"brazo"`, que cuando es `"pierna"`?
+
+- A gusto, modifica el programa y agrega una zona del cuerpo
 
 ```py
 print("Te pegó una flecha! Decime donde te pegó, y te voy a decir cuánta vida te queda")
@@ -422,3 +424,89 @@ else:
 
 print(f"Tenes {vida_jugador} puntos de vida")
 ```
+
+---
+
+#### Ejercicio 3
+
+Crea un programa que, preguntando la hora, checkee si una persona puede tomar
+bebidas alcohólicas o no
+
+<details>
+	<summary>Toca para ver la respuesta</summary>
+
+```py
+edad=int(input("Ingresa tu edad: "))
+if edad >=18:
+   print("Podes tomar")
+else:
+   print("No podes tomar")
+```
+
+</details>
+
+---
+
+para
+
+#### Ejercicio 4
+
+Los famosos ladrillos **LEGO** tienen un rango de edades permitidas, que van,
+en la mayoría de los casos, desde los 7 años hasta los 99 años.
+
+Hacer un programa que le pregunte la edad al usuario, y que le avise de las siguientes
+dos cosas:
+
+- Si el usuario esta en el rango de edad permitido para jugar con legos
+- Si el usuario es muy joven para jugar con legos
+- Si el usuario es muy viejo para jugar con legos
+- Si la edad ingresada es invalida (por ejemplo, si el usuario puso que tenía -1 años)
+
+_(Si, hice un ejercicio sobre los ladrillos lego, estaba muy aburrido)_
+
+<details>
+	<summary>Toca para ver la respuesta</summary>
+
+```py
+edad = int(input("Ingrese su edad: "))
+edad_minima = 7
+edad_maxima = 99
+if edad >= edad_minima and edad <= edad_maxima:
+    # Hay otra forma de hacer ese if, que es de esta forma:
+    # if edad_minima < edad < edad_minima:
+    print("Esta en el rango de edad permitido")
+elif edad <= edad_minima:
+    print("No tiene la edad suficiente")
+elif edad >= edad_maxima:
+    print("Es muy viejo para jugar con legos :( ")
+else:
+    print("Ingresó un número inválido")
+```
+
+</details>
+
+<!--
+### While
+
+#### Ejercicio 1
+
+La siguiente fracción de código hace que numero_random sea
+igual a un número al azar del 1 al 20. Esto quiere decir que su valor cambia con cada
+ejecución del programa.
+
+```py
+import random # Se importa el modulo random -- Esto es algo que todavia no vimos, jejeje
+numero_random = random.randrange(1, 21)
+```
+
+Usando `numero_random`, hacer un programa que le pida al usuario que adivine el valor
+de `numero_random`.
+
+El programa va a tener los siguientes requerimientos:
+
+- Si el usuario ingresa un numero mayor a `numero_random`, que le avise.
+- Si el usuario ingresa un numero menor a `numero_random`, que le avise.
+- Si el usuario ingresa un numero igual a `numero_random`, que le avise que ganó.
+- Al finalizar la ejecución del programa, el mismo deberá avisar cuántos intentos
+  le tomo al usuario para adivinar el número
+-->
