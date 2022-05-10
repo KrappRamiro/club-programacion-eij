@@ -129,6 +129,35 @@ O sea, si yo escribo `print()`, no va a ser lo mismo que `Print()`, `PRINT()` o 
 
 ---
 
+### Cómo escribir y correr programas de Python en las computadoras del colegio
+
+Para las computadoras del colegio, el paso a seguir es el siguiente
+
+Primero, abrir el editor de texto
+![1](imagenes/como_correr_programa/1.png)
+
+Luego, **guardar el programa**
+![2](imagenes/como_correr_programa/2.png)
+
+A este programa que escribimos lo vamos a poner en un archivo, cuyo nombre:
+
+- No contenga espacios
+- No contenga caracteres especiales
+- Termine en `.py`
+
+![3](imagenes/como_correr_programa/3.png)
+
+Luego, ir a la carpeta donde lo guardamos, clic derecho y abrir en una terminal
+![4](imagenes/como_correr_programa/4.png)
+
+Luego, escribir `python3 nombre_del_archivo.py`, reemplazando `nombre_del_archivo.py` por `programa.py` en este caso
+![5](imagenes/como_correr_programa/5.png)
+
+Luego, tocar enter, y asi se ejecuta nuestro programa
+![6](imagenes/como_correr_programa/6.png)
+
+---
+
 ### Comentarios:
 
 Los comentarios en python se escriben poniendo un `#` al principio del comentario
