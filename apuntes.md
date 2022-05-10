@@ -318,6 +318,60 @@ lo mejor es usar `True` y `False`.
 
 ---
 
+#### Averiguar el tipo de una variable
+
+Si no sabes el tipo de una variable y querés averiguarlo, tenes la función `type()`
+
+Cómo se usa? Así:
+
+```py
+mi_texto = "Aguante Boca"
+print(f"El tipo de la variable es: {type(mi_texto)}") # Imprime <class 'str'>
+
+mi_numero = 420
+print(f"El tipo de la variable es: {type(mi_numero)}") # Imprime <class 'int'>
+```
+
+#### Cómo cambiarle el tipo a una variable
+
+##### Pasar de `int` a `string`
+
+```py
+mi_numero = 15
+mi_texto = str(mi_numero)
+```
+
+##### Pasar de `string` a `int`
+
+```py
+mi_texto = "15"
+mi_numero = int(mi_texto) #
+```
+
+#### Sobreescribir el valor de una variable
+
+Hay un truquito muy útil en la programación, y es que si se le quiere sumar 1 a una
+variable, la forma más facil de hacerlo es esta:
+
+```py
+mi_cuenta = 0
+print(mi_cuenta) #Imprime 0
+mi_cuenta = mi_cuenta +1
+print(mi_cuenta) #Imprime
+```
+
+Lo que hay que tener en cuenta es que **el valor de una variable puede variar** a medida
+que avanza el programa
+
+**Pro-tip:** Esto se puede hacer más corto, en vez de escribir `mi_cuenta = mi_cuenta +1`,
+se puede escribir lo siguiente, con el mismo resultado:
+
+```py
+mi cuenta += 1
+```
+
+---
+
 #### Ejemplos de uso de variables
 
 ##### Guardar un texto en una variable
