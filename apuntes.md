@@ -357,7 +357,7 @@ variable, la forma más facil de hacerlo es esta:
 mi_cuenta = 0
 print(mi_cuenta) #Imprime 0
 mi_cuenta = mi_cuenta +1
-print(mi_cuenta) #Imprime
+print(mi_cuenta) #Imprime 1
 ```
 
 Lo que hay que tener en cuenta es que **el valor de una variable puede variar** a medida
