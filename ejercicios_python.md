@@ -303,6 +303,8 @@ usando `int()` o `str()`
 
 </details>
 
+---
+
 ### `input()`
 
 #### Ejercicio 1
@@ -323,6 +325,8 @@ nombre_usuario = input("Hola, ingresa tu nombre: ")
 3
 
 </details>
+
+---
 
 #### Ejercicio 2
 
@@ -351,6 +355,8 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 Habría que hacer `int(input())`
 
 </details>
+
+---
 
 ### `if`
 
@@ -381,6 +387,8 @@ y se imprime que perdiste.
 Si `flechazo_cabeza` fuera `False`, se imprimiría en pantalla el "la flecha no te pego"
 
 </details>
+
+---
 
 #### Ejercicio 2
 
