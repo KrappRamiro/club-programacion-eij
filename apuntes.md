@@ -481,6 +481,8 @@ Si queremos que sea un número con coma, tenemos que usar `float()`, resultando 
 
 ### `if` (condicionales)
 
+**Ahora si empieza lo bueno**
+
 A veces un programa va a tener que tomar decisiones.
 Estas decisiones pueden ejecutar diferentes piezas de código, dependiendo de
 ciertas condiciones.
