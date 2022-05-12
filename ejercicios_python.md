@@ -169,7 +169,7 @@ print(f"Mi amigo se llama {nombre}")
 <details>
 	<summary>Toca para ver la respuesta</summary>
 
-1
+3
 
 </details>
 
