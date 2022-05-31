@@ -846,6 +846,8 @@ print(nombres[1:6])  # Esto imprime ['Pepe', 'Agustina', 'Carla', 'Zefirot', 'Ga
 # numero del ultimo indice no es inclusivo
 ```
 
+---
+
 ### Pequeña introducción a los bucles
 
 Por fin llegamos a una de las cosas más usadas en python, los bucles. Pero primero, que es un bucle?
@@ -859,6 +861,8 @@ y menos una rama de las ciencias informáticas)
 
 Bueno, en python los bucles son **muy**, pero **MUY** útiles. Por qué? porque nos permiten
 repetir una (o más) acciones una cantidad determinada (bucle for) o indeterminada de veces (bucle while)
+
+---
 
 ### Bucles usando `for`
 
@@ -884,6 +888,8 @@ naranja
 
 Lo que pasa en este codigo es que por cada valor que hay en frutas, x adquiere su valor,
 y pasa lo que hay adentro del for.
+
+---
 
 ### Bucles usando `while`
 
