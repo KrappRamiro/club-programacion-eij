@@ -440,6 +440,8 @@ else:
 
 ---
 
+🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑
+
 ---
 
 ##### MUY IMPORTANTE!!! -- Nota sobre la identacion
@@ -457,6 +459,8 @@ y el print del `else` solamente pertenece al else. Esto es porque **esta identad
 Ademas, el `print("finaliza el programa")` NO pertenece al else, porque **no esta identado**
 
 ---
+
+🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑
 
 ---
 
