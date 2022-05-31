@@ -446,13 +446,13 @@ else:
 
 ##### MUY IMPORTANTE!!! -- Nota sobre la identacion
 
-Notar que los comentarios # que hay estan **identados**, eso quiere decir que hay una tabulacion
+Notar que los comentarios # del codigo de arriba que hay estan **identados**, eso quiere decir que hay una tabulacion (o sea, espacios)
 entre la linea del if y la linea del comentario.
 Esto es **OBLIGATORIO**, porque asi python entiende que es lo que está adentro del if
 
 Por ejemplo, en este codigo
 
-![ejemplo de la identacion][./imagenes/identacion.png]
+![ejemplo de la identacion](imagenes/identacion.png)
 
 los primeros dos `print`, los de "no podes pasar" y "sali de aca" pertenecen al primer `if`,
 y el print del `else` solamente pertenece al else. Esto es porque **esta identado**!!!.
