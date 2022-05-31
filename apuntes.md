@@ -771,3 +771,21 @@ en python existe algo llamado listas, que nos permite sintetinzar ese choclo de 
 ```py
 nombres = ["Juan", "Pepe", "Agustina", "Carla", "Zefirot", "Gaburro", "Maria", "Juan Carlos", "Guillermo", "Pablo"]
 ```
+
+Esto simplifica **mucho** laburar con multiples variables, usenlo que sirve un monton.
+
+#### Acceder a los ultimos elementos de una lista
+
+Antes vimos que con `cosas_verduleria[0]` accedimos al **primer** elemento de la lista,
+que con `cosas_verduleria[1]` accedemos al **segundo** elemento, y que con
+`cosas_verduleria[2]` accedemos al **tercer** elemento, y asi...
+
+Pero que pasa si queremos acceder al **ultimo elemento**? Bueno, hay que pasar a usar
+**indices negativos**. Suena raro, pero es re sencillo.
+
+**Para acceder al ultimo elemento**, hay que hacer `cosas_verduleria[-1]`. Por que?
+Porque `[-1]` simboliza el ultimo elemento.
+
+#### Slicing de Listas
+
+#### Agregar
