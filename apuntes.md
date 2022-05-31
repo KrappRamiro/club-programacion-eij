@@ -438,6 +438,10 @@ else:
 	# Lo que esta aca adentro se ejecuta si es falso
 ```
 
+---
+
+---
+
 ##### MUY IMPORTANTE!!! -- Nota sobre la identacion
 
 Notar que los comentarios # que hay estan **identados**, eso quiere decir que hay una tabulacion
@@ -451,6 +455,10 @@ Por ejemplo, en este codigo
 los primeros dos `print`, los de "no podes pasar" y "sali de aca" pertenecen al primer `if`,
 y el print del `else` solamente pertenece al else. Esto es porque **esta identado**!!!.
 Ademas, el `print("finaliza el programa")` NO pertenece al else, porque **no esta identado**
+
+---
+
+---
 
 #### Operadores
 
