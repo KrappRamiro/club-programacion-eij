@@ -411,6 +411,8 @@ lo que ingresamos como si fuera una variable de tipo numerico.
 Si queremos que sea un número con coma, tenemos que usar `float()`, resultando en
 `float(input())`
 
+---
+
 ### `if` (condicionales)
 
 **Ahora si empieza lo bueno**
@@ -561,7 +563,7 @@ elif nota_alumno == 0:
 print(f"Aprobacion: {aprobacion}")
 ```
 
-### `if` encadenados
+#### `if` encadenados
 
 Los if se pueden uno atras del otro, formando una cadena (a esto tambien se le
 llaman if en cascada)
@@ -581,6 +583,8 @@ Los if encadenados tienen un problema, y es que **en algunos casos**, si son muc
 if encadenados suelen generar lo que se conoce como "código hadouken", que es algo así:
 
 ![Codigo hadouken](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F1*AO_u4vKKyCYM0iepVant4Q.png&f=1&nofb=1)
+
+---
 
 ### Uso de `or` y `and` - Checkeo de multiples cosas en un if
 
@@ -614,6 +618,8 @@ if numero < 10 and numero % 2 == 0:
 elif numero % 2 != 0:
 	print("El numero es impar")
 ```
+
+---
 
 ### Listas
 
@@ -649,6 +655,29 @@ print(cosas_verduleria[0]) # esto imprime "manzana"
 ```
 
 Por qué 0? Bueno, mira la imagen. Si te fijas, el elemento con el indice = 0 es el primero.
+Para el segundo elemento, habría que hacer
+
+```py
+print(cosas_verduleria[1]) # Esto imprime banana
+```
+
+Ahora, que pasas si hacemos asi?
+
+```py
+print(cosas_verduleria[3]) # Esto me tira un ERROR!
+```
+
+Chan chan chaaaan, nos tira un error 0_0. ¿Por qué? Y porque `[3]` indica el 4to elemento
+de la lista, y nosotros solamente tenemos 3 en nuestra lista.
+Para los más curiosos, el error se ve así:
+
+```py
+Traceback (most recent call last):
+  File "/home/krapp/test.py", line 2, in <module>
+    print(cosas_verduleria[4])
+IndexError: list index out of range
+
+```
 
 #### Para que las usamos?
 
@@ -688,10 +717,108 @@ Pero que pasa si queremos acceder al **ultimo elemento**? Bueno, hay que pasar a
 
 **Para acceder al ultimo elemento**, hay que hacer `cosas_verduleria[-1]`. Por que?
 Porque `[-1]` simboliza el ultimo elemento.
+Y para acceder al anteultimo? `cosas_verduleria[-2]`
+
+#### Agregar elementos a una lista
+
+Para agregar elementos a una lista, usamos el **método** `append()` (Los metodos son los que usas el `.` antes de usarlos)
+
+Para el ejemplo, vamos a usar a nuestra amada y queridisima, `lista_verduleria`.
+Recordemos que la lista era asi:
+
+```py
+cosas_verduleria = ["manzana", "banana", "naranja"]
+```
+
+Si queremos agregar a la lista unas uvas, debemos hacer asi:
+
+```py
+cosas_verduleria.append("uvas")
+```
+
+Despues de hacer eso, los elementos de la lista quedan asi: `["manzana", "banana", "naranja", "uvas"]`
+
+#### Eliminar elementos a una lista
+
+Para eliminar elementos de una lista, hay dos métodos principales, el método `pop()` y el método `remove()`
+
+##### `remove()`
+
+`remove()` remueve el elemento especificado.
+
+En este codigo, remuevo a la banana de la lista
+
+```py
+cosas_verduleria = ["manzana", "banana", "naranja"]
+cosas_verduleria.remove("banana")
+print(cosas_verduleria) # Esto imprime ["manzana", "naranja"]
+```
+
+##### `pop()`
+
+`pop()` remueve el elemento que esta en el indice especificado
+
+```py
+cosas_verduleria = ["manzana", "banana", "naranja"]
+cosas_verduleria.pop(1)
+print(cosas_verduleria) # Esto imprime ["manzana", "naranja"], porque el elemento 1 es "banana"
+```
+
+Si no especificas el indice, `pop()` remueve el último elemento
+
+```py
+cosas_verduleria = ["manzana", "banana", "naranja"]
+cosas_verduleria.pop()
+print(cosas_verduleria) # Esto imprime ["manzana", "banana"]
+```
+
+##### `clear()`
+
+Vieron que les dije que habia dos métodos principales? Bueno les mentí xdxd.
+El método `clear()` vacía la lista. La lista todavía existe, pero no tiene elementos adentro
+
+```py
+cosas_verduleria = ["manzana", "banana", "naranja"]
+cosas_verduleria.clear()
+print(cosas_verduleria) # Esto imprime [], porque esta vacia lol
+```
 
 #### Slicing de Listas
 
-#### Agregar
+A veces, queremos acceder no a un elemento en especifico de la lista, sino a un rango de elementos.
+Y vos te preguntaras, que carajo significa eso?
+Bueno, es sencillo, acceder a un rango es acceder a cosas como
+**los primeros 3 elementos de la lista**, o a
+**los ultimos 3 elementos dela lista**, o a
+**todos los elementos desde el 2do al 5to** (o sea, 2do, 3ro, 4to y 5to).
+
+Esto se hace normalmente con **Slicing**, con el slicing, uno pone como indice un rango
+de elementos, con la siguiente sintaxis:
+
+```py
+mi_lista[inicio:fin]
+```
+
+##### Ejemplos de uso
+
+```py
+# Vamos a trabajar con esta lista de nombres
+nombres = ["Juan", "Pepe", "Agustina", "Carla", "Zefirot", "Gaburro", "Maria", "Juan Carlos", "Guillermo", "Pablo"]
+
+# Acceder a los primeros 3 elementos
+nombres[0:3]# Esto imprime ['Juan', 'Pepe', 'Agustina']
+
+# Otra forma de acceder a los primeros 3 elementos
+nombres[:3] # Esto imprime ['Juan', 'Pepe', 'Agustina']
+
+# Acceder a los ultimos 3 elementos
+nombres[-3:] # Esto imprime ['Juan Carlos', 'Guillermo', 'Pablo']
+
+# Acceder a los elementos desde el 2do al 5to
+print(nombres[1:6])  # Esto imprime ['Pepe', 'Agustina', 'Carla', 'Zefirot', 'Gaburro']
+# Te vas a preguntar, por que es [1:6? Bueno, porque empezamos a contar desde el 0, y el
+# numero del ultimo indice no es inclusivo
+```
 
 ## El sistema de archivos de Linux
 
