@@ -21,9 +21,7 @@ _Ante cualquier problema, google es tu mejor amigo_
 
 ---
 
-## Python
-
----
+## Nota sobre mayusculas y minusculas
 
 **Atencion**:
 <br> Todo lo que vayas a leer y escribir es **Caps-sensitive**, eso significa
@@ -32,15 +30,15 @@ O sea, si yo escribo `print()`, no va a ser lo mismo que `Print()`, `PRINT()` o 
 
 ---
 
-### Cómo escribir y correr programas de Python en las computadoras del colegio
+## Cómo escribir y correr programas de Python en las computadoras del colegio
 
 Para las computadoras del colegio, el paso a seguir es el siguiente
 
 Primero, abrir el editor de texto
-![1](imagenes/como_correr_programa/1.png)
+![1](../imagenes/como_correr_programa/1.png)
 
 Luego, **guardar el programa**
-![2](imagenes/como_correr_programa/2.png)
+![2](../imagenes/como_correr_programa/2.png)
 
 A este programa que escribimos lo vamos a poner en un archivo, cuyo nombre:
 
@@ -48,20 +46,20 @@ A este programa que escribimos lo vamos a poner en un archivo, cuyo nombre:
 - No contenga caracteres especiales
 - Termine en `.py`
 
-![3](imagenes/como_correr_programa/3.png)
+![3](../imagenes/como_correr_programa/3.png)
 
 Luego, ir a la carpeta donde lo guardamos, clic derecho y abrir en una terminal
-![4](imagenes/como_correr_programa/4.png)
+![4](../imagenes/como_correr_programa/4.png)
 
 Luego, escribir `python3 nombre_del_archivo.py`, reemplazando `nombre_del_archivo.py` por `programa.py` en este caso
-![5](imagenes/como_correr_programa/5.png)
+![5](../imagenes/como_correr_programa/5.png)
 
 Luego, tocar enter, y asi se ejecuta nuestro programa
-![6](imagenes/como_correr_programa/6.png)
+![6](../imagenes/como_correr_programa/6.png)
 
 ---
 
-### Comentarios:
+## Comentarios:
 
 Los comentarios en python se escriben poniendo un `#` al principio del comentario
 
@@ -73,7 +71,7 @@ print("Esto no es un comentario")
 Los comentarios son **fundamentales** para explicar el funcionamiento del código,
 un buen programador comenta su código con frecuencia.
 
-### `print()`
+## `print()`
 
 `print` es una **función** _(concepto que todavia no vimos, pero ya vamos a ver)_ que
 imprime lo que tenga entre `()` en la terminal. Si entre los `()` ponemos texto entre
@@ -83,7 +81,7 @@ va a entender que queremos imprimir una variable
 Nota: Al texto entre `" "` se lo suele llamar strings. Si leen la palabra String, sepan
 que se refiere a un texto
 
-#### Sintaxis
+### Sintaxis
 
 ```py
 print("texto a imprimir")
@@ -95,34 +93,34 @@ o
 print(variable_a_imprimir)
 ```
 
-#### Ejemplos de uso:
+### Ejemplos de uso:
 
-##### Imprimir Hola gente
+#### Imprimir Hola gente
 
 ```py
 print("Hola gente!")
 ```
 
-###### Resultado:
+#### Resultado:
 
 ```
 Hola gente!
 ```
 
-##### Imprimir el valor de una variable
+#### Imprimir el valor de una variable
 
 ```py
 saludo = "Hola gente"
 print(saludo)
 ```
 
-###### Resultado:
+#### Resultado:
 
 ```
 Hola gente
 ```
 
-##### Imprimir multiples cosas - Ejemplo usando concatenización
+#### Imprimir multiples cosas - Ejemplo usando concatenización
 
 Nota: La concatenizacion tiene un gran problema, y es que solamente te permite
 imprimir texto, no te permite imprimir cosas como números.
@@ -134,13 +132,13 @@ juego_favorito = "Skyrim"
 print("Hola, me llamo " + nombre + " y mi juego favorito es " + juego_favorito )
 ```
 
-###### Resultado:
+#### Resultado:
 
 ```
 Hola, me llamo Juan Carlos y mi juego favorito es Skyrim
 ```
 
-##### Imprimir multiples cosas - Ejemplo usando fstrings
+#### Imprimir multiples cosas - Ejemplo usando fstrings
 
 Si queremos imprimir multiples cosas en un print, la mejor forma de hacerlo es usando
 algo llamado fstrings
@@ -154,24 +152,24 @@ juego_favorito = "Skyrim"
 print(f"Hola, me llamo {nombre}, tengo {edad} años y mi juego favorito es {juego_favorito}")
 ```
 
-###### Resultado:
+#### Resultado:
 
 ```
 Hola, me llamo Juan Carlos, tengo 13 años y mi juego favorito es Skyrim
 ```
 
-### Variables
+## Variables
 
 Las variables son una de nuestras mejores herramientas. Estas nos permiten almacenar datos
 en la memoria, a los cuales despues vamos a poder acceder y modificar.
 
-#### Sintaxis:
+### Sintaxis:
 
 ```py
 nombre_de_la_variable = valor_de_la_variable
 ```
 
-#### Tipos de variables / Tipos de datos
+### Tipos de variables / Tipos de datos
 
 En Python no todas las variables son iguales, sino que hay tipos. Una variable de un tipo
 solamente puede almacenar valores de su mismo tipo. Este concepto tambien es conocido como el **tipo de dato**, o **datatype.**
@@ -190,18 +188,18 @@ Bueno, en python pasa algo parecido con los tipos de dato.
 - Variables numericas (integers, floats)
 - Variables lógicas (bools)
 
-##### Variables de texto (`String`)
+#### Variables de texto (`String`)
 
 Las **variables de texto**, generalmente llamadas **String**, son variables que pueden
 almacenar texto en ellas.
 
-###### Ejemplo:
+#### Ejemplo:
 
 ```py
 mi_nombre = "Ramiro"
 ```
 
-##### Variables numericas (`int y float`)
+#### Variables numericas (`int y float`)
 
 Las **variables numéricas** son variables que almacenan números (¿qué sorpresa no?).
 <br>
@@ -216,14 +214,14 @@ y numeros con coma (1.342, -1.5, -0.999, 0.666).
 porque en programacion la coma `,` se usa para armar **listas**,
 que es un concepto que viene más adelante.
 
-###### Ejemplo
+#### Ejemplo
 
 ```py
 porciones_pizza = 8 # Esta variable es de tipo int
 pi = 3.14 # Esta variable es de tipo float
 ```
 
-##### Variables lógicas (`bool`)
+#### Variables lógicas (`bool`)
 
 Las **variables lógicas** son variables que pueden almacenar solamente **DOS** valores,
 **Verdadero** (`True`) o **Falso** (`False`).
@@ -233,7 +231,7 @@ A estas variables tambien se les suele llamar **variables booleanas**, esto es p
 La forma más facil de entender a las variables lógicas es imaginarse que en nuestro código
 queremos guardar el estado de una lamparita
 
-###### Ejemplo
+#### Ejemplo
 
 ```py
 lamparita_prendida = True  # La lamparita esta prendida
@@ -250,7 +248,7 @@ lo mejor es usar `True` y `False`.
 
 ---
 
-#### Averiguar el tipo de una variable
+### Averiguar el tipo de una variable
 
 Si no sabes el tipo de una variable y querés averiguarlo, tenes la función `type()`
 
@@ -264,23 +262,23 @@ mi_numero = 420
 print(f"El tipo de la variable es: {type(mi_numero)}") # Imprime <class 'int'>
 ```
 
-#### Cómo cambiarle el tipo a una variable
+### Cómo cambiarle el tipo a una variable
 
-##### Pasar de `int` a `string`
+#### Pasar de `int` a `string`
 
 ```py
 mi_numero = 15
 mi_texto = str(mi_numero)
 ```
 
-##### Pasar de `string` a `int`
+#### Pasar de `string` a `int`
 
 ```py
 mi_texto = "15"
 mi_numero = int(mi_texto) #
 ```
 
-#### Sobreescribir el valor de una variable
+### Sobreescribir el valor de una variable
 
 Hay un truquito muy útil en la programación, y es que si se le quiere sumar 1 a una
 variable, la forma más facil de hacerlo es esta:
@@ -304,9 +302,9 @@ mi cuenta += 1
 
 ---
 
-#### Ejemplos de uso de variables
+### Ejemplos de uso de variables
 
-##### Guardar un texto en una variable
+#### Guardar un texto en una variable
 
 Como es texto, uso `" "`
 
@@ -314,7 +312,7 @@ Como es texto, uso `" "`
 mi_nombre = "Ramiro"
 ```
 
-##### Guardar un numero en una variable
+#### Guardar un numero en una variable
 
 Como **NO** es texto, sino que es un numero, **NO** uso `" "`
 
@@ -322,7 +320,7 @@ Como **NO** es texto, sino que es un numero, **NO** uso `" "`
 mi_edad = 18
 ```
 
-##### Guardar la suma de dos numeros en una variable
+#### Guardar la suma de dos numeros en una variable
 
 ```py
 suma = 3+15
@@ -330,7 +328,7 @@ suma = 3+15
 
 `suma` ahora vale `18`
 
-##### Guardar la suma de dos variables en una tercera variable
+#### Guardar la suma de dos variables en una tercera variable
 
 ```py
 num_1 = 3
@@ -341,22 +339,22 @@ num_3 = num_1 + num_2
 
 `num_3` ahora vale `8`
 
-### `input()`
+## `input()`
 
 `input()` es una funcion que nos permite recibir datos del usuario en forma de string.
 
 Esta funcion espera que escribas algo en la terminal y que toques enter. Cuando tocaste
 enter, guarda lo que escribiste en una variable que le hayas indicado
 
-#### Sintaxis
+### Sintaxis
 
 ```py
 mi_variable = input("Mensaje a mostrar al usuario")
 ```
 
-#### Ejemplos:
+### Ejemplos:
 
-##### Ejemplo 1 - Ingreso de nombre de usuario
+#### Ejemplo 1 - Ingreso de nombre de usuario
 
 Un ejemplo muy sencillo puede ser un programa que pida al usuario que ingrese su nombre,
 y que luego imprima en pantalla el nombre del usuario.
@@ -389,7 +387,7 @@ El nombre del usuario es: Juancito
 
 ---
 
-##### Ejemplo 2 - Ingreso de edad del usuario
+#### Ejemplo 2 - Ingreso de edad del usuario
 
 Cuando queremos dejar de introducir texto, para empezar a introducir numeros, la cosa
 cambia un poco.
@@ -413,7 +411,7 @@ Si queremos que sea un número con coma, tenemos que usar `float()`, resultando 
 
 ---
 
-### `if` (condicionales)
+## `if` (condicionales)
 
 **Ahora si empieza lo bueno**
 
@@ -429,7 +427,7 @@ llama como **control del flujo**
 
 ![if-else-flow](https://cdn.educba.com/academy/wp-content/uploads/2019/08/If-Else-Statement-Flow-Diagram-2.png)
 
-#### Sintaxis
+### Sintaxis
 
 ```py
 if condicion:
@@ -444,7 +442,7 @@ else:
 
 ---
 
-##### MUY IMPORTANTE!!! -- Nota sobre la identacion
+#### MUY IMPORTANTE!!! -- Nota sobre la identacion
 
 Notar que los comentarios # del codigo de arriba que hay estan **identados**, eso quiere decir que hay una tabulacion (o sea, espacios)
 entre la linea del if y la linea del comentario.
@@ -452,7 +450,7 @@ Esto es **OBLIGATORIO**, porque asi python entiende que es lo que está adentro 
 
 Por ejemplo, en este codigo
 
-![ejemplo de la identacion](imagenes/identacion.png)
+![ejemplo de la identacion](../imagenes/identacion.png)
 
 los primeros dos `print`, los de "no podes pasar" y "sali de aca" pertenecen al primer `if`,
 y el print del `else` solamente pertenece al else. Esto es porque **esta identado**!!!.
@@ -464,7 +462,7 @@ Ademas, el `print("finaliza el programa")` NO pertenece al else, porque **no est
 
 ---
 
-#### Operadores
+### Operadores
 
 En python, el `if` permite checkear cosas de distintas formas, usando **operadores**
 
@@ -475,9 +473,9 @@ En python, el `if` permite checkear cosas de distintas formas, usando **operador
 - `>` Checkea si es mayor
 - `>=` Checkea si es mayor o igual
 
-#### Ejemplos
+### Ejemplos
 
-##### Ejemplo de checkear un bool
+#### Ejemplo de checkear un bool
 
 ```py
 boton_presionado = True
@@ -497,7 +495,7 @@ En este ejemplo, al final del codigo, `lamparita_prendida` va a ser `True`.
 Si nosotros alteramos nuestro código para que `boton_presionado` sea `False`,
 al final del codigo `lamparita_prendida` va a ser `False`
 
-##### Ejemplo de checkear si un numero es mayor a 10
+#### Ejemplo de checkear si un numero es mayor a 10
 
 ```py
 numero = int(input("Ingrese un número: "))
@@ -508,7 +506,7 @@ else:
 	print("El numero es menor a 10")
 ```
 
-##### Ejemplo de checkear si un número es igual a 10
+#### Ejemplo de checkear si un número es igual a 10
 
 ```py
 numero = int(input("Ingrese un número: "))
@@ -519,7 +517,7 @@ else:
 	print("El numero es distinto de 10")
 ```
 
-##### Ejemplo de checkear si un número es distinto de 10
+#### Ejemplo de checkear si un número es distinto de 10
 
 ```py
 numero = int(input("Ingrese un número: "))
@@ -530,7 +528,7 @@ else:
 	print("El numero es 10")
 ```
 
-##### Ejemplo de checkear si un alumno esta aprobado
+#### Ejemplo de checkear si un alumno esta aprobado
 
 ```py
 nota_alumno = int(input("Ingrese la nota del alumno"))
@@ -541,7 +539,7 @@ else:
 	print("El alumno esta desaprobado :( ")
 ```
 
-### Uso de `elif` (`else if`)
+## Uso de `elif` (`else if`)
 
 Si se quieren checkear para multiples casos, se puede usar algo
 llamado `elif` (que significa `else if`)
@@ -549,7 +547,7 @@ llamado `elif` (que significa `else if`)
 El `elif` es la forma de decir "si la condicion anterior no fue verdadera,
 intenta con esta condicion"
 
-##### Ejemplo mejorado de checkear si un alumno esta aprobado
+#### Ejemplo mejorado de checkear si un alumno esta aprobado
 
 ```py
 nota_alumno = int(input("Ingrese la nota del alumno": ))
@@ -589,7 +587,7 @@ elif nota_alumno == 0:
 print(f"Aprobacion: {aprobacion}")
 ```
 
-#### `if` encadenados
+### `if` encadenados
 
 Los if se pueden uno atras del otro, formando una cadena (a esto tambien se le
 llaman if en cascada)
@@ -612,14 +610,14 @@ if encadenados suelen generar lo que se conoce como "código hadouken", que es a
 
 ---
 
-### Uso de `or` y `and` - Checkeo de multiples cosas en un if
+## Uso de `or` y `and` - Checkeo de multiples cosas en un if
 
 Cuando uno usa un `if`, puede checkear por multiples cosas, usando `or` y `and`
 
 - `or` checkea si alguna de las condiciones son verdaderas
 - `and` checkea si todas de las condiciones son verdaderas
 
-#### Ejemplo con `or`
+### Ejemplo con `or`
 
 ```py
 numero = int(input("Ingresa un número: "))
@@ -628,7 +626,7 @@ if numero == 1 or numero == 2:
 	print("El numero que introduciste es 1 o es 2, alguno de los dos es")
 ```
 
-#### Ejemplo con `and`
+### Ejemplo con `and`
 
 Este ejemplo usa el operador `%`. Lo que hace el operador `%` es checkear cual es el
 resto de un numero cuando lo dividis por otro.
@@ -647,7 +645,7 @@ elif numero % 2 != 0:
 
 ---
 
-### Listas
+## Listas
 
 Una lista es un tipo de variable usada para almacenar multiples items en una sola variable.
 Estos multiples items pueden ser de cualquier tipo, tanto strings, como ints, como floats,
@@ -705,7 +703,7 @@ IndexError: list index out of range
 
 ```
 
-#### Para que las usamos?
+### Para que las usamos?
 
 Imaginate que tenés que hacer un programa, que reciba el nombre de 10 usuarios.
 Con lo que aprendiste hasta ahora, la única opción que tenes es tener 10 variables:
@@ -732,7 +730,7 @@ nombres = ["Juan", "Pepe", "Agustina", "Carla", "Zefirot", "Gaburro", "Maria", "
 
 Esto simplifica **mucho** laburar con multiples variables, usenlo que sirve un monton.
 
-#### Acceder a los ultimos elementos de una lista
+### Acceder a los ultimos elementos de una lista
 
 Antes vimos que con `cosas_verduleria[0]` accedimos al **primer** elemento de la lista,
 que con `cosas_verduleria[1]` accedemos al **segundo** elemento, y que con
@@ -745,7 +743,7 @@ Pero que pasa si queremos acceder al **ultimo elemento**? Bueno, hay que pasar a
 Porque `[-1]` simboliza el ultimo elemento.
 Y para acceder al anteultimo? `cosas_verduleria[-2]`
 
-#### Agregar elementos a una lista
+### Agregar elementos a una lista
 
 Para agregar elementos a una lista, usamos el **método** `append()` (Los metodos son los que usas el `.` antes de usarlos)
 
@@ -764,11 +762,11 @@ cosas_verduleria.append("uvas")
 
 Despues de hacer eso, los elementos de la lista quedan asi: `["manzana", "banana", "naranja", "uvas"]`
 
-#### Eliminar elementos a una lista
+### Eliminar elementos a una lista
 
 Para eliminar elementos de una lista, hay dos métodos principales, el método `pop()` y el método `remove()`
 
-##### `remove()`
+#### `remove()`
 
 `remove()` remueve el elemento especificado.
 
@@ -780,7 +778,7 @@ cosas_verduleria.remove("banana")
 print(cosas_verduleria) # Esto imprime ["manzana", "naranja"]
 ```
 
-##### `pop()`
+#### `pop()`
 
 `pop()` remueve el elemento que esta en el indice especificado
 
@@ -798,7 +796,7 @@ cosas_verduleria.pop()
 print(cosas_verduleria) # Esto imprime ["manzana", "banana"]
 ```
 
-##### `clear()`
+#### `clear()`
 
 Vieron que les dije que habia dos métodos principales? Bueno les mentí xdxd.
 El método `clear()` vacía la lista. La lista todavía existe, pero no tiene elementos adentro
@@ -809,7 +807,7 @@ cosas_verduleria.clear()
 print(cosas_verduleria) # Esto imprime [], porque esta vacia lol
 ```
 
-#### Slicing de Listas
+### Slicing de Listas
 
 A veces, queremos acceder no a un elemento en especifico de la lista, sino a un rango de elementos.
 Y vos te preguntaras, que carajo significa eso?
@@ -825,7 +823,7 @@ de elementos, con la siguiente sintaxis:
 mi_lista[inicio:fin]
 ```
 
-##### Ejemplos de uso
+#### Ejemplos de uso
 
 ```py
 # Vamos a trabajar con esta lista de nombres
@@ -848,7 +846,7 @@ print(nombres[1:6])  # Esto imprime ['Pepe', 'Agustina', 'Carla', 'Zefirot', 'Ga
 
 ---
 
-### Pequeña introducción a los bucles
+## Pequeña introducción a los bucles
 
 Por fin llegamos a una de las cosas más usadas en python, los bucles. Pero primero, que es un bucle?
 Un bucle es una acción que se repite una vez, y otra vez, y otra vez, y otra vez,
@@ -864,7 +862,7 @@ repetir una (o más) acciones una cantidad determinada (bucle for) o indetermina
 
 ---
 
-### Bucles usando `for`
+## Bucles usando `for`
 
 ![Bucle for](https://datagy.io/wp-content/uploads/2020/06/Python-For-Loop-Structure.png)
 
@@ -875,123 +873,20 @@ que hay adentro de la lista frutas.
 ```py
 frutas = ["manzana", "banana", "naranja"]
 for x in fruits:
-	print(x)
+	print(f"Hola me estoy ejecutando! x es igual a: {x}")
 ```
 
 Este codigo imprime
 
 ```
-manzana
-banana
-naranja
+Hola me estoy ejecutando! x es igual a: manzana
+Hola me estoy ejecutando! x es igual a: banana
+Hola me estoy ejecutando! x es igual a: naranja
 ```
 
-Lo que pasa en este codigo es que por cada valor que hay en frutas, x adquiere su valor,
-y pasa lo que hay adentro del for.
+Cómo funciona este for? Bueno, lo que sucede es que el for va pasando por la lista `frutas`,
+y va cambiando a `x` de valor
 
----
-
-### Bucles usando `while`
+## Bucles usando `while`
 
 ![Bucle while](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.journaldev.com%2Fwp-content%2Fuploads%2F2017%2F10%2Fwhile-loop-java.png&f=1&nofb=1)
-
-## El sistema de archivos de Linux
-
-La carpeta home `~` es la carpeta del usuario, donde el usuario tiene todos sus
-archivos personales
-
-## Uso de Bash (La terminal)
-
-La consola, la linea de comandos, la terminal, son todos nombres que se usan para referirse
-a la <u>shell</u> por defecto de Linux, **Bash**.
-
-Qué es la terminal? La terminal es lo que usamos los programadores para poder **comunicarnos
-directamente con la computadora**, usando comandos específicos, que cumplen una
-tarea en concreto.
-
-### Comandos de bash
-
-Hay muchos comandos? Si, hay un montonazo, pero uno **solamente usa los que necesita**,
-y son más bien pocos, los más importantes son:
-
-#### `ls`
-
-Muestra en la terminal los contenidos del directorio actual.
-
-Qué es un directorio? Un directorio es lo que se conoce normalmente como una carpeta.
-O sea, `ls` muestras los contenidos de la carpeta actual en la que estas localizado.
-
-Cómo se usa? Simplemente hay que escribir `ls`, y tocar enter para ejecutar el comando
-
-Un resultado tipico de `ls` cuando uno esta en `~` (home) puede ser:
-
-````
-
-Descargas
-Documentos
-Imagenes
-Musica
-foto_gato.jpg
-lista_compras.txt
-ejercicios_matematicas.pdf
-
-```
-
-**Pro-tip:**
-Si se desean ver los archivos ocultos, los cuales empiezan con un punto `.` , se debe
-usar `ls -a`
-
----
-
-#### `cd`
-
-Cambia el directorio actual al que uno especifique.
-
-Para dar un ejemplo, imaginemos que estoy en la carpeta `~` (home) ,
-y ls me dió el siguiente resultado:
-
-```
-
-Descargas
-Documentos
-Imagenes
-Musica
-foto_gato.jpg
-lista_compras.txt
-ejercicios_matematicas.pdf
-
-````
-
-Si yo quisiera cambiar a la carpeta (o directorio) Documentos, lo unico que tendria que hacer es
-
-```bash
-cd Documentos
-```
-
-y ya estaría adentro de la carpeta (o directorio) Documentos.
-
-Tambien, si adentro de la carpeta (o directorio) Documentos hubiera otra carpeta,
-por ejemplo "Recibos_de_pago/", yo podría hacer
-
-```bash
-cd Documentos/Recibos_de_pago/
-```
-
-Y me mandaría directamente adentro de Recibos_de_pago
-
-Otra cosa, si se usa simplemente `cd` **sin indicarle ninguna carpeta** (lo que tecnicamente
-se llama "no pasarle argumentos"), `cd` te manda a la carpeta `~` (home)
-
----
-
-#### `sudo`
-
-Permite ejecutar un comando como un usuario administrador,
-conocido en linux como usuario **root**.
-Sirve cuando un comando tiene que modificar archivos del sistema y/o instalar aplicaciones.
-
-Para usuarlo, lo único que hay que hacer es escribir
-
-```bash
-sudo comando_a_ejecutar_aqui
-```
