@@ -438,6 +438,20 @@ else:
 	# Lo que esta aca adentro se ejecuta si es falso
 ```
 
+##### MUY IMPORTANTE!!! -- Nota sobre la identacion
+
+Notar que los comentarios # que hay estan **identados**, eso quiere decir que hay una tabulacion
+entre la linea del if y la linea del comentario.
+Esto es **OBLIGATORIO**, porque asi python entiende que es lo que está adentro del if
+
+Por ejemplo, en este codigo
+
+![ejemplo de la identacion][./imagenes/identacion.png]
+
+los primeros dos `print`, los de "no podes pasar" y "sali de aca" pertenecen al primer `if`,
+y el print del `else` solamente pertenece al else. Esto es porque **esta identado**!!!.
+Ademas, el `print("finaliza el programa")` NO pertenece al else, porque **no esta identado**
+
 #### Operadores
 
 En python, el `if` permite checkear cosas de distintas formas, usando **operadores**
@@ -820,6 +834,49 @@ print(nombres[1:6])  # Esto imprime ['Pepe', 'Agustina', 'Carla', 'Zefirot', 'Ga
 # numero del ultimo indice no es inclusivo
 ```
 
+### Pequeña introducción a los bucles
+
+Por fin llegamos a una de las cosas más usadas en python, los bucles. Pero primero, que es un bucle?
+Un bucle es una acción que se repite una vez, y otra vez, y otra vez, y otra vez,
+y otra vez, y otra vez, y otra vez, y otra vez, y otra vez...
+hasta que en momento, **PUM**, para de ejecutarse.
+
+(Si nunca parara de ejecutarse, es lo que se conoce como un **bucle infinito**.
+Ya se, con cada termino nuevo, la programación parece cada vez más una peli de Marvel
+y menos una rama de las ciencias informáticas)
+
+Bueno, en python los bucles son **muy**, pero **MUY** útiles. Por qué? porque nos permiten
+repetir una (o más) acciones una cantidad determinada (bucle for) o indeterminada de veces (bucle while)
+
+### Bucles usando `for`
+
+![Bucle for](https://datagy.io/wp-content/uploads/2020/06/Python-For-Loop-Structure.png)
+
+Los bucles `for` permiten hacer una acción una determinada cantidad de veces. Uno de los ejemplos
+más sencillos que hay para entender a los bucles `for` es este ejemplo, que imprime todos los elementos
+que hay adentro de la lista frutas.
+
+```py
+frutas = ["manzana", "banana", "naranja"]
+for x in fruits:
+	print(x)
+```
+
+Este codigo imprime
+
+```
+manzana
+banana
+naranja
+```
+
+Lo que pasa en este codigo es que por cada valor que hay en frutas, x adquiere su valor,
+y pasa lo que hay adentro del for.
+
+### Bucles usando `while`
+
+![Bucle while](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.journaldev.com%2Fwp-content%2Fuploads%2F2017%2F10%2Fwhile-loop-java.png&f=1&nofb=1)
+
 ## El sistema de archivos de Linux
 
 La carpeta home `~` es la carpeta del usuario, donde el usuario tiene todos sus
@@ -850,7 +907,8 @@ Cómo se usa? Simplemente hay que escribir `ls`, y tocar enter para ejecutar el 
 
 Un resultado tipico de `ls` cuando uno esta en `~` (home) puede ser:
 
-```
+````
+
 Descargas
 Documentos
 Imagenes
@@ -858,6 +916,7 @@ Musica
 foto_gato.jpg
 lista_compras.txt
 ejercicios_matematicas.pdf
+
 ```
 
 **Pro-tip:**
@@ -874,6 +933,7 @@ Para dar un ejemplo, imaginemos que estoy en la carpeta `~` (home) ,
 y ls me dió el siguiente resultado:
 
 ```
+
 Descargas
 Documentos
 Imagenes
@@ -881,7 +941,8 @@ Musica
 foto_gato.jpg
 lista_compras.txt
 ejercicios_matematicas.pdf
-```
+
+````
 
 Si yo quisiera cambiar a la carpeta (o directorio) Documentos, lo unico que tendria que hacer es
 
