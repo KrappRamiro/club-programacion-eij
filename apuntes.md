@@ -711,3 +711,63 @@ if numero < 10 and numero % 2 == 0:
 elif numero % 2 != 0:
 	print("El numero es impar")
 ```
+
+### Listas
+
+Una lista es un tipo de variable usada para almacenar multiples items en una sola variable.
+Estos multiples items pueden ser de cualquier tipo, tanto strings, como ints, como floats,
+como bools
+
+Uno declara una lista de forma similar a la que se declara una variable, y le asigna los
+elementos que tiene adentro escribiendolos adentro de unos corchetes `[]` separados por comas,
+de la sigiente forma:
+
+```py
+cosas_verduleria = ["manzana", "banana", "naranja"]
+```
+
+Cuando Python guarda los elementos adentro de una lista, les asigna un indice, que comienza
+en 0, como lo muestra la siguiente imagen, en la que hay una lista que tiene distintos
+colores en ingles:
+
+![Indices de las listas](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frailsware.com%2Fblog%2Fwp-content%2Fuploads%2F2018%2F10%2Fpositive-indexes.png&f=1&nofb=1)
+
+Para acceder a un elemento de la lista yo tengo que hacer lo siguiente:
+
+```py
+cosas_verduleria = [indice]
+```
+
+Por ejemplo, si yo quisiera acceder al primer elemento, o sea, `"manzana"`,
+para poder imprimirlo, debería hacer lo siguiente:
+
+```py
+print(cosas_verduleria[0]) # esto imprime "manzana"
+```
+
+Por qué 0? Bueno, mira la imagen. Si te fijas, el elemento con el indice = 0 es el primero.
+
+#### Para que las usamos?
+
+Imaginate que tenés que hacer un programa, que reciba el nombre de 10 usuarios.
+Con lo que aprendiste hasta ahora, la única opción que tenes es tener 10 variables:
+
+```py
+nombre_persona_1 = "Juan"
+nombre_persona_2 = "Pepe"
+nombre_persona_3 = "Agustina"
+nombre_persona_4 = "Carla"
+nombre_persona_5 = "Zefirot"
+nombre_persona_6 = "Gaburro"
+nombre_persona_7 = "Maria"
+nombre_persona_8 = "Juan Carlos"
+nombre_persona_9 = "Guillermo"
+nombre_persona_10 = "Pablo"
+```
+
+La realidad es que esa solución es muy incómoda y tiene muchos problemas. Por suerte,
+en python existe algo llamado listas, que nos permite sintetinzar ese choclo de 10 variables en la siguiente linea:
+
+```py
+nombres = ["Juan", "Pepe", "Agustina", "Carla", "Zefirot", "Gaburro", "Maria", "Juan Carlos", "Guillermo", "Pablo"]
+```
