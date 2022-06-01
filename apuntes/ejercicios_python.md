@@ -411,10 +411,10 @@ if zona_impacto == "cabeza":
 	dano = 100
 	vida_jugador -= dano # Le resto 100 al valor actual de vida_jugador
 
-elif zona_impacto == "pecho:
+elif zona_impacto == "pecho":
 	vida_jugador -= 90
 
-elif zona_impacto == "brazo" or "pierna:
+elif zona_impacto == "brazo" or zona_impacto == "pierna":
 	vida_jugador -= 40
 
 else:
@@ -427,7 +427,7 @@ print(f"Tenes {vida_jugador} puntos de vida")
 
 ### Ejercicio 3
 
-Crea un programa que, preguntando la hora, checkee si una persona puede tomar
+Crea un programa que, preguntando la edad, checkee si una persona puede tomar
 bebidas alcohólicas o no
 
 <details>
@@ -481,6 +481,8 @@ else:
 
 </details>
 
+---
+
 ## While
 
 ### Ejercicio 1
@@ -514,17 +516,132 @@ run = True
 cantidad_intentos = 0
 
 while run:
-    user_input = int(input('Adivina el numero: '))
-    if user_input < numero_random:
-        print("Muy bajo!")
-    elif user_input > numero_random:
-        print("Muy alto!")
-    elif user_input == numero_random:
-        print('Adivinaste!')
-        run = False
-    cantidad_intentos += 1
+	user_input = int(input('Adivina el numero: '))
+	if user_input < numero_random:
+		print("Muy bajo!")
+	elif user_input > numero_random:
+		print("Muy alto!")
+	elif user_input == numero_random:
+		print('Adivinaste!')
+		run = False
+	cantidad_intentos += 1
 
 print(f"Te tomo {cantidad_intentos} intentos!")
+```
+
+</details>
+
+---
+
+## For
+
+### Ejercicio 1
+
+Hacer un código que, usando un for, checkee si en una lista de nombres de animales
+hay un perro llamado Juan Carlos
+
+<details>
+	<summary>Toca para ver la respuesta</summary>
+
+```py
+lista_perros = "Rufus", "Rocco", "Juan Carlos", "Manchitas", "Juan Carlos"
+
+for perro in lista_perros:
+    if perro == "Juan Carlos":
+        print("Hay un perro llamado Juan Carlos!")
+```
+
+</details>
+
+---
+
+### Ejercicio 2
+
+Modificar el código anterior, para que checkee si en una lista de nombres de animales
+hay **tres o más** perros llamados Juan Carlos
+
+<details>
+	<summary>Toca para ver la respuesta</summary>
+
+```py
+lista_perros = "Rufus", "Rocco", "Juan Carlos", "Manchitas", "Juan Carlos"
+cantidad_repeticiones = 0
+
+for perro in lista_perros:
+    if perro == "Juan Carlos":
+        cantidad_repeticiones += 1
+
+if cantidad_repeticiones == 0:
+    print("No se encontraron perros llamados Juan Carlos")
+else:
+    print(f"Se encontraron {cantidad_repeticiones} perros llamados Juan Carlos")
+```
+
+</details>
+
+---
+
+### Ejercicio 3
+
+Modificar el código anterior, para que permita buscar cualquier nombre y cualquier
+cantidad de repeticiones del mismo
+
+<details>
+	<summary>Toca para ver la respuesta</summary>
+
+```py
+lista_perros = "Rufus", "Rocco", "Juan Carlos", "Manchitas", "Juan Carlos"
+cantidad_repeticiones = 0
+nombre_buscado = input("Ingrese el nombre del perro a buscar")
+
+for perro in lista_perros:
+    if perro == nombre_buscado:
+        cantidad_repeticiones += 1
+
+if cantidad_repeticiones == 0:
+    print(f"No se encontraron perros llamados {nombre_buscado}")
+else:
+    print(f"Se encontraron {cantidad_repeticiones} perros llamados {nombre_buscado}")
+```
+
+</details>
+
+---
+
+### Ejercicio 4
+
+Escribir un programa para mostrar los numeros de una lista que satisfagan los siguientes requisitos:
+
+- El numero debe ser divisible por cinco
+- Si el número es mayor a 150, skipear a la siguiente iteración
+- Si el número es mayor a 500, salir completamente del for
+
+Dado:
+
+numeros = [12, 75, 150, 180, 145, 525, 50]
+
+Printeo en pantalla esperado:
+
+```
+75
+150
+145
+```
+
+<details>
+	<summary>Toca para ver la respuesta</summary>
+
+```py
+numeros = [12, 75, 150, 180, 145, 525, 50]
+# Itero por cada elemento en la lista
+for item in numeros:
+    if item > 500:
+        break # Con break salgo del for
+    elif item > 150:
+        continue # Continue skipeea la iteracion actual y pasa al siguiente item
+    # Checkeo si el numero es divisible por 5
+    elif item % 5 == 0:
+        print(item)
 ```
 
 </details>
