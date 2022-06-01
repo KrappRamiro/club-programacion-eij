@@ -31,10 +31,12 @@ Por: Krapp Ramiro
     - [Ejercicio 4](#ejercicio-4-2)
     - [Ejercicio 3](#ejercicio-3-2)
     - [Ejercicio 4](#ejercicio-4-3)
-  - [While](#while)
+  - [Diccionarios](#diccionarios)
     - [Ejercicio 1](#ejercicio-1-4)
-  - [For](#for)
+  - [While](#while)
     - [Ejercicio 1](#ejercicio-1-5)
+  - [For](#for)
+    - [Ejercicio 1](#ejercicio-1-6)
     - [Ejercicio 2](#ejercicio-2-3)
     - [Ejercicio 3](#ejercicio-3-3)
     - [Ejercicio 4](#ejercicio-4-4)
@@ -70,7 +72,7 @@ _Ante cualquier problema, google es tu mejor amigo_
 3.
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 1
 </details>
@@ -91,7 +93,7 @@ print("Hola mundo!")
 3. Va a tirar un error
 
 <details> 
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 2
 
@@ -112,7 +114,7 @@ print("Hola mundo!)
 3. Va a tirar un error
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 3, falta un `"` antes del `)` para cerrar el texto
 
@@ -133,7 +135,7 @@ print(Hola mundo!)
 3. Va a tirar un error
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 3, faltan las `" "` para que python entienda que queremos imprimir un texto,
 porque en este caso python cree que queremos imprimir una variable llamada Hola
@@ -156,7 +158,7 @@ print(nombre)
 3. Va a tirar un error
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 2
 
@@ -178,7 +180,7 @@ print("nombre")
 3. Va a tirar un error
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 1
 
@@ -200,7 +202,7 @@ print(f"Mi amigo se llama {nombre}")
 3. Imprime Mi amigo se llama Pepe Argento
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 3
 
@@ -222,7 +224,7 @@ print("Mi amigo se llama {nombre}")
 3. Imprime Mi amigo se llama Pepe Argento
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 1, va a entender `{nombre}` como si fuera parte del string, falta la `f`
 
@@ -244,7 +246,7 @@ print(f"Tengo {edad} años")
 3. Tira un error
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 2
 
@@ -277,7 +279,7 @@ nombre_variable = valor_variable
 ```
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 3
 
@@ -290,7 +292,7 @@ nombre_variable = valor_variable
 ¿Qué diferencias hay entre las variables de texto y las variables numéricas?
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 Las variables de texto solamente pueden almacenar texto, mientras que
 las variables numérticas solamente pueden almacenar números.
@@ -353,7 +355,7 @@ nombre_usuario = input("Hola, ingresa tu nombre: ")
 3. Va a pedirle al usuario que ingrese su nombre, y lo va a guardar como un string
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 3
 
@@ -377,13 +379,13 @@ print (f"Su numero favorito más 7 es: {resultado}")
 
 ```py
 Traceback (most recent call last):
-	File "/home/krapp/test.py", line 2, in <module>
-		resultado = 7 + numero_favorito
+  File "/home/krapp/test.py", line 2, in <module>
+    resultado = 7 + numero_favorito
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 Habría que hacer `int(input())`
 
@@ -404,15 +406,15 @@ flechazo_cabeza = True
 vida_jugador = 100
 
 if flechazo_cabeza == True:
-	vida_jugador = 0
-	print("Te pegaron un flechazo en la cabeza! Te moriste :( ")
+  vida_jugador = 0
+  print("Te pegaron un flechazo en la cabeza! Te moriste :( ")
 
 else:
-	print("La flecha no te pego, zafaste...")
+  print("La flecha no te pego, zafaste...")
 ```
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 Cuando `flechazo_cabeza` es `True`, la vida del jugador se setea en 0,
 y se imprime que perdiste.
@@ -441,19 +443,19 @@ zona_impacto = input("La zona de impacto fue: ")
 vida_jugador = 100
 
 if zona_impacto == "cabeza":
-	# No usamos la ñ ni tildes (caracteres especiales en general) en la programacion,
-	# porque causan errores
-	dano = 100
-	vida_jugador -= dano # Le resto 100 al valor actual de vida_jugador
+  # No usamos la ñ ni tildes (caracteres especiales en general) en la programacion,
+  # porque causan errores
+  dano = 100
+  vida_jugador -= dano # Le resto 100 al valor actual de vida_jugador
 
 elif zona_impacto == "pecho":
-	vida_jugador -= 90
+  vida_jugador -= 90
 
 elif zona_impacto == "brazo" or zona_impacto == "pierna":
-	vida_jugador -= 40
+  vida_jugador -= 40
 
 else:
-	print(f"Zona de impacto: {zona_impacto}  no reconocida")
+  print(f"Zona de impacto: {zona_impacto}  no reconocida")
 
 print(f"Tenes {vida_jugador} puntos de vida")
 ```
@@ -466,14 +468,14 @@ Crea un programa que, preguntando la edad, checkee si una persona puede tomar
 bebidas alcohólicas o no
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 ```py
 edad=int(input("Ingresa tu edad: "))
 if edad >=18:
-	 print("Podes tomar")
+   print("Podes tomar")
 else:
-	 print("No podes tomar")
+   print("No podes tomar")
 ```
 
 </details>
@@ -496,22 +498,53 @@ dos cosas:
 _(Si, hice un ejercicio sobre los ladrillos lego, estaba muy aburrido)_
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 ```py
 edad = int(input("Ingrese su edad: "))
 edad_minima = 7
 edad_maxima = 99
 if edad >= edad_minima and edad <= edad_maxima:
-		# Hay otra forma de hacer ese if, que es de esta forma:
-		# if edad_minima < edad < edad_minima:
-		print("Esta en el rango de edad permitido")
+    # Hay otra forma de hacer ese if, que es de esta forma:
+    # if edad_minima < edad < edad_minima:
+    print("Esta en el rango de edad permitido")
 elif edad <= edad_minima:
-		print("No tiene la edad suficiente")
+    print("No tiene la edad suficiente")
 elif edad >= edad_maxima:
-		print("Es muy viejo para jugar con legos :( ")
+    print("Es muy viejo para jugar con legos :( ")
 else:
-		print("Ingresó un número inválido")
+    print("Ingresó un número inválido")
+```
+
+</details>
+
+---
+
+## Diccionarios
+
+### Ejercicio 1
+
+Crear un
+
+<details>
+  <summary>Toca para ver la respuesta</summary>
+
+```py
+objetos = {
+    "remera": 300,
+    "pantalones": 500,
+    "zapatillas": 3500
+}
+lista_objetos_disponibles = list(objetos.keys())
+
+print(f"Nuestros objetos disponibles son: {lista_objetos_disponibles}")
+pedido_compra = input("Ingrese el item a comprar: ")
+
+if pedido_compra in objetos:
+    print(f"serán ${objetos[pedido_compra]} pesos")
+else:
+    print("No existe ese objeto en nuestro sistema")
+
 ```
 
 </details>
@@ -542,7 +575,7 @@ El programa va a tener los siguientes requerimientos:
   le tomo al usuario para adivinar el número
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 ```py
 import random
@@ -551,15 +584,15 @@ run = True
 cantidad_intentos = 0
 
 while run:
-	user_input = int(input('Adivina el numero: '))
-	if user_input < numero_random:
-		print("Muy bajo!")
-	elif user_input > numero_random:
-		print("Muy alto!")
-	elif user_input == numero_random:
-		print('Adivinaste!')
-		run = False
-	cantidad_intentos += 1
+  user_input = int(input('Adivina el numero: '))
+  if user_input < numero_random:
+    print("Muy bajo!")
+  elif user_input > numero_random:
+    print("Muy alto!")
+  elif user_input == numero_random:
+    print('Adivinaste!')
+    run = False
+  cantidad_intentos += 1
 
 print(f"Te tomo {cantidad_intentos} intentos!")
 ```
@@ -576,7 +609,7 @@ Hacer un código que, usando un for, checkee si en una lista de nombres de anima
 hay un perro llamado Juan Carlos
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 ```py
 lista_perros = ["Rufus", "Rocco", "Juan Carlos", "Manchitas", "Juan Carlos"]
@@ -596,7 +629,7 @@ Modificar el código anterior, para que checkee si en una lista de nombres de an
 hay **tres o más** perros llamados Juan Carlos
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 ```py
 lista_perros = ["Rufus", "Rocco", "Juan Carlos", "Manchitas", "Juan Carlos"]
@@ -622,7 +655,7 @@ Modificar el código anterior, para que permita buscar cualquier nombre y cualqu
 cantidad de repeticiones del mismo
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 ```py
 lista_perros = ["Rufus", "Rocco", "Juan Carlos", "Manchitas", "Juan Carlos"]
@@ -664,7 +697,7 @@ Printeo en pantalla esperado:
 ```
 
 <details>
-	<summary>Toca para ver la respuesta</summary>
+  <summary>Toca para ver la respuesta</summary>
 
 ```py
 numeros = [12, 75, 150, 180, 145, 525, 50]
