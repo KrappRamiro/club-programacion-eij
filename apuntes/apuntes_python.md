@@ -862,31 +862,198 @@ repetir una (o más) acciones una cantidad determinada (bucle for) o indetermina
 
 ---
 
+## Bucles usando `while`
+
+![Bucle while](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.journaldev.com%2Fwp-content%2Fuploads%2F2017%2F10%2Fwhile-loop-java.png&f=1&nofb=1)
+
+Los bucles `while` permiten hacer una acción una indeterminada cantidad de veces.
+
+### Sintaxis
+
+```py
+while condicion:
+	# hacer lo que esta aca mientras condicion es True
+```
+
+El `while` funciona asi, mientras la condicion sea `True`, va a hacer lo que esta adentro
+del mismo. Cuando la condicion sea `False`, deja de ejecutar lo que esta adentro
+
+### Ejemplos
+
+Un ejemplo sencillo para entender el bucle `while` es este:
+
+```py
+enemigos_no_se_rinden = True
+
+while enemigos_no_se_rinden:
+	print("Hay que atacar al enemigo!")
+```
+
+A nivel práctico, la realidad es que este codigo tiene un problema, y es que NUNCA
+para de ejecutarse. Si yo lo ejecuto en mi computadora (ademas de explotar), empieza a imprimir esto:
+
+```
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+Hay que atacar al enemigo!
+```
+
+Por qué? Porque entró en un **bucle infinito**. Para evitar esto, hay que agregar una
+condicion de fin de bucle. Hay **dos formas** de hacer eso, usando `break` o cambiando
+el valor de `enemigo_no_se_rinde` a `False` en medio del bucle.
+
+Para hacer el ejemplo, voy a cambiar un poco el código.
+
+```py
+enemigos_no_se_rinden = True
+vida_enemigo = 10
+
+while enemigos_no_se_rinden:
+	print("Estamos atacando al enemigo!")
+	vida_enemigo -= 3 # Le resto 3 al valor de vida_enemigo, o sea, le hago 3 de daño xD
+	if vida_enemigo < 0:
+		enemigos_no_se_rinden = False # Los enemigos son derrotados, por lo cual se rinden
+		print("El enemigo fue derrotado! Eureka!")
+```
+
+Este codigo imprime esto:
+
+```
+Estamos atacando al enemigo!
+Estamos atacando al enemigo!
+Estamos atacando al enemigo!
+Estamos atacando al enemigo!
+El enemigo fue derrotado! Eureka!
+```
+
+Otra forma de hacerlo es esta, y nos ahorramos de usar la variable `enemigos_no_se_rinden`
+
+```py
+vida_enemigo = 10
+
+while True:
+	print("Estamos atacando al enemigo!")
+	vida_enemigo -= 3 # Le resto 3 al valor de vida_enemigo, o sea, le hago 3 de daño xD
+	if vida_enemigo < 0:
+		print("El enemigo fue derrotado! Eureka!")
+		break
+```
+
+Funciona igual, pero nos ahorramos usar la variable. Ademas, cabe aclarar que
+**break sale de forma abrupta del while**, por lo tanto si tenes más cosas adentro del
+while, y se ejecuto el break, esas otras cosas **no se van a ejecutar**. Es muy util
+
 ## Bucles usando `for`
 
 ![Bucle for](https://datagy.io/wp-content/uploads/2020/06/Python-For-Loop-Structure.png)
 
-Los bucles `for` permiten hacer una acción una determinada cantidad de veces. Uno de los ejemplos
-más sencillos que hay para entender a los bucles `for` es este ejemplo, que imprime todos los elementos
-que hay adentro de la lista frutas.
+Los bucles `for` permiten hacer una acción una determinada cantidad de veces.
+
+### Sintaxis
+
+```py
+for item in secuencia: # Notar los : que a simple vista no se ven
+	# codigo a ejecutar aqui
+	# codigo a ejecutar aqui
+	# codigo a ejecutar aqui
+```
+
+### Ejemplos
+
+Uno de los ejemplos más sencillos que hay para entender a los bucles `for` es este ejemplo,
+que imprime todos los elementos que hay adentro de la lista frutas.
 
 ```py
 frutas = ["manzana", "banana", "naranja"]
 for x in fruits:
-	print(f"Hola me estoy ejecutando! x es igual a: {x}")
+	print("Hola!")
+	print(f"Me estoy ejecutando! x es igual a: {x}")
+	print("Chauuu\n") # \n es un salto de linea, seria como imprimir un enter.
 ```
 
 Este codigo imprime
 
 ```
-Hola me estoy ejecutando! x es igual a: manzana
-Hola me estoy ejecutando! x es igual a: banana
-Hola me estoy ejecutando! x es igual a: naranja
+Hola!
+Me estoy ejecutando! x es igual a: manzana
+
+Hola!
+Me estoy ejecutando! x es igual a: banana
+
+Hola!
+Me estoy ejecutando! x es igual a: naranja
 ```
 
-Cómo funciona este for? Bueno, lo que sucede es que el for va pasando por la lista `frutas`,
-y va cambiando a `x` de valor
+Cómo funciona este for? Bueno, lo que sucede es que el `for` va pasando por la lista `frutas`,
+y le va cambiando el valor a `x` por cada valor que tiene `frutas`.
+Ademas, **ejecuta todo lo que esta adentro del for**
+Si lo vemos paso a paso, funciona asi:
 
-## Bucles usando `while`
+1. Comienza el `for`
+2. Se imprime Hola
+3. x es igual a "manzana"
+4. se imprime manzana
+5. Se vuelve al inicio del bucle...
+   <br>
+   <br>
+6. Se imprime Hola
+7. x es igual a "banana"
+8. se imprime banana
+9. Se vuelve al inicio del bucle...
+   <br>
+   <br>
+10. Se imprime Hola
+11. x es igual a "naranja"
+12. se imprime naranja
+13. Como frutas no tiene más valores, termina el bucle y se sale del for
 
-![Bucle while](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.journaldev.com%2Fwp-content%2Fuploads%2F2017%2F10%2Fwhile-loop-java.png&f=1&nofb=1)
+Si nos centramos en x, durante toda la ejecucion del programa lo vemos pasar por tres valores:
+
+1. manzana
+2. banana
+3. naranja
+4. deja de existir :(
+
+---
+
+Otro ejemplo que hay es usando `range()`. `range()` lo que hace es devolver una lista
+de numeros, la cual podemos **iterar**.
+Entonces, usando `for i in range(10)` podemos hacer un codigo para imprimir los numeros del 1 al 10.
+
+Seria algo asi:
+
+```py
+for i in range(10):
+	print(i)
+```
+
+Esto imprime
+
+```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+**¿Oops, que pasó?** Bueno, la realidad es que si, el for se repite 10 veces, pero
+**los programadores empezamos a contar desde el 0**. Ahora, cómo harías vos para que
+imprima del 1 al 10? Podes googlearlo tranquilo
