@@ -579,7 +579,7 @@ hay un perro llamado Juan Carlos
 	<summary>Toca para ver la respuesta</summary>
 
 ```py
-lista_perros = "Rufus", "Rocco", "Juan Carlos", "Manchitas", "Juan Carlos"
+lista_perros = ["Rufus", "Rocco", "Juan Carlos", "Manchitas", "Juan Carlos"]
 
 for perro in lista_perros:
     if perro == "Juan Carlos":
@@ -599,7 +599,7 @@ hay **tres o más** perros llamados Juan Carlos
 	<summary>Toca para ver la respuesta</summary>
 
 ```py
-lista_perros = "Rufus", "Rocco", "Juan Carlos", "Manchitas", "Juan Carlos"
+lista_perros = ["Rufus", "Rocco", "Juan Carlos", "Manchitas", "Juan Carlos"]
 cantidad_repeticiones = 0
 
 for perro in lista_perros:
@@ -625,7 +625,7 @@ cantidad de repeticiones del mismo
 	<summary>Toca para ver la respuesta</summary>
 
 ```py
-lista_perros = "Rufus", "Rocco", "Juan Carlos", "Manchitas", "Juan Carlos"
+lista_perros = ["Rufus", "Rocco", "Juan Carlos", "Manchitas", "Juan Carlos"]
 cantidad_repeticiones = 0
 nombre_buscado = input("Ingrese el nombre del perro a buscar")
 
@@ -653,7 +653,7 @@ Escribir un programa para mostrar los numeros de una lista que satisfagan los si
 
 Dado:
 
-numeros = [12, 75, 150, 180, 145, 525, 50]
+`numeros = [12, 75, 150, 180, 145, 525, 50]`
 
 Printeo en pantalla esperado:
 

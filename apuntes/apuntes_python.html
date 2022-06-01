@@ -717,13 +717,9 @@ hue-6-2: #e6c07b
 <li><a href="#222-ejemplos-de-uso">2.2.2. Ejemplos de uso:</a>
 <ul>
 <li><a href="#2221-imprimir-hola-gente">2.2.2.1. Imprimir Hola gente</a></li>
-<li><a href="#2222-resultado">2.2.2.2. Resultado:</a></li>
-<li><a href="#2223-imprimir-el-valor-de-una-variable">2.2.2.3. Imprimir el valor de una variable</a></li>
-<li><a href="#2224-resultado">2.2.2.4. Resultado:</a></li>
-<li><a href="#2225-imprimir-multiples-cosas---ejemplo-usando-concatenizaci%C3%B3n">2.2.2.5. Imprimir multiples cosas - Ejemplo usando concatenización</a></li>
-<li><a href="#2226-resultado">2.2.2.6. Resultado:</a></li>
-<li><a href="#2227-imprimir-multiples-cosas---ejemplo-usando-fstrings">2.2.2.7. Imprimir multiples cosas - Ejemplo usando fstrings</a></li>
-<li><a href="#2228-resultado">2.2.2.8. Resultado:</a></li>
+<li><a href="#2222-imprimir-el-valor-de-una-variable">2.2.2.2. Imprimir el valor de una variable</a></li>
+<li><a href="#2223-imprimir-multiples-cosas---ejemplo-usando-concatenizaci%C3%B3n">2.2.2.3. Imprimir multiples cosas - Ejemplo usando concatenización</a></li>
+<li><a href="#2224-imprimir-multiples-cosas---ejemplo-usando-fstrings">2.2.2.4. Imprimir multiples cosas - Ejemplo usando fstrings</a></li>
 </ul>
 </li>
 </ul>
@@ -733,12 +729,21 @@ hue-6-2: #e6c07b
 <li><a href="#231-sintaxis">2.3.1. Sintaxis:</a></li>
 <li><a href="#232-tipos-de-variables--tipos-de-datos">2.3.2. Tipos de variables / Tipos de datos</a>
 <ul>
-<li><a href="#2321-variables-de-texto-string">2.3.2.1. Variables de texto (<code>String</code>)</a></li>
-<li><a href="#2322-ejemplo">2.3.2.2. Ejemplo:</a></li>
-<li><a href="#2323-variables-numericas-int-y-float">2.3.2.3. Variables numericas (<code>int y float</code>)</a></li>
-<li><a href="#2324-ejemplo">2.3.2.4. Ejemplo</a></li>
-<li><a href="#2325-variables-l%C3%B3gicas-bool">2.3.2.5. Variables lógicas (<code>bool</code>)</a></li>
-<li><a href="#2326-ejemplo">2.3.2.6. Ejemplo</a></li>
+<li><a href="#2321-variables-de-texto-string">2.3.2.1. Variables de texto (<code>String</code>)</a>
+<ul>
+<li><a href="#23211-ejemplo">2.3.2.1.1. Ejemplo:</a></li>
+</ul>
+</li>
+<li><a href="#2322-variables-numericas-int-y-float">2.3.2.2. Variables numericas (<code>int y float</code>)</a>
+<ul>
+<li><a href="#23221-ejemplo">2.3.2.2.1. Ejemplo</a></li>
+</ul>
+</li>
+<li><a href="#2323-variables-l%C3%B3gicas-bool">2.3.2.3. Variables lógicas (<code>bool</code>)</a>
+<ul>
+<li><a href="#23231-ejemplo">2.3.2.3.1. Ejemplo</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#233-averiguar-el-tipo-de-una-variable">2.3.3. Averiguar el tipo de una variable</a></li>
@@ -807,7 +812,7 @@ hue-6-2: #e6c07b
 </li>
 </ul>
 </li>
-<li><a href="#4-listas-tuplas-y-diccionarios">4. Listas, Tuplas y Diccionarios</a>
+<li><a href="#4-estructuras-de-datos---listas-tuplas-y-diccionarios">4. Estructuras de datos - Listas, Tuplas y Diccionarios</a>
 <ul>
 <li><a href="#41-listas">4.1. Listas</a>
 <ul>
@@ -828,6 +833,17 @@ hue-6-2: #e6c07b
 </li>
 </ul>
 </li>
+<li><a href="#42-tuplas">4.2. Tuplas</a>
+<ul>
+<li><a href="#421-sintaxis">4.2.1. Sintaxis</a></li>
+</ul>
+</li>
+<li><a href="#43-diccionarios">4.3. Diccionarios</a>
+<ul>
+<li><a href="#431-sintaxis">4.3.1. Sintaxis</a></li>
+</ul>
+</li>
+<li><a href="#44-la-keyword-palabra-reservada-in">4.4. La keyword (palabra reservada) <code>in</code></a></li>
 </ul>
 </li>
 <li><a href="#5-bucles">5. Bucles</a>
@@ -912,17 +928,17 @@ que se refiere a un texto</p>
 <h4 id="2221-imprimir-hola-gente">2.2.2.1. Imprimir Hola gente</h4>
 <pre><code class="language-py"><div><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hola gente!&quot;</span>)
 </div></code></pre>
-<h4 id="2222-resultado">2.2.2.2. Resultado:</h4>
+<p>Resultado:</p>
 <pre><code><code><div>Hola gente!
 </div></code></code></pre>
-<h4 id="2223-imprimir-el-valor-de-una-variable">2.2.2.3. Imprimir el valor de una variable</h4>
+<h4 id="2222-imprimir-el-valor-de-una-variable">2.2.2.2. Imprimir el valor de una variable</h4>
 <pre><code class="language-py"><div>saludo = <span class="hljs-string">&quot;Hola gente&quot;</span>
 <span class="hljs-built_in">print</span>(saludo)
 </div></code></pre>
-<h4 id="2224-resultado">2.2.2.4. Resultado:</h4>
+<p>Resultado:</p>
 <pre><code><code><div>Hola gente
 </div></code></code></pre>
-<h4 id="2225-imprimir-multiples-cosas---ejemplo-usando-concatenización">2.2.2.5. Imprimir multiples cosas - Ejemplo usando concatenización</h4>
+<h4 id="2223-imprimir-multiples-cosas---ejemplo-usando-concatenización">2.2.2.3. Imprimir multiples cosas - Ejemplo usando concatenización</h4>
 <p>Nota: La concatenizacion tiene un gran problema, y es que solamente te permite
 imprimir texto, no te permite imprimir cosas como números.
 La solución a esto la vamos a ver en el siguiente ejemplo, que usa fstrings</p>
@@ -930,10 +946,10 @@ La solución a esto la vamos a ver en el siguiente ejemplo, que usa fstrings</p>
 juego_favorito = <span class="hljs-string">&quot;Skyrim&quot;</span>
 <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hola, me llamo &quot;</span> + nombre + <span class="hljs-string">&quot; y mi juego favorito es &quot;</span> + juego_favorito )
 </div></code></pre>
-<h4 id="2226-resultado">2.2.2.6. Resultado:</h4>
+<p>Resultado:</p>
 <pre><code><code><div>Hola, me llamo Juan Carlos y mi juego favorito es Skyrim
 </div></code></code></pre>
-<h4 id="2227-imprimir-multiples-cosas---ejemplo-usando-fstrings">2.2.2.7. Imprimir multiples cosas - Ejemplo usando fstrings</h4>
+<h4 id="2224-imprimir-multiples-cosas---ejemplo-usando-fstrings">2.2.2.4. Imprimir multiples cosas - Ejemplo usando fstrings</h4>
 <p>Si queremos imprimir multiples cosas en un print, la mejor forma de hacerlo es usando
 algo llamado fstrings</p>
 <p>Por favor, notar la <code>f</code> que está entre <code>(</code> y el <code>&quot;</code></p>
@@ -942,7 +958,7 @@ edad = <span class="hljs-number">13</span>
 juego_favorito = <span class="hljs-string">&quot;Skyrim&quot;</span>
 <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Hola, me llamo <span class="hljs-subst">{nombre}</span>, tengo <span class="hljs-subst">{edad}</span> años y mi juego favorito es <span class="hljs-subst">{juego_favorito}</span>&quot;</span>)
 </div></code></pre>
-<h4 id="2228-resultado">2.2.2.8. Resultado:</h4>
+<p>Resultado:</p>
 <pre><code><code><div>Hola, me llamo Juan Carlos, tengo 13 años y mi juego favorito es Skyrim
 </div></code></code></pre>
 <h2 id="23-variables">2.3. Variables</h2>
@@ -969,10 +985,10 @@ los elementales de <strong>fuego</strong> solamente pueden usar hechizos de <str
 <h4 id="2321-variables-de-texto-string">2.3.2.1. Variables de texto (<code>String</code>)</h4>
 <p>Las <strong>variables de texto</strong>, generalmente llamadas <strong>String</strong>, son variables que pueden
 almacenar texto en ellas.</p>
-<h4 id="2322-ejemplo">2.3.2.2. Ejemplo:</h4>
+<h5 id="23211-ejemplo">2.3.2.1.1. Ejemplo:</h5>
 <pre><code class="language-py"><div>mi_nombre = <span class="hljs-string">&quot;Ramiro&quot;</span>
 </div></code></pre>
-<h4 id="2323-variables-numericas-int-y-float">2.3.2.3. Variables numericas (<code>int y float</code>)</h4>
+<h4 id="2322-variables-numericas-int-y-float">2.3.2.2. Variables numericas (<code>int y float</code>)</h4>
 <p>Las <strong>variables numéricas</strong> son variables que almacenan números (¿qué sorpresa no?).
 <br>
 En la programación se diferencian entre numeros enteros (1, 2, 3, -1, -2, -3, 0)
@@ -985,17 +1001,17 @@ y numeros con coma (1.342, -1.5, -0.999, 0.666).
 <p><strong>Nota:</strong> Cuando programamos usamos el <code>.</code> para indicar donde empieza la coma en un float,
 porque en programacion la coma <code>,</code> se usa para armar <strong>listas</strong>,
 que es un concepto que viene más adelante.</p>
-<h4 id="2324-ejemplo">2.3.2.4. Ejemplo</h4>
+<h5 id="23221-ejemplo">2.3.2.2.1. Ejemplo</h5>
 <pre><code class="language-py"><div>porciones_pizza = <span class="hljs-number">8</span> <span class="hljs-comment"># Esta variable es de tipo int</span>
 pi = <span class="hljs-number">3.14</span> <span class="hljs-comment"># Esta variable es de tipo float</span>
 </div></code></pre>
-<h4 id="2325-variables-lógicas-bool">2.3.2.5. Variables lógicas (<code>bool</code>)</h4>
+<h4 id="2323-variables-lógicas-bool">2.3.2.3. Variables lógicas (<code>bool</code>)</h4>
 <p>Las <strong>variables lógicas</strong> son variables que pueden almacenar solamente <strong>DOS</strong> valores,
 <strong>Verdadero</strong> (<code>True</code>) o <strong>Falso</strong> (<code>False</code>).</p>
 <p>A estas variables tambien se les suele llamar <strong>variables booleanas</strong>, esto es porque el creador se apellidaba Bool, mira que había apellidos raros :/</p>
 <p>La forma más facil de entender a las variables lógicas es imaginarse que en nuestro código
 queremos guardar el estado de una lamparita</p>
-<h4 id="2326-ejemplo">2.3.2.6. Ejemplo</h4>
+<h5 id="23231-ejemplo">2.3.2.3.1. Ejemplo</h5>
 <pre><code class="language-py"><div>lamparita_prendida = <span class="hljs-literal">True</span>  <span class="hljs-comment"># La lamparita esta prendida</span>
 lamparita_prendida = <span class="hljs-literal">False</span> <span class="hljs-comment"># La lamparita esta apagada</span>
 </div></code></pre>
@@ -1278,7 +1294,7 @@ Luego, se checkea si es impar, viendo que el resto de cuando lo dividis por 2 no
 	<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;El numero es impar&quot;</span>)
 </div></code></pre>
 <hr>
-<h1 id="4-listas-tuplas-y-diccionarios">4. Listas, Tuplas y Diccionarios</h1>
+<h1 id="4-estructuras-de-datos---listas-tuplas-y-diccionarios">4. Estructuras de datos - Listas, Tuplas y Diccionarios</h1>
 <h2 id="41-listas">4.1. Listas</h2>
 <p>Una lista es un tipo de variable usada para almacenar multiples items en una sola variable.
 Estos multiples items pueden ser de cualquier tipo, tanto strings, como ints, como floats,
@@ -1408,6 +1424,63 @@ nombres[-<span class="hljs-number">3</span>:] <span class="hljs-comment"># Esto 
 <span class="hljs-built_in">print</span>(nombres[<span class="hljs-number">1</span>:<span class="hljs-number">6</span>])  <span class="hljs-comment"># Esto imprime [&#x27;Pepe&#x27;, &#x27;Agustina&#x27;, &#x27;Carla&#x27;, &#x27;Zefirot&#x27;, &#x27;Gaburro&#x27;]</span>
 <span class="hljs-comment"># Te vas a preguntar, por que es [1:6? Bueno, porque empezamos a contar desde el 0, y el</span>
 <span class="hljs-comment"># numero del ultimo indice no es inclusivo</span>
+</div></code></pre>
+<h2 id="42-tuplas">4.2. Tuplas</h2>
+<p>Las tuplas son como las listas, pero tienen la particularidad de ser inmutables.
+Es decir, <strong>no se pueden modificar</strong>, no se les pueden agregar elementos,
+y tampoco se pueden modificar los que estan adentro.</p>
+<h3 id="421-sintaxis">4.2.1. Sintaxis</h3>
+<pre><code class="language-py"><div>mi_tupla = (<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">32</span>)
+</div></code></pre>
+<p>A diferencia de las listas que usan <code>[]</code>, las tuplas usan <code>()</code></p>
+<h2 id="43-diccionarios">4.3. Diccionarios</h2>
+<p>Los diccionarios son usados para almacenar datos en pares de key:value.
+Estos son modificables, y no admiten duplicados.</p>
+<h3 id="431-sintaxis">4.3.1. Sintaxis</h3>
+<pre><code class="language-py"><div>mi_diccionario =	{
+	<span class="hljs-string">&quot;llave_1&quot;</span> : valor,
+	<span class="hljs-string">&quot;llave_2&quot;</span> : valor,
+	<span class="hljs-string">&quot;llave_3&quot;</span> : valor
+}
+</div></code></pre>
+<p><em>Nota: No hace falta que sean 3 valores, puede ser 1 o pueden ser 700, puse 3 para ejemplificar</em></p>
+<p>Pero primero, lo más importante, que es eso de key:value? Bueno, significa que
+los diccionarios almacenan sus datos asociados a una clave. Veamos un ejemplo,
+de un diccionario usado para almacenar datos de un auto</p>
+<pre><code class="language-py"><div>auto_favorito =	{
+  <span class="hljs-string">&quot;marca&quot;</span>: <span class="hljs-string">&quot;Ford&quot;</span>,
+  <span class="hljs-string">&quot;modelo&quot;</span>: <span class="hljs-string">&quot;Mustang&quot;</span>,
+  <span class="hljs-string">&quot;ano&quot;</span>: <span class="hljs-number">1964</span> <span class="hljs-comment"># recordemos que no podemos usar la ñ en python</span>
+}
+</div></code></pre>
+<p>Ahora, como accedemos a estos valores? Bueno, muy sencillo, en vez de usar <code>[indice]</code> como
+hacíamos con las listas o con las tuplas, vamos a usar <code>[nombre_llave]</code>, de esta manera:</p>
+<pre><code class="language-py"><div><span class="hljs-comment"># Codigo para imprimir todos los datos del auto</span>
+<span class="hljs-comment"># Imprimir la marca</span>
+<span class="hljs-built_in">print</span>(auto_favorito[<span class="hljs-string">&quot;marca&quot;</span>])
+<span class="hljs-comment"># Imprimir el modelo</span>
+<span class="hljs-built_in">print</span>(auto_favorito[<span class="hljs-string">&quot;modelo&quot;</span>])
+<span class="hljs-comment"># Imprimir el ano</span>
+<span class="hljs-built_in">print</span>(auto_favorito[<span class="hljs-string">&quot;ano&quot;</span>])
+</div></code></pre>
+<p>Para más información, ver <a href="https://devcode.la/tutoriales/diccionarios-en-python/">https://devcode.la/tutoriales/diccionarios-en-python/</a></p>
+<h2 id="44-la-keyword-palabra-reservada-in">4.4. La keyword (palabra reservada) <code>in</code></h2>
+<p><code>in</code> tiene dos usos principales:</p>
+<ul>
+<li>
+<p>Checkear si un valor esta presente en una lista, tupla, diccionario o string</p>
+</li>
+<li>
+<p>Iterar a travez de una secuencia usando for</p>
+</li>
+</ul>
+<p>En lo que nos vamos a centrar en esta sección va a ser en lo primero,
+<strong>checkear si un valor está presente</strong> en una lista, tupla, o diccionario.</p>
+<p>Cómo es esto? Bueno, imaginemos que tenemos la siguiente lista:</p>
+<p><code>mi_lista = [&quot;Juan&quot;, &quot;Pedro&quot;, &quot;Agustin&quot;]</code></p>
+<p>Una forma sencilla de checkear si <code>Agustin</code> esta en la lista es de la siguiente forma:</p>
+<pre><code class="language-py"><div><span class="hljs-keyword">if</span> <span class="hljs-string">&quot;Agustin&quot;</span> <span class="hljs-keyword">in</span> mi_lista:
+	<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hay un agustin en la lista!&quot;</span>)
 </div></code></pre>
 <hr>
 <h1 id="5-bucles">5. Bucles</h1>
@@ -1594,6 +1667,7 @@ imprima del 1 al 10? Podes googlearlo tranquilo</p>
 </tbody>
 </table>
 <h1 id="6-funciones">6. Funciones</h1>
+<!--TODO-->
 
         
         

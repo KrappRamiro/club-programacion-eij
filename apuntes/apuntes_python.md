@@ -14,22 +14,18 @@ Por: Krapp Ramiro
 		- [2.2.1. Sintaxis](#221-sintaxis)
 		- [2.2.2. Ejemplos de uso:](#222-ejemplos-de-uso)
 			- [2.2.2.1. Imprimir Hola gente](#2221-imprimir-hola-gente)
-			- [2.2.2.2. Resultado:](#2222-resultado)
-			- [2.2.2.3. Imprimir el valor de una variable](#2223-imprimir-el-valor-de-una-variable)
-			- [2.2.2.4. Resultado:](#2224-resultado)
-			- [2.2.2.5. Imprimir multiples cosas - Ejemplo usando concatenización](#2225-imprimir-multiples-cosas---ejemplo-usando-concatenización)
-			- [2.2.2.6. Resultado:](#2226-resultado)
-			- [2.2.2.7. Imprimir multiples cosas - Ejemplo usando fstrings](#2227-imprimir-multiples-cosas---ejemplo-usando-fstrings)
-			- [2.2.2.8. Resultado:](#2228-resultado)
+			- [2.2.2.2. Imprimir el valor de una variable](#2222-imprimir-el-valor-de-una-variable)
+			- [2.2.2.3. Imprimir multiples cosas - Ejemplo usando concatenización](#2223-imprimir-multiples-cosas---ejemplo-usando-concatenización)
+			- [2.2.2.4. Imprimir multiples cosas - Ejemplo usando fstrings](#2224-imprimir-multiples-cosas---ejemplo-usando-fstrings)
 	- [2.3. Variables](#23-variables)
 		- [2.3.1. Sintaxis:](#231-sintaxis)
 		- [2.3.2. Tipos de variables / Tipos de datos](#232-tipos-de-variables--tipos-de-datos)
 			- [2.3.2.1. Variables de texto (`String`)](#2321-variables-de-texto-string)
-			- [2.3.2.2. Ejemplo:](#2322-ejemplo)
-			- [2.3.2.3. Variables numericas (`int y float`)](#2323-variables-numericas-int-y-float)
-			- [2.3.2.4. Ejemplo](#2324-ejemplo)
-			- [2.3.2.5. Variables lógicas (`bool`)](#2325-variables-lógicas-bool)
-			- [2.3.2.6. Ejemplo](#2326-ejemplo)
+				- [2.3.2.1.1. Ejemplo:](#23211-ejemplo)
+			- [2.3.2.2. Variables numericas (`int y float`)](#2322-variables-numericas-int-y-float)
+				- [2.3.2.2.1. Ejemplo](#23221-ejemplo)
+			- [2.3.2.3. Variables lógicas (`bool`)](#2323-variables-lógicas-bool)
+				- [2.3.2.3.1. Ejemplo](#23231-ejemplo)
 		- [2.3.3. Averiguar el tipo de una variable](#233-averiguar-el-tipo-de-una-variable)
 		- [2.3.4. Cómo cambiarle el tipo a una variable](#234-cómo-cambiarle-el-tipo-a-una-variable)
 			- [2.3.4.1. Pasar de `int` a `string`](#2341-pasar-de-int-a-string)
@@ -62,7 +58,7 @@ Por: Krapp Ramiro
 	- [3.3. Uso de `or` y `and` - Checkeo de multiples cosas en un if](#33-uso-de-or-y-and---checkeo-de-multiples-cosas-en-un-if)
 		- [3.3.1. Ejemplo con `or`](#331-ejemplo-con-or)
 		- [3.3.2. Ejemplo con `and`](#332-ejemplo-con-and)
-- [4. Listas, Tuplas y Diccionarios](#4-listas-tuplas-y-diccionarios)
+- [4. Estructuras de datos - Listas, Tuplas y Diccionarios](#4-estructuras-de-datos---listas-tuplas-y-diccionarios)
 	- [4.1. Listas](#41-listas)
 		- [4.1.1. Para que las usamos?](#411-para-que-las-usamos)
 		- [4.1.2. Acceder a los ultimos elementos de una lista](#412-acceder-a-los-ultimos-elementos-de-una-lista)
@@ -73,6 +69,11 @@ Por: Krapp Ramiro
 			- [4.1.4.3. `clear()`](#4143-clear)
 		- [4.1.5. Slicing de Listas](#415-slicing-de-listas)
 			- [4.1.5.1. Ejemplos de uso](#4151-ejemplos-de-uso)
+	- [4.2. Tuplas](#42-tuplas)
+		- [4.2.1. Sintaxis](#421-sintaxis)
+	- [4.3. Diccionarios](#43-diccionarios)
+		- [4.3.1. Sintaxis](#431-sintaxis)
+	- [4.4. La keyword (palabra reservada) `in`](#44-la-keyword-palabra-reservada-in)
 - [5. Bucles](#5-bucles)
 	- [5.1. Pequeña introducción a los bucles](#51-pequeña-introducción-a-los-bucles)
 	- [5.2. Bucles usando `while`](#52-bucles-usando-while)
@@ -183,26 +184,26 @@ print(variable_a_imprimir)
 print("Hola gente!")
 ```
 
-#### 2.2.2.2. Resultado:
+Resultado:
 
 ```
 Hola gente!
 ```
 
-#### 2.2.2.3. Imprimir el valor de una variable
+#### 2.2.2.2. Imprimir el valor de una variable
 
 ```py
 saludo = "Hola gente"
 print(saludo)
 ```
 
-#### 2.2.2.4. Resultado:
+Resultado:
 
 ```
 Hola gente
 ```
 
-#### 2.2.2.5. Imprimir multiples cosas - Ejemplo usando concatenización
+#### 2.2.2.3. Imprimir multiples cosas - Ejemplo usando concatenización
 
 Nota: La concatenizacion tiene un gran problema, y es que solamente te permite
 imprimir texto, no te permite imprimir cosas como números.
@@ -214,13 +215,13 @@ juego_favorito = "Skyrim"
 print("Hola, me llamo " + nombre + " y mi juego favorito es " + juego_favorito )
 ```
 
-#### 2.2.2.6. Resultado:
+Resultado:
 
 ```
 Hola, me llamo Juan Carlos y mi juego favorito es Skyrim
 ```
 
-#### 2.2.2.7. Imprimir multiples cosas - Ejemplo usando fstrings
+#### 2.2.2.4. Imprimir multiples cosas - Ejemplo usando fstrings
 
 Si queremos imprimir multiples cosas en un print, la mejor forma de hacerlo es usando
 algo llamado fstrings
@@ -234,7 +235,7 @@ juego_favorito = "Skyrim"
 print(f"Hola, me llamo {nombre}, tengo {edad} años y mi juego favorito es {juego_favorito}")
 ```
 
-#### 2.2.2.8. Resultado:
+Resultado:
 
 ```
 Hola, me llamo Juan Carlos, tengo 13 años y mi juego favorito es Skyrim
@@ -275,13 +276,13 @@ Bueno, en python pasa algo parecido con los tipos de dato.
 Las **variables de texto**, generalmente llamadas **String**, son variables que pueden
 almacenar texto en ellas.
 
-#### 2.3.2.2. Ejemplo:
+##### 2.3.2.1.1. Ejemplo:
 
 ```py
 mi_nombre = "Ramiro"
 ```
 
-#### 2.3.2.3. Variables numericas (`int y float`)
+#### 2.3.2.2. Variables numericas (`int y float`)
 
 Las **variables numéricas** son variables que almacenan números (¿qué sorpresa no?).
 <br>
@@ -296,14 +297,14 @@ y numeros con coma (1.342, -1.5, -0.999, 0.666).
 porque en programacion la coma `,` se usa para armar **listas**,
 que es un concepto que viene más adelante.
 
-#### 2.3.2.4. Ejemplo
+##### 2.3.2.2.1. Ejemplo
 
 ```py
 porciones_pizza = 8 # Esta variable es de tipo int
 pi = 3.14 # Esta variable es de tipo float
 ```
 
-#### 2.3.2.5. Variables lógicas (`bool`)
+#### 2.3.2.3. Variables lógicas (`bool`)
 
 Las **variables lógicas** son variables que pueden almacenar solamente **DOS** valores,
 **Verdadero** (`True`) o **Falso** (`False`).
@@ -313,7 +314,7 @@ A estas variables tambien se les suele llamar **variables booleanas**, esto es p
 La forma más facil de entender a las variables lógicas es imaginarse que en nuestro código
 queremos guardar el estado de una lamparita
 
-#### 2.3.2.6. Ejemplo
+##### 2.3.2.3.1. Ejemplo
 
 ```py
 lamparita_prendida = True  # La lamparita esta prendida
@@ -729,7 +730,7 @@ elif numero % 2 != 0:
 
 ---
 
-# 4. Listas, Tuplas y Diccionarios
+# 4. Estructuras de datos - Listas, Tuplas y Diccionarios
 
 ## 4.1. Listas
 
@@ -928,6 +929,86 @@ nombres[-3:] # Esto imprime ['Juan Carlos', 'Guillermo', 'Pablo']
 print(nombres[1:6])  # Esto imprime ['Pepe', 'Agustina', 'Carla', 'Zefirot', 'Gaburro']
 # Te vas a preguntar, por que es [1:6? Bueno, porque empezamos a contar desde el 0, y el
 # numero del ultimo indice no es inclusivo
+```
+
+## 4.2. Tuplas
+
+Las tuplas son como las listas, pero tienen la particularidad de ser inmutables.
+Es decir, **no se pueden modificar**, no se les pueden agregar elementos,
+y tampoco se pueden modificar los que estan adentro.
+
+### 4.2.1. Sintaxis
+
+```py
+mi_tupla = (1,2,3,4,5,32)
+```
+
+A diferencia de las listas que usan `[]`, las tuplas usan `()`
+
+## 4.3. Diccionarios
+
+Los diccionarios son usados para almacenar datos en pares de key:value.
+Estos son modificables, y no admiten duplicados.
+
+### 4.3.1. Sintaxis
+
+```py
+mi_diccionario =	{
+	"llave_1" : valor,
+	"llave_2" : valor,
+	"llave_3" : valor
+}
+```
+
+_Nota: No hace falta que sean 3 valores, puede ser 1 o pueden ser 700, puse 3 para ejemplificar_
+
+Pero primero, lo más importante, que es eso de key:value? Bueno, significa que
+los diccionarios almacenan sus datos asociados a una clave. Veamos un ejemplo,
+de un diccionario usado para almacenar datos de un auto
+
+```py
+auto_favorito =	{
+  "marca": "Ford",
+  "modelo": "Mustang",
+  "ano": 1964 # recordemos que no podemos usar la ñ en python
+}
+```
+
+Ahora, como accedemos a estos valores? Bueno, muy sencillo, en vez de usar `[indice]` como
+hacíamos con las listas o con las tuplas, vamos a usar `[nombre_llave]`, de esta manera:
+
+```py
+# Codigo para imprimir todos los datos del auto
+# Imprimir la marca
+print(auto_favorito["marca"])
+# Imprimir el modelo
+print(auto_favorito["modelo"])
+# Imprimir el ano
+print(auto_favorito["ano"])
+```
+
+Para más información, ver https://devcode.la/tutoriales/diccionarios-en-python/
+
+## 4.4. La keyword (palabra reservada) `in`
+
+`in` tiene dos usos principales:
+
+- Checkear si un valor esta presente en una lista, tupla, diccionario o string
+
+- Iterar a travez de una secuencia usando for
+
+En lo que nos vamos a centrar en esta sección va a ser en lo primero,
+**checkear si un valor está presente** en una lista, tupla, o diccionario.
+
+Cómo es esto? Bueno, imaginemos que tenemos la siguiente lista:
+
+`mi_lista = ["Juan", "Pedro", "Agustin"]`
+
+Una forma sencilla de checkear si `Agustin` esta en la lista es de la siguiente forma:
+
+```py
+if "Agustin" in mi_lista:
+	print("Hay un agustin en la lista!")
 ```
 
 ---
@@ -1154,3 +1235,5 @@ imprima del 1 al 10? Podes googlearlo tranquilo
 | pass      | No hace nada. Ignora la condicion en la que ocurrió y procede a correr el programa como estaba |
 
 # 6. Funciones
+
+<!--TODO-->
