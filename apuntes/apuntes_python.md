@@ -1,10 +1,90 @@
-# Apuntes del Club de Programacion
+# 1. Apuntes del Club de Programacion
 
 Por: Krapp Ramiro
 
 ---
 
-## Nota del autor
+- [1. Apuntes del Club de Programacion](#1-apuntes-del-club-de-programacion)
+	- [1.1. Nota del autor](#11-nota-del-autor)
+	- [1.2. Nota sobre mayusculas y minusculas](#12-nota-sobre-mayusculas-y-minusculas)
+	- [1.3. Cómo escribir y correr programas de Python en las computadoras del colegio](#13-cómo-escribir-y-correr-programas-de-python-en-las-computadoras-del-colegio)
+- [2. Conocimientos basicos](#2-conocimientos-basicos)
+	- [2.1. Comentarios:](#21-comentarios)
+	- [2.2. `print()`](#22-print)
+		- [2.2.1. Sintaxis](#221-sintaxis)
+		- [2.2.2. Ejemplos de uso:](#222-ejemplos-de-uso)
+			- [2.2.2.1. Imprimir Hola gente](#2221-imprimir-hola-gente)
+			- [2.2.2.2. Resultado:](#2222-resultado)
+			- [2.2.2.3. Imprimir el valor de una variable](#2223-imprimir-el-valor-de-una-variable)
+			- [2.2.2.4. Resultado:](#2224-resultado)
+			- [2.2.2.5. Imprimir multiples cosas - Ejemplo usando concatenización](#2225-imprimir-multiples-cosas---ejemplo-usando-concatenización)
+			- [2.2.2.6. Resultado:](#2226-resultado)
+			- [2.2.2.7. Imprimir multiples cosas - Ejemplo usando fstrings](#2227-imprimir-multiples-cosas---ejemplo-usando-fstrings)
+			- [2.2.2.8. Resultado:](#2228-resultado)
+	- [2.3. Variables](#23-variables)
+		- [2.3.1. Sintaxis:](#231-sintaxis)
+		- [2.3.2. Tipos de variables / Tipos de datos](#232-tipos-de-variables--tipos-de-datos)
+			- [2.3.2.1. Variables de texto (`String`)](#2321-variables-de-texto-string)
+			- [2.3.2.2. Ejemplo:](#2322-ejemplo)
+			- [2.3.2.3. Variables numericas (`int y float`)](#2323-variables-numericas-int-y-float)
+			- [2.3.2.4. Ejemplo](#2324-ejemplo)
+			- [2.3.2.5. Variables lógicas (`bool`)](#2325-variables-lógicas-bool)
+			- [2.3.2.6. Ejemplo](#2326-ejemplo)
+		- [2.3.3. Averiguar el tipo de una variable](#233-averiguar-el-tipo-de-una-variable)
+		- [2.3.4. Cómo cambiarle el tipo a una variable](#234-cómo-cambiarle-el-tipo-a-una-variable)
+			- [2.3.4.1. Pasar de `int` a `string`](#2341-pasar-de-int-a-string)
+			- [2.3.4.2. Pasar de `string` a `int`](#2342-pasar-de-string-a-int)
+		- [2.3.5. Sobreescribir el valor de una variable](#235-sobreescribir-el-valor-de-una-variable)
+		- [2.3.6. Ejemplos de uso de variables](#236-ejemplos-de-uso-de-variables)
+			- [2.3.6.1. Guardar un texto en una variable](#2361-guardar-un-texto-en-una-variable)
+			- [2.3.6.2. Guardar un numero en una variable](#2362-guardar-un-numero-en-una-variable)
+			- [2.3.6.3. Guardar la suma de dos numeros en una variable](#2363-guardar-la-suma-de-dos-numeros-en-una-variable)
+			- [2.3.6.4. Guardar la suma de dos variables en una tercera variable](#2364-guardar-la-suma-de-dos-variables-en-una-tercera-variable)
+	- [2.4. `input()`](#24-input)
+		- [2.4.1. Sintaxis](#241-sintaxis)
+		- [2.4.2. Ejemplos:](#242-ejemplos)
+			- [2.4.2.1. Ejemplo 1 - Ingreso de nombre de usuario](#2421-ejemplo-1---ingreso-de-nombre-de-usuario)
+			- [2.4.2.2. Ejemplo 2 - Ingreso de edad del usuario](#2422-ejemplo-2---ingreso-de-edad-del-usuario)
+- [3. Control del flujo](#3-control-del-flujo)
+	- [3.1. `if` (condicionales)](#31-if-condicionales)
+		- [3.1.1. Sintaxis](#311-sintaxis)
+			- [3.1.1.1. MUY IMPORTANTE!!! -- Nota sobre la identacion](#3111-muy-importante----nota-sobre-la-identacion)
+		- [3.1.2. Operadores](#312-operadores)
+		- [3.1.3. Ejemplos](#313-ejemplos)
+			- [3.1.3.1. Ejemplo de checkear un bool](#3131-ejemplo-de-checkear-un-bool)
+			- [3.1.3.2. Ejemplo de checkear si un numero es mayor a 10](#3132-ejemplo-de-checkear-si-un-numero-es-mayor-a-10)
+			- [3.1.3.3. Ejemplo de checkear si un número es igual a 10](#3133-ejemplo-de-checkear-si-un-número-es-igual-a-10)
+			- [3.1.3.4. Ejemplo de checkear si un número es distinto de 10](#3134-ejemplo-de-checkear-si-un-número-es-distinto-de-10)
+			- [3.1.3.5. Ejemplo de checkear si un alumno esta aprobado](#3135-ejemplo-de-checkear-si-un-alumno-esta-aprobado)
+	- [3.2. Uso de `elif` (`else if`)](#32-uso-de-elif-else-if)
+			- [3.2.0.1. Ejemplo mejorado de checkear si un alumno esta aprobado](#3201-ejemplo-mejorado-de-checkear-si-un-alumno-esta-aprobado)
+		- [3.2.1. `if` encadenados](#321-if-encadenados)
+	- [3.3. Uso de `or` y `and` - Checkeo de multiples cosas en un if](#33-uso-de-or-y-and---checkeo-de-multiples-cosas-en-un-if)
+		- [3.3.1. Ejemplo con `or`](#331-ejemplo-con-or)
+		- [3.3.2. Ejemplo con `and`](#332-ejemplo-con-and)
+- [4. Listas, Tuplas y Diccionarios](#4-listas-tuplas-y-diccionarios)
+	- [4.1. Listas](#41-listas)
+		- [4.1.1. Para que las usamos?](#411-para-que-las-usamos)
+		- [4.1.2. Acceder a los ultimos elementos de una lista](#412-acceder-a-los-ultimos-elementos-de-una-lista)
+		- [4.1.3. Agregar elementos a una lista](#413-agregar-elementos-a-una-lista)
+		- [4.1.4. Eliminar elementos a una lista](#414-eliminar-elementos-a-una-lista)
+			- [4.1.4.1. `remove()`](#4141-remove)
+			- [4.1.4.2. `pop()`](#4142-pop)
+			- [4.1.4.3. `clear()`](#4143-clear)
+		- [4.1.5. Slicing de Listas](#415-slicing-de-listas)
+			- [4.1.5.1. Ejemplos de uso](#4151-ejemplos-de-uso)
+- [5. Bucles](#5-bucles)
+	- [5.1. Pequeña introducción a los bucles](#51-pequeña-introducción-a-los-bucles)
+	- [5.2. Bucles usando `while`](#52-bucles-usando-while)
+		- [5.2.1. Sintaxis](#521-sintaxis)
+		- [5.2.2. Ejemplos](#522-ejemplos)
+	- [5.3. Bucles usando `for`](#53-bucles-usando-for)
+		- [5.3.1. Sintaxis](#531-sintaxis)
+		- [5.3.2. Ejemplos](#532-ejemplos)
+	- [5.4. `break` vs `continue` vs `pass`](#54-break-vs-continue-vs-pass)
+- [6. Funciones](#6-funciones)
+
+## 1.1. Nota del autor
 
 Personalmente, **recomiendo encarecidamente con toda mi alma** googlear todo lo posible.
 Si no entendés algo del apunte, googlealo, puede ser que en internet
@@ -21,7 +101,7 @@ _Ante cualquier problema, google es tu mejor amigo_
 
 ---
 
-## Nota sobre mayusculas y minusculas
+## 1.2. Nota sobre mayusculas y minusculas
 
 **Atencion**:
 <br> Todo lo que vayas a leer y escribir es **Caps-sensitive**, eso significa
@@ -30,7 +110,7 @@ O sea, si yo escribo `print()`, no va a ser lo mismo que `Print()`, `PRINT()` o 
 
 ---
 
-## Cómo escribir y correr programas de Python en las computadoras del colegio
+## 1.3. Cómo escribir y correr programas de Python en las computadoras del colegio
 
 Para las computadoras del colegio, el paso a seguir es el siguiente
 
@@ -59,7 +139,9 @@ Luego, tocar enter, y asi se ejecuta nuestro programa
 
 ---
 
-## Comentarios:
+# 2. Conocimientos basicos
+
+## 2.1. Comentarios:
 
 Los comentarios en python se escriben poniendo un `#` al principio del comentario
 
@@ -71,7 +153,7 @@ print("Esto no es un comentario")
 Los comentarios son **fundamentales** para explicar el funcionamiento del código,
 un buen programador comenta su código con frecuencia.
 
-## `print()`
+## 2.2. `print()`
 
 `print` es una **función** _(concepto que todavia no vimos, pero ya vamos a ver)_ que
 imprime lo que tenga entre `()` en la terminal. Si entre los `()` ponemos texto entre
@@ -81,7 +163,7 @@ va a entender que queremos imprimir una variable
 Nota: Al texto entre `" "` se lo suele llamar strings. Si leen la palabra String, sepan
 que se refiere a un texto
 
-### Sintaxis
+### 2.2.1. Sintaxis
 
 ```py
 print("texto a imprimir")
@@ -93,34 +175,34 @@ o
 print(variable_a_imprimir)
 ```
 
-### Ejemplos de uso:
+### 2.2.2. Ejemplos de uso:
 
-#### Imprimir Hola gente
+#### 2.2.2.1. Imprimir Hola gente
 
 ```py
 print("Hola gente!")
 ```
 
-#### Resultado:
+#### 2.2.2.2. Resultado:
 
 ```
 Hola gente!
 ```
 
-#### Imprimir el valor de una variable
+#### 2.2.2.3. Imprimir el valor de una variable
 
 ```py
 saludo = "Hola gente"
 print(saludo)
 ```
 
-#### Resultado:
+#### 2.2.2.4. Resultado:
 
 ```
 Hola gente
 ```
 
-#### Imprimir multiples cosas - Ejemplo usando concatenización
+#### 2.2.2.5. Imprimir multiples cosas - Ejemplo usando concatenización
 
 Nota: La concatenizacion tiene un gran problema, y es que solamente te permite
 imprimir texto, no te permite imprimir cosas como números.
@@ -132,13 +214,13 @@ juego_favorito = "Skyrim"
 print("Hola, me llamo " + nombre + " y mi juego favorito es " + juego_favorito )
 ```
 
-#### Resultado:
+#### 2.2.2.6. Resultado:
 
 ```
 Hola, me llamo Juan Carlos y mi juego favorito es Skyrim
 ```
 
-#### Imprimir multiples cosas - Ejemplo usando fstrings
+#### 2.2.2.7. Imprimir multiples cosas - Ejemplo usando fstrings
 
 Si queremos imprimir multiples cosas en un print, la mejor forma de hacerlo es usando
 algo llamado fstrings
@@ -152,24 +234,24 @@ juego_favorito = "Skyrim"
 print(f"Hola, me llamo {nombre}, tengo {edad} años y mi juego favorito es {juego_favorito}")
 ```
 
-#### Resultado:
+#### 2.2.2.8. Resultado:
 
 ```
 Hola, me llamo Juan Carlos, tengo 13 años y mi juego favorito es Skyrim
 ```
 
-## Variables
+## 2.3. Variables
 
 Las variables son una de nuestras mejores herramientas. Estas nos permiten almacenar datos
 en la memoria, a los cuales despues vamos a poder acceder y modificar.
 
-### Sintaxis:
+### 2.3.1. Sintaxis:
 
 ```py
 nombre_de_la_variable = valor_de_la_variable
 ```
 
-### Tipos de variables / Tipos de datos
+### 2.3.2. Tipos de variables / Tipos de datos
 
 En Python no todas las variables son iguales, sino que hay tipos. Una variable de un tipo
 solamente puede almacenar valores de su mismo tipo. Este concepto tambien es conocido como el **tipo de dato**, o **datatype.**
@@ -188,18 +270,18 @@ Bueno, en python pasa algo parecido con los tipos de dato.
 - Variables numericas (integers, floats)
 - Variables lógicas (bools)
 
-#### Variables de texto (`String`)
+#### 2.3.2.1. Variables de texto (`String`)
 
 Las **variables de texto**, generalmente llamadas **String**, son variables que pueden
 almacenar texto en ellas.
 
-#### Ejemplo:
+#### 2.3.2.2. Ejemplo:
 
 ```py
 mi_nombre = "Ramiro"
 ```
 
-#### Variables numericas (`int y float`)
+#### 2.3.2.3. Variables numericas (`int y float`)
 
 Las **variables numéricas** son variables que almacenan números (¿qué sorpresa no?).
 <br>
@@ -214,14 +296,14 @@ y numeros con coma (1.342, -1.5, -0.999, 0.666).
 porque en programacion la coma `,` se usa para armar **listas**,
 que es un concepto que viene más adelante.
 
-#### Ejemplo
+#### 2.3.2.4. Ejemplo
 
 ```py
 porciones_pizza = 8 # Esta variable es de tipo int
 pi = 3.14 # Esta variable es de tipo float
 ```
 
-#### Variables lógicas (`bool`)
+#### 2.3.2.5. Variables lógicas (`bool`)
 
 Las **variables lógicas** son variables que pueden almacenar solamente **DOS** valores,
 **Verdadero** (`True`) o **Falso** (`False`).
@@ -231,7 +313,7 @@ A estas variables tambien se les suele llamar **variables booleanas**, esto es p
 La forma más facil de entender a las variables lógicas es imaginarse que en nuestro código
 queremos guardar el estado de una lamparita
 
-#### Ejemplo
+#### 2.3.2.6. Ejemplo
 
 ```py
 lamparita_prendida = True  # La lamparita esta prendida
@@ -248,7 +330,7 @@ lo mejor es usar `True` y `False`.
 
 ---
 
-### Averiguar el tipo de una variable
+### 2.3.3. Averiguar el tipo de una variable
 
 Si no sabes el tipo de una variable y querés averiguarlo, tenes la función `type()`
 
@@ -262,23 +344,23 @@ mi_numero = 420
 print(f"El tipo de la variable es: {type(mi_numero)}") # Imprime <class 'int'>
 ```
 
-### Cómo cambiarle el tipo a una variable
+### 2.3.4. Cómo cambiarle el tipo a una variable
 
-#### Pasar de `int` a `string`
+#### 2.3.4.1. Pasar de `int` a `string`
 
 ```py
 mi_numero = 15
 mi_texto = str(mi_numero)
 ```
 
-#### Pasar de `string` a `int`
+#### 2.3.4.2. Pasar de `string` a `int`
 
 ```py
 mi_texto = "15"
 mi_numero = int(mi_texto) #
 ```
 
-### Sobreescribir el valor de una variable
+### 2.3.5. Sobreescribir el valor de una variable
 
 Hay un truquito muy útil en la programación, y es que si se le quiere sumar 1 a una
 variable, la forma más facil de hacerlo es esta:
@@ -302,9 +384,9 @@ mi cuenta += 1
 
 ---
 
-### Ejemplos de uso de variables
+### 2.3.6. Ejemplos de uso de variables
 
-#### Guardar un texto en una variable
+#### 2.3.6.1. Guardar un texto en una variable
 
 Como es texto, uso `" "`
 
@@ -312,7 +394,7 @@ Como es texto, uso `" "`
 mi_nombre = "Ramiro"
 ```
 
-#### Guardar un numero en una variable
+#### 2.3.6.2. Guardar un numero en una variable
 
 Como **NO** es texto, sino que es un numero, **NO** uso `" "`
 
@@ -320,7 +402,7 @@ Como **NO** es texto, sino que es un numero, **NO** uso `" "`
 mi_edad = 18
 ```
 
-#### Guardar la suma de dos numeros en una variable
+#### 2.3.6.3. Guardar la suma de dos numeros en una variable
 
 ```py
 suma = 3+15
@@ -328,7 +410,7 @@ suma = 3+15
 
 `suma` ahora vale `18`
 
-#### Guardar la suma de dos variables en una tercera variable
+#### 2.3.6.4. Guardar la suma de dos variables en una tercera variable
 
 ```py
 num_1 = 3
@@ -339,22 +421,22 @@ num_3 = num_1 + num_2
 
 `num_3` ahora vale `8`
 
-## `input()`
+## 2.4. `input()`
 
 `input()` es una funcion que nos permite recibir datos del usuario en forma de string.
 
 Esta funcion espera que escribas algo en la terminal y que toques enter. Cuando tocaste
 enter, guarda lo que escribiste en una variable que le hayas indicado
 
-### Sintaxis
+### 2.4.1. Sintaxis
 
 ```py
 mi_variable = input("Mensaje a mostrar al usuario")
 ```
 
-### Ejemplos:
+### 2.4.2. Ejemplos:
 
-#### Ejemplo 1 - Ingreso de nombre de usuario
+#### 2.4.2.1. Ejemplo 1 - Ingreso de nombre de usuario
 
 Un ejemplo muy sencillo puede ser un programa que pida al usuario que ingrese su nombre,
 y que luego imprima en pantalla el nombre del usuario.
@@ -387,7 +469,7 @@ El nombre del usuario es: Juancito
 
 ---
 
-#### Ejemplo 2 - Ingreso de edad del usuario
+#### 2.4.2.2. Ejemplo 2 - Ingreso de edad del usuario
 
 Cuando queremos dejar de introducir texto, para empezar a introducir numeros, la cosa
 cambia un poco.
@@ -411,9 +493,11 @@ Si queremos que sea un número con coma, tenemos que usar `float()`, resultando 
 
 ---
 
-## `if` (condicionales)
+# 3. Control del flujo
 
 **Ahora si empieza lo bueno**
+
+## 3.1. `if` (condicionales)
 
 A veces un programa va a tener que tomar decisiones.
 Estas decisiones pueden ejecutar diferentes piezas de código, dependiendo de
@@ -427,7 +511,7 @@ llama como **control del flujo**
 
 ![if-else-flow](https://cdn.educba.com/academy/wp-content/uploads/2019/08/If-Else-Statement-Flow-Diagram-2.png)
 
-### Sintaxis
+### 3.1.1. Sintaxis
 
 ```py
 if condicion:
@@ -442,7 +526,7 @@ else:
 
 ---
 
-#### MUY IMPORTANTE!!! -- Nota sobre la identacion
+#### 3.1.1.1. MUY IMPORTANTE!!! -- Nota sobre la identacion
 
 Notar que los comentarios # del codigo de arriba que hay estan **identados**, eso quiere decir que hay una tabulacion (o sea, espacios)
 entre la linea del if y la linea del comentario.
@@ -462,7 +546,7 @@ Ademas, el `print("finaliza el programa")` NO pertenece al else, porque **no est
 
 ---
 
-### Operadores
+### 3.1.2. Operadores
 
 En python, el `if` permite checkear cosas de distintas formas, usando **operadores**
 
@@ -473,9 +557,9 @@ En python, el `if` permite checkear cosas de distintas formas, usando **operador
 - `>` Checkea si es mayor
 - `>=` Checkea si es mayor o igual
 
-### Ejemplos
+### 3.1.3. Ejemplos
 
-#### Ejemplo de checkear un bool
+#### 3.1.3.1. Ejemplo de checkear un bool
 
 ```py
 boton_presionado = True
@@ -495,7 +579,7 @@ En este ejemplo, al final del codigo, `lamparita_prendida` va a ser `True`.
 Si nosotros alteramos nuestro código para que `boton_presionado` sea `False`,
 al final del codigo `lamparita_prendida` va a ser `False`
 
-#### Ejemplo de checkear si un numero es mayor a 10
+#### 3.1.3.2. Ejemplo de checkear si un numero es mayor a 10
 
 ```py
 numero = int(input("Ingrese un número: "))
@@ -506,7 +590,7 @@ else:
 	print("El numero es menor a 10")
 ```
 
-#### Ejemplo de checkear si un número es igual a 10
+#### 3.1.3.3. Ejemplo de checkear si un número es igual a 10
 
 ```py
 numero = int(input("Ingrese un número: "))
@@ -517,7 +601,7 @@ else:
 	print("El numero es distinto de 10")
 ```
 
-#### Ejemplo de checkear si un número es distinto de 10
+#### 3.1.3.4. Ejemplo de checkear si un número es distinto de 10
 
 ```py
 numero = int(input("Ingrese un número: "))
@@ -528,7 +612,7 @@ else:
 	print("El numero es 10")
 ```
 
-#### Ejemplo de checkear si un alumno esta aprobado
+#### 3.1.3.5. Ejemplo de checkear si un alumno esta aprobado
 
 ```py
 nota_alumno = int(input("Ingrese la nota del alumno"))
@@ -539,7 +623,7 @@ else:
 	print("El alumno esta desaprobado :( ")
 ```
 
-## Uso de `elif` (`else if`)
+## 3.2. Uso de `elif` (`else if`)
 
 Si se quieren checkear para multiples casos, se puede usar algo
 llamado `elif` (que significa `else if`)
@@ -547,7 +631,7 @@ llamado `elif` (que significa `else if`)
 El `elif` es la forma de decir "si la condicion anterior no fue verdadera,
 intenta con esta condicion"
 
-#### Ejemplo mejorado de checkear si un alumno esta aprobado
+#### 3.2.0.1. Ejemplo mejorado de checkear si un alumno esta aprobado
 
 ```py
 nota_alumno = int(input("Ingrese la nota del alumno": ))
@@ -587,7 +671,7 @@ elif nota_alumno == 0:
 print(f"Aprobacion: {aprobacion}")
 ```
 
-### `if` encadenados
+### 3.2.1. `if` encadenados
 
 Los if se pueden uno atras del otro, formando una cadena (a esto tambien se le
 llaman if en cascada)
@@ -610,14 +694,14 @@ if encadenados suelen generar lo que se conoce como "código hadouken", que es a
 
 ---
 
-## Uso de `or` y `and` - Checkeo de multiples cosas en un if
+## 3.3. Uso de `or` y `and` - Checkeo de multiples cosas en un if
 
 Cuando uno usa un `if`, puede checkear por multiples cosas, usando `or` y `and`
 
 - `or` checkea si alguna de las condiciones son verdaderas
 - `and` checkea si todas de las condiciones son verdaderas
 
-### Ejemplo con `or`
+### 3.3.1. Ejemplo con `or`
 
 ```py
 numero = int(input("Ingresa un número: "))
@@ -626,7 +710,7 @@ if numero == 1 or numero == 2:
 	print("El numero que introduciste es 1 o es 2, alguno de los dos es")
 ```
 
-### Ejemplo con `and`
+### 3.3.2. Ejemplo con `and`
 
 Este ejemplo usa el operador `%`. Lo que hace el operador `%` es checkear cual es el
 resto de un numero cuando lo dividis por otro.
@@ -645,7 +729,9 @@ elif numero % 2 != 0:
 
 ---
 
-## Listas
+# 4. Listas, Tuplas y Diccionarios
+
+## 4.1. Listas
 
 Una lista es un tipo de variable usada para almacenar multiples items en una sola variable.
 Estos multiples items pueden ser de cualquier tipo, tanto strings, como ints, como floats,
@@ -703,7 +789,7 @@ IndexError: list index out of range
 
 ```
 
-### Para que las usamos?
+### 4.1.1. Para que las usamos?
 
 Imaginate que tenés que hacer un programa, que reciba el nombre de 10 usuarios.
 Con lo que aprendiste hasta ahora, la única opción que tenes es tener 10 variables:
@@ -730,7 +816,7 @@ nombres = ["Juan", "Pepe", "Agustina", "Carla", "Zefirot", "Gaburro", "Maria", "
 
 Esto simplifica **mucho** laburar con multiples variables, usenlo que sirve un monton.
 
-### Acceder a los ultimos elementos de una lista
+### 4.1.2. Acceder a los ultimos elementos de una lista
 
 Antes vimos que con `cosas_verduleria[0]` accedimos al **primer** elemento de la lista,
 que con `cosas_verduleria[1]` accedemos al **segundo** elemento, y que con
@@ -743,7 +829,7 @@ Pero que pasa si queremos acceder al **ultimo elemento**? Bueno, hay que pasar a
 Porque `[-1]` simboliza el ultimo elemento.
 Y para acceder al anteultimo? `cosas_verduleria[-2]`
 
-### Agregar elementos a una lista
+### 4.1.3. Agregar elementos a una lista
 
 Para agregar elementos a una lista, usamos el **método** `append()` (Los metodos son los que usas el `.` antes de usarlos)
 
@@ -762,11 +848,11 @@ cosas_verduleria.append("uvas")
 
 Despues de hacer eso, los elementos de la lista quedan asi: `["manzana", "banana", "naranja", "uvas"]`
 
-### Eliminar elementos a una lista
+### 4.1.4. Eliminar elementos a una lista
 
 Para eliminar elementos de una lista, hay dos métodos principales, el método `pop()` y el método `remove()`
 
-#### `remove()`
+#### 4.1.4.1. `remove()`
 
 `remove()` remueve el elemento especificado.
 
@@ -778,7 +864,7 @@ cosas_verduleria.remove("banana")
 print(cosas_verduleria) # Esto imprime ["manzana", "naranja"]
 ```
 
-#### `pop()`
+#### 4.1.4.2. `pop()`
 
 `pop()` remueve el elemento que esta en el indice especificado
 
@@ -796,7 +882,7 @@ cosas_verduleria.pop()
 print(cosas_verduleria) # Esto imprime ["manzana", "banana"]
 ```
 
-#### `clear()`
+#### 4.1.4.3. `clear()`
 
 Vieron que les dije que habia dos métodos principales? Bueno les mentí xdxd.
 El método `clear()` vacía la lista. La lista todavía existe, pero no tiene elementos adentro
@@ -807,7 +893,7 @@ cosas_verduleria.clear()
 print(cosas_verduleria) # Esto imprime [], porque esta vacia lol
 ```
 
-### Slicing de Listas
+### 4.1.5. Slicing de Listas
 
 A veces, queremos acceder no a un elemento en especifico de la lista, sino a un rango de elementos.
 Y vos te preguntaras, que carajo significa eso?
@@ -823,7 +909,7 @@ de elementos, con la siguiente sintaxis:
 mi_lista[inicio:fin]
 ```
 
-#### Ejemplos de uso
+#### 4.1.5.1. Ejemplos de uso
 
 ```py
 # Vamos a trabajar con esta lista de nombres
@@ -846,7 +932,9 @@ print(nombres[1:6])  # Esto imprime ['Pepe', 'Agustina', 'Carla', 'Zefirot', 'Ga
 
 ---
 
-## Pequeña introducción a los bucles
+# 5. Bucles
+
+## 5.1. Pequeña introducción a los bucles
 
 Por fin llegamos a una de las cosas más usadas en python, los bucles. Pero primero, que es un bucle?
 Un bucle es una acción que se repite una vez, y otra vez, y otra vez, y otra vez,
@@ -862,13 +950,13 @@ repetir una (o más) acciones una cantidad determinada (bucle for) o indetermina
 
 ---
 
-## Bucles usando `while`
+## 5.2. Bucles usando `while`
 
 ![Bucle while](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.journaldev.com%2Fwp-content%2Fuploads%2F2017%2F10%2Fwhile-loop-java.png&f=1&nofb=1)
 
 Los bucles `while` permiten hacer una acción una indeterminada cantidad de veces.
 
-### Sintaxis
+### 5.2.1. Sintaxis
 
 ```py
 while condicion:
@@ -878,7 +966,7 @@ while condicion:
 El `while` funciona asi, mientras la condicion sea `True`, va a hacer lo que esta adentro
 del mismo. Cuando la condicion sea `False`, deja de ejecutar lo que esta adentro
 
-### Ejemplos
+### 5.2.2. Ejemplos
 
 Un ejemplo sencillo para entender el bucle `while` es este:
 
@@ -955,13 +1043,13 @@ Funciona igual, pero nos ahorramos usar la variable. Ademas, cabe aclarar que
 **break sale de forma abrupta del while**, por lo tanto si tenes más cosas adentro del
 while, y se ejecuto el break, esas otras cosas **no se van a ejecutar**. Es muy util
 
-## Bucles usando `for`
+## 5.3. Bucles usando `for`
 
 ![Bucle for](https://datagy.io/wp-content/uploads/2020/06/Python-For-Loop-Structure.png)
 
 Los bucles `for` permiten hacer una acción una determinada cantidad de veces.
 
-### Sintaxis
+### 5.3.1. Sintaxis
 
 ```py
 for item in secuencia: # Notar los : que a simple vista no se ven
@@ -970,7 +1058,7 @@ for item in secuencia: # Notar los : que a simple vista no se ven
 	# codigo a ejecutar aqui
 ```
 
-### Ejemplos
+### 5.3.2. Ejemplos
 
 Uno de los ejemplos más sencillos que hay para entender a los bucles `for` es este ejemplo,
 que imprime todos los elementos que hay adentro de la lista frutas.
@@ -1057,10 +1145,12 @@ Esto imprime
 **los programadores empezamos a contar desde el 0**. Ahora, cómo harías vos para que
 imprima del 1 al 10? Podes googlearlo tranquilo
 
-## `break` vs `continue` vs `pass`
+## 5.4. `break` vs `continue` vs `pass`
 
 | statement | Descripcion                                                                                    |
 | --------- | ---------------------------------------------------------------------------------------------- |
 | break     | Termina el loop actual. Usa break para salir del loop de forma instantanea.                    |
 | continue  | Skipea la iteracion actual del loop y pasa a la siguiente                                      |
 | pass      | No hace nada. Ignora la condicion en la que ocurrió y procede a correr el programa como estaba |
+
+# 6. Funciones

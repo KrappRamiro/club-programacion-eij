@@ -4,6 +4,41 @@ Por: Krapp Ramiro
 
 ---
 
+- [Ejercicios de Python del Club de Programacion](#ejercicios-de-python-del-club-de-programacion)
+  - [Nota del autor](#nota-del-autor)
+  - [Uso de `print()`](#uso-de-print)
+    - [Ejercicio 1](#ejercicio-1)
+    - [Ejercicio 2](#ejercicio-2)
+    - [Ejercicio 3](#ejercicio-3)
+    - [Ejercicio 4](#ejercicio-4)
+    - [Ejercicio 5](#ejercicio-5)
+    - [Ejercicio 6](#ejercicio-6)
+    - [Ejercicio 7](#ejercicio-7)
+    - [Ejercicio 8](#ejercicio-8)
+  - [Variables](#variables)
+    - [Ejercicio 1](#ejercicio-1-1)
+    - [Ejercicio 2](#ejercicio-2-1)
+    - [Ejercicio 3](#ejercicio-3-1)
+    - [Ejercicio 4](#ejercicio-4-1)
+    - [Ejercicio 5](#ejercicio-5-1)
+  - [`input()`](#input)
+    - [Ejercicio 1](#ejercicio-1-2)
+    - [Ejercicio 2](#ejercicio-2-2)
+      - [Código](#código)
+      - [Error de Compilación](#error-de-compilación)
+  - [`if`](#if)
+    - [Ejercicio 1](#ejercicio-1-3)
+    - [Ejercicio 4](#ejercicio-4-2)
+    - [Ejercicio 3](#ejercicio-3-2)
+    - [Ejercicio 4](#ejercicio-4-3)
+  - [While](#while)
+    - [Ejercicio 1](#ejercicio-1-4)
+  - [For](#for)
+    - [Ejercicio 1](#ejercicio-1-5)
+    - [Ejercicio 2](#ejercicio-2-3)
+    - [Ejercicio 3](#ejercicio-3-3)
+    - [Ejercicio 4](#ejercicio-4-4)
+
 ## Nota del autor
 
 Personalmente, **recomiendo encarecidamente con toda mi alma** googlear todo lo posible.
