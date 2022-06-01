@@ -1056,3 +1056,11 @@ Esto imprime
 **¿Oops, que pasó?** Bueno, la realidad es que si, el for se repite 10 veces, pero
 **los programadores empezamos a contar desde el 0**. Ahora, cómo harías vos para que
 imprima del 1 al 10? Podes googlearlo tranquilo
+
+## `break` vs `continue` vs `pass`
+
+| statement | Descripcion                                                                                    |
+| --------- | ---------------------------------------------------------------------------------------------- |
+| break     | Termina el loop actual. Usa break para salir del loop de forma instantanea.                    |
+| continue  | Skipea la iteracion actual del loop y pasa a la siguiente                                      |
+| pass      | No hace nada. Ignora la condicion en la que ocurrió y procede a correr el programa como estaba |
