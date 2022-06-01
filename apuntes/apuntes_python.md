@@ -979,8 +979,7 @@ que imprime todos los elementos que hay adentro de la lista frutas.
 frutas = ["manzana", "banana", "naranja"]
 for x in fruits:
 	print("Hola!")
-	print(f"Me estoy ejecutando! x es igual a: {x}")
-	print("Chauuu\n") # \n es un salto de linea, seria como imprimir un enter.
+	print(f"Me estoy ejecutando! x es igual a: {x}")# \n es un salto de linea, seria como imprimir un enter.
 ```
 
 Este codigo imprime
