@@ -21,8 +21,6 @@ _Ante cualquier problema, google es tu mejor amigo_
 
 ---
 
-## Ejercicios
-
 <!-- Template para las preguntas -->
 
 <!--
@@ -43,9 +41,9 @@ _Ante cualquier problema, google es tu mejor amigo_
 </details>
 -->
 
-### Uso de `print()`
+## Uso de `print()`
 
-#### Ejercicio 1
+### Ejercicio 1
 
 ¿Qué resultado va a tener el siguiente código?
 
@@ -66,7 +64,7 @@ print("Hola mundo!")
 
 ---
 
-#### Ejercicio 2
+### Ejercicio 2
 
 ¿Qué resultado va a tener el siguiente código?
 
@@ -87,7 +85,7 @@ print("Hola mundo!)
 
 ---
 
-#### Ejercicio 3
+### Ejercicio 3
 
 ¿Qué resultado va a tener el siguiente código?
 
@@ -109,7 +107,7 @@ porque en este caso python cree que queremos imprimir una variable llamada Hola
 
 ---
 
-#### Ejercicio 4
+### Ejercicio 4
 
 ¿Qué resultado va a tener el siguiente código?
 
@@ -131,7 +129,7 @@ print(nombre)
 
 ---
 
-#### Ejercicio 5
+### Ejercicio 5
 
 ¿Qué resultado va a tener el siguiente código?
 
@@ -153,7 +151,7 @@ print("nombre")
 
 ---
 
-#### Ejercicio 6
+### Ejercicio 6
 
 ¿Qué resultado va a tener el siguiente código?
 
@@ -175,7 +173,7 @@ print(f"Mi amigo se llama {nombre}")
 
 ---
 
-#### Ejercicio 7
+### Ejercicio 7
 
 ¿Qué resultado va a tener el siguiente código?
 
@@ -197,7 +195,7 @@ print("Mi amigo se llama {nombre}")
 
 ---
 
-#### Ejercicio 8
+### Ejercicio 8
 
 ¿Qué resultado va a tener el siguiente código?
 
@@ -217,11 +215,11 @@ print(f"Tengo {edad} años")
 
 </details>
 
-### Variables
+## Variables
 
 ---
 
-#### Ejercicio 1
+### Ejercicio 1
 
 ¿Cuál es la **sintaxis** de la declaración de una variable?
 
@@ -252,7 +250,7 @@ nombre_variable = valor_variable
 
 ---
 
-#### Ejercicio 2
+### Ejercicio 2
 
 ¿Qué diferencias hay entre las variables de texto y las variables numéricas?
 
@@ -266,7 +264,7 @@ las variables numérticas solamente pueden almacenar números.
 
 ---
 
-#### Ejercicio 3
+### Ejercicio 3
 
 ¿Qué valores pueden tener las variables lógicas (booleanas)?
 
@@ -279,7 +277,7 @@ Solamente pueden tener dos valores, `True` y `False`
 
 ---
 
-#### Ejercicio 4
+### Ejercicio 4
 
 ¿Cómo averiguo el tipo de una variable?
 
@@ -292,7 +290,7 @@ usando `type(nombre_variable)`
 
 ---
 
-#### Ejercicio 5
+### Ejercicio 5
 
 ¿Cómo le cambio el tipo a una variable?
 
@@ -305,9 +303,9 @@ usando `int()` o `str()`
 
 ---
 
-### `input()`
+## `input()`
 
-#### Ejercicio 1
+### Ejercicio 1
 
 ¿Qué resultado va a tener el siguiente código?
 
@@ -328,11 +326,11 @@ nombre_usuario = input("Hola, ingresa tu nombre: ")
 
 ---
 
-#### Ejercicio 2
+### Ejercicio 2
 
 El siguiente código tiene un error de compilación, cómo arreglaría ese problema?
 
-##### Código
+#### Código
 
 ```py
 numero_favorito = input("Ingrese su número favorito")
@@ -340,12 +338,12 @@ resultado = 7 + numero_favorito
 print (f"Su numero favorito más 7 es: {resultado}")
 ```
 
-##### Error de Compilación
+#### Error de Compilación
 
 ```py
 Traceback (most recent call last):
-  File "/home/krapp/test.py", line 2, in <module>
-    resultado = 7 + numero_favorito
+	File "/home/krapp/test.py", line 2, in <module>
+		resultado = 7 + numero_favorito
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
@@ -358,9 +356,9 @@ Habría que hacer `int(input())`
 
 ---
 
-### `if`
+## `if`
 
-#### Ejercicio 1
+### Ejercicio 1
 
 1. ¿Qué pasa cuando `flechazo_cabeza` es `True`?
 
@@ -390,7 +388,7 @@ Si `flechazo_cabeza` fuera `False`, se imprimiría en pantalla el "la flecha no 
 
 ---
 
-#### Ejercicio 4
+### Ejercicio 4
 
 1. ¿Qué pasa cuando `zona_impacto` es `"cabeza"`?
 
@@ -427,7 +425,7 @@ print(f"Tenes {vida_jugador} puntos de vida")
 
 ---
 
-#### Ejercicio 3
+### Ejercicio 3
 
 Crea un programa que, preguntando la hora, checkee si una persona puede tomar
 bebidas alcohólicas o no
@@ -438,18 +436,16 @@ bebidas alcohólicas o no
 ```py
 edad=int(input("Ingresa tu edad: "))
 if edad >=18:
-   print("Podes tomar")
+	 print("Podes tomar")
 else:
-   print("No podes tomar")
+	 print("No podes tomar")
 ```
 
 </details>
 
 ---
 
-para
-
-#### Ejercicio 4
+### Ejercicio 4
 
 Los famosos ladrillos **LEGO** tienen un rango de edades permitidas, que van,
 en la mayoría de los casos, desde los 7 años hasta los 99 años.
@@ -472,27 +468,25 @@ edad = int(input("Ingrese su edad: "))
 edad_minima = 7
 edad_maxima = 99
 if edad >= edad_minima and edad <= edad_maxima:
-    # Hay otra forma de hacer ese if, que es de esta forma:
-    # if edad_minima < edad < edad_minima:
-    print("Esta en el rango de edad permitido")
+		# Hay otra forma de hacer ese if, que es de esta forma:
+		# if edad_minima < edad < edad_minima:
+		print("Esta en el rango de edad permitido")
 elif edad <= edad_minima:
-    print("No tiene la edad suficiente")
+		print("No tiene la edad suficiente")
 elif edad >= edad_maxima:
-    print("Es muy viejo para jugar con legos :( ")
+		print("Es muy viejo para jugar con legos :( ")
 else:
-    print("Ingresó un número inválido")
+		print("Ingresó un número inválido")
 ```
 
 </details>
 
-<!--
-### While
+## While
 
-#### Ejercicio 1
+### Ejercicio 1
 
-La siguiente fracción de código hace que numero_random sea
-igual a un número al azar del 1 al 20. Esto quiere decir que su valor cambia con cada
-ejecución del programa.
+La siguiente fracción de código hace que numero_random sea igual a un número al azar del 1 al 20.
+Esto quiere decir que su valor cambia con cada ejecución del programa.
 
 ```py
 import random # Se importa el modulo random -- Esto es algo que todavia no vimos, jejeje
@@ -509,4 +503,28 @@ El programa va a tener los siguientes requerimientos:
 - Si el usuario ingresa un numero igual a `numero_random`, que le avise que ganó.
 - Al finalizar la ejecución del programa, el mismo deberá avisar cuántos intentos
   le tomo al usuario para adivinar el número
--->
+
+<details>
+	<summary>Toca para ver la respuesta</summary>
+
+```py
+import random
+numero_random = random.randrange(1, 21)
+run = True
+cantidad_intentos = 0
+
+while run:
+    user_input = int(input('Adivina el numero: '))
+    if user_input < numero_random:
+        print("Muy bajo!")
+    elif user_input > numero_random:
+        print("Muy alto!")
+    elif user_input == numero_random:
+        print('Adivinaste!')
+        run = False
+    cantidad_intentos += 1
+
+print(f"Te tomo {cantidad_intentos} intentos!")
+```
+
+</details>
