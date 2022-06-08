@@ -524,7 +524,19 @@ else:
 
 ### Ejercicio 1
 
-Crear un
+Crear un sistema compra en el que, usando un diccionario, se pueda seleccionar
+un item a comprar.
+
+El diccionario se debe ver de la siguiente forma:
+
+```py
+objetos = {
+    "remera": 300,
+    "pantalones": 500,
+    "zapatillas": 3500
+}
+```
+
 
 <details>
   <summary>Toca para ver la respuesta</summary>
