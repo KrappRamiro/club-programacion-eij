@@ -116,6 +116,7 @@ que se hace distinción entre minusculas y mayúsculas.
 O sea, si yo escribo `print()`, no va a ser lo mismo que `Print()`, `PRINT()` o `pRiNt()`.
 
 ---
+
 ## 1.3. Recomendacion personal:
 
 Armar una carpeta llamada programacion, y adentro armar otra carpeta llamada python, y adentro
@@ -124,6 +125,7 @@ de esa carpeta meter todos los archivos de programación en python.
 ## 1.4. Cómo escribir y correr programas de Python en sus computadoras personales \[Windows\]
 
 En esta sección se ven 4 cosas:
+
 1. La instalación del programa usado para escribir el código (vscode)
 2. La instalación de Python
 3. La configuración de vscode
@@ -133,38 +135,67 @@ Si lo único que te interesa es saber cómo correr el código, anda a la secció
 
 ### 1.4.1. Instalacion de Visual Studio Code (vscode para los amigos)
 
-1. Primero, ir a La página de descarga del Visual Studio Code [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) y tocar en la opción que dice Windows, y descargar y ejecutar el archivo .exe que te descarga ![1](../imagenes/instalar_vscode_windows/descargar-visual-code.png)
+1. Primero, ir a La página de descarga del Visual Studio Code [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) y tocar en la opción que dice Windows, y descargar y ejecutar el archivo .exe que te descarga
 
-2. Aceptar los términos y condiciones de uso de la licencia para continuar con la instalación. ![2](../imagenes/instalar_vscode_windows/licencia-visual-code.png)
+![1](../imagenes/instalar_vscode_windows/descargar-visual-code.png)
 
-3. En esta ventana te permite elegir el directorio de instalación, se recomienda mantener la configuración por defecto, le damos clic en Next para continuar. ![3](../imagenes/instalar_vscode_windows/carpeta-visual-code.png)
+1. Aceptar los términos y condiciones de uso de la licencia para continuar con la instalación.
 
-4. Aca te permite cambiar el nombre de los accesos directos para acceder al programa, se recomienda mantener la configuración por defecto, le damos clic a Next. ![4](../imagenes/instalar_vscode_windows/menu-visual-code.png)
+![2](../imagenes/instalar_vscode_windows/licencia-visual-code.png)
 
-5. En esta pantalla el asistente de instalación te permite seleccionar tareas adicionales que se crearán al momento de la instalación. En nuestro caso seleccionamos el crear icono en escritorio, y añadir Path, le damos clic Next. ![5](../imagenes/instalar_vscode_windows/escritorio-visual-code.png)
+2. En esta ventana te permite elegir el directorio de instalación, se recomienda mantener la configuración por defecto, le damos clic en Next para continuar.
 
-6. Una vez completadas las configuraciones, ya estamos listo para empezar la instalación de Visual Studio Code en nuestra máquina, le damos clic en Install. ![6](../imagenes/instalar_vscode_windows/iniciar-instalacion-visual-code.png)
+![3](../imagenes/instalar_vscode_windows/carpeta-visual-code.png)
 
-7. Comienza el proceso de instalación, esto puede demorar unos cuantos minutos, el avance de la instalación se muestra en la barra de carga. ![7](../imagenes/instalar_vscode_windows/proceso-instalacion-visual-code.png)
+3. Aca te permite cambiar el nombre de los accesos directos para acceder al programa, se recomienda mantener la configuración por defecto, le damos clic a Next.
 
-8. Una vez finalizado la instalación el programa está listo para su uso, nos muestra la opción seleccionada de iniciar el programa, hacemos clic en Finish. ![8](../imagenes/instalar_vscode_windows/finalizar-instalacion-visual-code.png)
+![4](../imagenes/instalar_vscode_windows/menu-visual-code.png)
 
-9. Al finalizar se abrirá Visual Studio Code por primera vez, en este punto ya podemos empezar a trabajar con nuestros proyectos. ![9](../imagenes/instalar_vscode_windows/editor-visual-code.png)
+4. En esta pantalla el asistente de instalación te permite seleccionar tareas adicionales que se crearán al momento de la instalación. En nuestro caso seleccionamos el crear icono en escritorio, y añadir Path, le damos clic Next.
+
+![5](../imagenes/instalar_vscode_windows/escritorio-visual-code.png)
+
+5. Una vez completadas las configuraciones, ya estamos listo para empezar la instalación de Visual Studio Code en nuestra máquina, le damos clic en Install.
+
+![6](../imagenes/instalar_vscode_windows/iniciar-instalacion-visual-code.png)
+
+6. Comienza el proceso de instalación, esto puede demorar unos cuantos minutos, el avance de la instalación se muestra en la barra de carga.
+
+![7](../imagenes/instalar_vscode_windows/proceso-instalacion-visual-code.png)
+
+7. Una vez finalizado la instalación el programa está listo para su uso, nos muestra la opción seleccionada de iniciar el programa, hacemos clic en Finish.
+
+![8](../imagenes/instalar_vscode_windows/finalizar-instalacion-visual-code.png)
+
+8. Al finalizar se abrirá Visual Studio Code por primera vez, en este punto ya podemos empezar a trabajar con nuestros proyectos.
+
+![9](../imagenes/instalar_vscode_windows/editor-visual-code.png)
 
 ### 1.4.2. Instalacion de Python
 
-1. Ir a la página de descarga de Python [https://www.python.org/downloads/](https://www.python.org/downloads/) y descargar la ultima version ![1](../imagenes/instalar_python_windows/descargar-python.jpg)
-2. Es esta de aca ![1-2](../imagenes/instalar_python_windows/descargar-python-2.jpg)
+1. Ir a la página de descarga de Python [https://www.python.org/downloads/](https://www.python.org/downloads/) y descargar la ultima version
 
-3. _(Ignorar que dice 3.6, me robe la imagen de internet)_<br> Ahora, **tildar en agregar al PATH (MUY IMPORTANTE!)** y tocar en Install Now![2](../imagenes/instalar_python_windows/2.png)
+![1](../imagenes/instalar_python_windows/descargar-python.jpg) 2. Es esta de aca
 
-4. Una vez que termina la instalación, tocar en Disable Path lenght limit![3](../imagenes/instalar_python_windows/3.png)
+![1-2](../imagenes/instalar_python_windows/descargar-python-2.jpg)
+
+3. _(Ignorar que dice 3.6, me robe la imagen de internet)_<br> Ahora, **tildar en agregar al PATH (MUY IMPORTANTE!)** y tocar en Install Now
+
+![2](../imagenes/instalar_python_windows/2.png)
+
+4. Una vez que termina la instalación, tocar en Disable Path lenght limit
+
+![3](../imagenes/instalar_python_windows/3.png)
 
 ### 1.4.3. Instalación de Python en Visual Studio Code (vscode)
 
-1. Abrir Visual Studio Code, e ir a la pestaña de extensiones ![1](../imagenes/python_vscode/1.png)
+1. Abrir Visual Studio Code, e ir a la pestaña de extensiones
 
-2. Descargar la extensión de Python tocando en Install (Es la extension con más de 50 millones de descargas)![2](../imagenes/python_vscode/2.png)
+![1](../imagenes/python_vscode/1.png)
+
+2. Descargar la extensión de Python tocando en Install (Es la extension con más de 50 millones de descargas)
+
+![2](../imagenes/python_vscode/2.png)
 
 3. Hacer lo mismo para la siguiente lista de extensiones:
 
@@ -181,7 +212,9 @@ Si lo único que te interesa es saber cómo correr el código, anda a la secció
 
 ### 1.4.4. Correr los programas en Visual Studio Code (vscode)
 
-Para correr los programas, hay muchas opciones, la mas sencilla es tocar Ctrl+Shift+P, y escribir hasta que aparezca la opcion `Python: Run Python File in Terminal` ![2](../imagenes/python_vscode/3.png).
+Para correr los programas, hay muchas opciones, la mas sencilla es tocar Ctrl+Shift+P, y escribir hasta que aparezca la opcion `Python: Run Python File in Terminal`
+
+![2](../imagenes/python_vscode/3.png).
 Eso debería correr el archivo en una terminal, la cual va a aparecer en la parte de abajo del vscode
 
 Para los que quieran saber, Ctrl+Shift+P abre la **command pallete**, una de las herramientas
