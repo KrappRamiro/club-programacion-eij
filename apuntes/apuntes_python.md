@@ -167,7 +167,7 @@ Si lo único que te interesa es saber cómo correr el código, anda a la secció
 
 ![8](../imagenes/instalar_vscode_windows/finalizar-instalacion-visual-code.png)
 
-8. Al finalizar se abrirá Visual Studio Code por primera vez, en este punto ya podemos empezar a trabajar con nuestros proyectos.
+8. Al finalizar se abrirá Visual Studio Code por primera vez, en este punto ya podemos empezar a trabajar con nuestros proyectos. Para abrir la carpeta de python que deberían haber creado, tocar en open folder.
 
 ![9](../imagenes/instalar_vscode_windows/editor-visual-code.png)
 
