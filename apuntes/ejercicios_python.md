@@ -723,5 +723,38 @@ for item in numeros:
     elif item % 5 == 0:
         print(item)
 ```
+</details>
 
+# Funciones
+
+## Ejercicio 1:
+
+Escribir una funcion que imprima un nombre pasado por parametro
+
+<details>
+  <summary>Toca para ver la respuesta</summary>
+
+```py
+def saludar(nombre):
+	print(f"Hola {nombre}, todo bien?")
+
+saludar("Muller")
+```
+</details>
+
+
+Escribir una funcion que imprima la hora en un formato en especifico. (Para esta, vas a tener que googlear. Suerte.)
+
+<details>
+  <summary>Toca para ver la respuesta</summary>
+
+```py
+from datetime import datetime
+
+def imprimir_hora_actual(formato):
+	tiempo = datetime.now() # Consigue la hora actual
+
+	tiempo_legible = tiempo.strftime(formato) # Pasa la hora a un formato un poco más legible
+	print("fHora actual: {tiempo_legible}")
+```
 </details>
