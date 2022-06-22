@@ -5,90 +5,97 @@ Por: Krapp Ramiro
 ---
 
 - [1. Apuntes del Club de Programacion](#1-apuntes-del-club-de-programacion)
-  - [1.1. Nota del autor](#11-nota-del-autor)
-  - [1.2. Nota sobre mayusculas y minusculas](#12-nota-sobre-mayusculas-y-minusculas)
-  - [1.3. Recomendacion personal:](#13-recomendacion-personal)
-  - [1.4. Cómo escribir y correr programas de Python en sus computadoras personales \[Windows\]](#14-cómo-escribir-y-correr-programas-de-python-en-sus-computadoras-personales-windows)
-    - [1.4.1. Instalacion de Visual Studio Code (vscode para los amigos)](#141-instalacion-de-visual-studio-code-vscode-para-los-amigos)
-    - [1.4.2. Instalacion de Python](#142-instalacion-de-python)
-    - [1.4.3. Instalación de Python en Visual Studio Code (vscode)](#143-instalación-de-python-en-visual-studio-code-vscode)
-    - [1.4.4. Correr los programas en Visual Studio Code (vscode)](#144-correr-los-programas-en-visual-studio-code-vscode)
-  - [1.5. Cómo escribir y correr programas de Python en las computadoras del colegio](#15-cómo-escribir-y-correr-programas-de-python-en-las-computadoras-del-colegio)
+	- [1.1. Nota del autor](#11-nota-del-autor)
+	- [1.2. Nota sobre mayusculas y minusculas](#12-nota-sobre-mayusculas-y-minusculas)
+	- [1.3. Recomendacion personal:](#13-recomendacion-personal)
+	- [1.4. Cómo escribir y correr programas de Python en sus computadoras personales \[Windows\]](#14-cómo-escribir-y-correr-programas-de-python-en-sus-computadoras-personales-windows)
+		- [1.4.1. Instalacion de Visual Studio Code (vscode para los amigos)](#141-instalacion-de-visual-studio-code-vscode-para-los-amigos)
+		- [1.4.2. Instalacion de Python](#142-instalacion-de-python)
+		- [1.4.3. Instalación de Python en Visual Studio Code (vscode)](#143-instalación-de-python-en-visual-studio-code-vscode)
+		- [1.4.4. Correr los programas en Visual Studio Code (vscode)](#144-correr-los-programas-en-visual-studio-code-vscode)
+	- [1.5. Cómo escribir y correr programas de Python en las computadoras del colegio](#15-cómo-escribir-y-correr-programas-de-python-en-las-computadoras-del-colegio)
 - [2. Conocimientos basicos](#2-conocimientos-basicos)
-  - [2.1. Comentarios:](#21-comentarios)
-  - [2.2. `print()`](#22-print)
-    - [2.2.1. Sintaxis](#221-sintaxis)
-    - [2.2.2. Ejemplos de uso:](#222-ejemplos-de-uso)
-      - [2.2.2.1. Imprimir Hola gente](#2221-imprimir-hola-gente)
-      - [2.2.2.2. Imprimir el valor de una variable](#2222-imprimir-el-valor-de-una-variable)
-      - [2.2.2.3. Imprimir multiples cosas - Ejemplo usando concatenización](#2223-imprimir-multiples-cosas---ejemplo-usando-concatenización)
-      - [2.2.2.4. Imprimir multiples cosas - Ejemplo usando fstrings](#2224-imprimir-multiples-cosas---ejemplo-usando-fstrings)
-  - [2.3. Variables](#23-variables)
-    - [2.3.1. Sintaxis:](#231-sintaxis)
-    - [2.3.2. Tipos de variables / Tipos de datos](#232-tipos-de-variables--tipos-de-datos)
-      - [2.3.2.1. Variables de texto (`String`)](#2321-variables-de-texto-string)
-        - [2.3.2.1.1. Ejemplo:](#23211-ejemplo)
-      - [2.3.2.2. Variables numericas (`int y float`)](#2322-variables-numericas-int-y-float)
-        - [2.3.2.2.1. Ejemplo](#23221-ejemplo)
-      - [2.3.2.3. Variables lógicas (`bool`)](#2323-variables-lógicas-bool)
-        - [2.3.2.3.1. Ejemplo](#23231-ejemplo)
-    - [2.3.3. Averiguar el tipo de una variable](#233-averiguar-el-tipo-de-una-variable)
-    - [2.3.4. Cómo cambiarle el tipo a una variable](#234-cómo-cambiarle-el-tipo-a-una-variable)
-      - [2.3.4.1. Pasar de `int` a `string`](#2341-pasar-de-int-a-string)
-      - [2.3.4.2. Pasar de `string` a `int`](#2342-pasar-de-string-a-int)
-    - [2.3.5. Sobreescribir el valor de una variable](#235-sobreescribir-el-valor-de-una-variable)
-    - [2.3.6. Ejemplos de uso de variables](#236-ejemplos-de-uso-de-variables)
-      - [2.3.6.1. Guardar un texto en una variable](#2361-guardar-un-texto-en-una-variable)
-      - [2.3.6.2. Guardar un numero en una variable](#2362-guardar-un-numero-en-una-variable)
-      - [2.3.6.3. Guardar la suma de dos numeros en una variable](#2363-guardar-la-suma-de-dos-numeros-en-una-variable)
-      - [2.3.6.4. Guardar la suma de dos variables en una tercera variable](#2364-guardar-la-suma-de-dos-variables-en-una-tercera-variable)
-  - [2.4. `input()`](#24-input)
-    - [2.4.1. Sintaxis](#241-sintaxis)
-    - [2.4.2. Ejemplos:](#242-ejemplos)
-      - [2.4.2.1. Ejemplo 1 - Ingreso de nombre de usuario](#2421-ejemplo-1---ingreso-de-nombre-de-usuario)
-      - [2.4.2.2. Ejemplo 2 - Ingreso de edad del usuario](#2422-ejemplo-2---ingreso-de-edad-del-usuario)
+	- [2.1. Comentarios:](#21-comentarios)
+	- [2.2. `print()`](#22-print)
+		- [2.2.1. Sintaxis](#221-sintaxis)
+		- [2.2.2. Ejemplos de uso:](#222-ejemplos-de-uso)
+			- [2.2.2.1. Imprimir Hola gente](#2221-imprimir-hola-gente)
+			- [2.2.2.2. Imprimir el valor de una variable](#2222-imprimir-el-valor-de-una-variable)
+			- [2.2.2.3. Imprimir multiples cosas - Ejemplo usando concatenización](#2223-imprimir-multiples-cosas---ejemplo-usando-concatenización)
+			- [2.2.2.4. Imprimir multiples cosas - Ejemplo usando fstrings](#2224-imprimir-multiples-cosas---ejemplo-usando-fstrings)
+	- [2.3. Variables](#23-variables)
+		- [2.3.1. Sintaxis:](#231-sintaxis)
+		- [2.3.2. Tipos de variables / Tipos de datos](#232-tipos-de-variables--tipos-de-datos)
+			- [2.3.2.1. Variables de texto (`String`)](#2321-variables-de-texto-string)
+				- [2.3.2.1.1. Ejemplo:](#23211-ejemplo)
+			- [2.3.2.2. Variables numericas (`int y float`)](#2322-variables-numericas-int-y-float)
+				- [2.3.2.2.1. Ejemplo](#23221-ejemplo)
+			- [2.3.2.3. Variables lógicas (`bool`)](#2323-variables-lógicas-bool)
+				- [2.3.2.3.1. Ejemplo](#23231-ejemplo)
+		- [2.3.3. Averiguar el tipo de una variable](#233-averiguar-el-tipo-de-una-variable)
+		- [2.3.4. Cómo cambiarle el tipo a una variable](#234-cómo-cambiarle-el-tipo-a-una-variable)
+			- [2.3.4.1. Pasar de `int` a `string`](#2341-pasar-de-int-a-string)
+			- [2.3.4.2. Pasar de `string` a `int`](#2342-pasar-de-string-a-int)
+		- [2.3.5. Sobreescribir el valor de una variable](#235-sobreescribir-el-valor-de-una-variable)
+		- [2.3.6. Ejemplos de uso de variables](#236-ejemplos-de-uso-de-variables)
+			- [2.3.6.1. Guardar un texto en una variable](#2361-guardar-un-texto-en-una-variable)
+			- [2.3.6.2. Guardar un numero en una variable](#2362-guardar-un-numero-en-una-variable)
+			- [2.3.6.3. Guardar la suma de dos numeros en una variable](#2363-guardar-la-suma-de-dos-numeros-en-una-variable)
+			- [2.3.6.4. Guardar la suma de dos variables en una tercera variable](#2364-guardar-la-suma-de-dos-variables-en-una-tercera-variable)
+	- [2.4. `input()`](#24-input)
+		- [2.4.1. Sintaxis](#241-sintaxis)
+		- [2.4.2. Ejemplos:](#242-ejemplos)
+			- [2.4.2.1. Ejemplo 1 - Ingreso de nombre de usuario](#2421-ejemplo-1---ingreso-de-nombre-de-usuario)
+			- [2.4.2.2. Ejemplo 2 - Ingreso de edad del usuario](#2422-ejemplo-2---ingreso-de-edad-del-usuario)
 - [3. Control del flujo](#3-control-del-flujo)
-  - [3.1. `if` (condicionales)](#31-if-condicionales)
-    - [3.1.1. Sintaxis](#311-sintaxis)
-      - [3.1.1.1. MUY IMPORTANTE!!! -- Nota sobre la identacion](#3111-muy-importante----nota-sobre-la-identacion)
-    - [3.1.2. Operadores](#312-operadores)
-    - [3.1.3. Ejemplos](#313-ejemplos)
-      - [3.1.3.1. Ejemplo de checkear un bool](#3131-ejemplo-de-checkear-un-bool)
-      - [3.1.3.2. Ejemplo de checkear si un numero es mayor a 10](#3132-ejemplo-de-checkear-si-un-numero-es-mayor-a-10)
-      - [3.1.3.3. Ejemplo de checkear si un número es igual a 10](#3133-ejemplo-de-checkear-si-un-número-es-igual-a-10)
-      - [3.1.3.4. Ejemplo de checkear si un número es distinto de 10](#3134-ejemplo-de-checkear-si-un-número-es-distinto-de-10)
-      - [3.1.3.5. Ejemplo de checkear si un alumno esta aprobado](#3135-ejemplo-de-checkear-si-un-alumno-esta-aprobado)
-  - [3.2. Uso de `elif` (`else if`)](#32-uso-de-elif-else-if) - [3.2.0.1. Ejemplo mejorado de checkear si un alumno esta aprobado](#3201-ejemplo-mejorado-de-checkear-si-un-alumno-esta-aprobado)
-    - [3.2.1. `if` encadenados](#321-if-encadenados)
-  - [3.3. Uso de `or` y `and` - Checkeo de multiples cosas en un if](#33-uso-de-or-y-and---checkeo-de-multiples-cosas-en-un-if)
-    - [3.3.1. Ejemplo con `or`](#331-ejemplo-con-or)
-    - [3.3.2. Ejemplo con `and`](#332-ejemplo-con-and)
+	- [3.1. `if` (condicionales)](#31-if-condicionales)
+		- [3.1.1. Sintaxis](#311-sintaxis)
+			- [3.1.1.1. MUY IMPORTANTE!!! -- Nota sobre la identacion](#3111-muy-importante----nota-sobre-la-identacion)
+		- [3.1.2. Operadores](#312-operadores)
+		- [3.1.3. Ejemplos](#313-ejemplos)
+			- [3.1.3.1. Ejemplo de checkear un bool](#3131-ejemplo-de-checkear-un-bool)
+			- [3.1.3.2. Ejemplo de checkear si un numero es mayor a 10](#3132-ejemplo-de-checkear-si-un-numero-es-mayor-a-10)
+			- [3.1.3.3. Ejemplo de checkear si un número es igual a 10](#3133-ejemplo-de-checkear-si-un-número-es-igual-a-10)
+			- [3.1.3.4. Ejemplo de checkear si un número es distinto de 10](#3134-ejemplo-de-checkear-si-un-número-es-distinto-de-10)
+			- [3.1.3.5. Ejemplo de checkear si un alumno esta aprobado](#3135-ejemplo-de-checkear-si-un-alumno-esta-aprobado)
+	- [3.2. Uso de `elif` (`else if`)](#32-uso-de-elif-else-if)
+			- [3.2.0.1. Ejemplo mejorado de checkear si un alumno esta aprobado](#3201-ejemplo-mejorado-de-checkear-si-un-alumno-esta-aprobado)
+		- [3.2.1. `if` encadenados](#321-if-encadenados)
+	- [3.3. Uso de `or` y `and` - Checkeo de multiples cosas en un if](#33-uso-de-or-y-and---checkeo-de-multiples-cosas-en-un-if)
+		- [3.3.1. Ejemplo con `or`](#331-ejemplo-con-or)
+		- [3.3.2. Ejemplo con `and`](#332-ejemplo-con-and)
 - [4. Estructuras de datos - Listas, Tuplas y Diccionarios](#4-estructuras-de-datos---listas-tuplas-y-diccionarios)
-  - [4.1. Listas](#41-listas)
-    - [4.1.1. Para que las usamos?](#411-para-que-las-usamos)
-    - [4.1.2. Acceder a los ultimos elementos de una lista](#412-acceder-a-los-ultimos-elementos-de-una-lista)
-    - [4.1.3. Agregar elementos a una lista](#413-agregar-elementos-a-una-lista)
-    - [4.1.4. Eliminar elementos a una lista](#414-eliminar-elementos-a-una-lista)
-      - [4.1.4.1. `remove()`](#4141-remove)
-      - [4.1.4.2. `pop()`](#4142-pop)
-      - [4.1.4.3. `clear()`](#4143-clear)
-    - [4.1.5. Slicing de Listas](#415-slicing-de-listas)
-      - [4.1.5.1. Ejemplos de uso](#4151-ejemplos-de-uso)
-  - [4.2. Tuplas](#42-tuplas)
-    - [4.2.1. Sintaxis](#421-sintaxis)
-  - [4.3. Diccionarios](#43-diccionarios)
-    - [4.3.1. Sintaxis](#431-sintaxis)
-  - [4.4. La keyword (palabra reservada) `in`](#44-la-keyword-palabra-reservada-in)
+	- [4.1. Listas](#41-listas)
+		- [4.1.1. Para que las usamos?](#411-para-que-las-usamos)
+		- [4.1.2. Acceder a los ultimos elementos de una lista](#412-acceder-a-los-ultimos-elementos-de-una-lista)
+		- [4.1.3. Agregar elementos a una lista](#413-agregar-elementos-a-una-lista)
+		- [4.1.4. Eliminar elementos a una lista](#414-eliminar-elementos-a-una-lista)
+			- [4.1.4.1. `remove()`](#4141-remove)
+			- [4.1.4.2. `pop()`](#4142-pop)
+			- [4.1.4.3. `clear()`](#4143-clear)
+		- [4.1.5. Slicing de Listas](#415-slicing-de-listas)
+			- [4.1.5.1. Ejemplos de uso](#4151-ejemplos-de-uso)
+	- [4.2. Tuplas](#42-tuplas)
+		- [4.2.1. Sintaxis](#421-sintaxis)
+	- [4.3. Diccionarios](#43-diccionarios)
+		- [4.3.1. Sintaxis](#431-sintaxis)
+	- [4.4. La keyword (palabra reservada) `in`](#44-la-keyword-palabra-reservada-in)
 - [5. Bucles](#5-bucles)
-  - [5.1. Pequeña introducción a los bucles](#51-pequeña-introducción-a-los-bucles)
-  - [5.2. Bucles usando `while`](#52-bucles-usando-while)
-    - [5.2.1. Sintaxis](#521-sintaxis)
-    - [5.2.2. Ejemplos](#522-ejemplos)
-  - [5.3. Bucles usando `for`](#53-bucles-usando-for)
-    - [5.3.1. Sintaxis](#531-sintaxis)
-    - [5.3.2. Ejemplos](#532-ejemplos)
-  - [5.4. `break` vs `continue` vs `pass`](#54-break-vs-continue-vs-pass)
+	- [5.1. Pequeña introducción a los bucles](#51-pequeña-introducción-a-los-bucles)
+	- [5.2. Bucles usando `while`](#52-bucles-usando-while)
+		- [5.2.1. Sintaxis](#521-sintaxis)
+		- [5.2.2. Ejemplos](#522-ejemplos)
+	- [5.3. Bucles usando `for`](#53-bucles-usando-for)
+		- [5.3.1. Sintaxis](#531-sintaxis)
+		- [5.3.2. Ejemplos](#532-ejemplos)
+	- [5.4. `break` vs `continue` vs `pass`](#54-break-vs-continue-vs-pass)
 - [6. Funciones](#6-funciones)
+	- [6.1. Sintaxis](#61-sintaxis)
+	- [6.2. Funciones sin parametros](#62-funciones-sin-parametros)
+	- [6.3. Uso de `return`](#63-uso-de-return)
+	- [6.4. Uso de parametros y argumentos](#64-uso-de-parametros-y-argumentos)
+		- [6.4.1. Me perdí, cual era el parametro y cual era el argumento?](#641-me-perdí-cual-era-el-parametro-y-cual-era-el-argumento)
+		- [6.4.2. Se pueden hacer funciones con varios parametros?](#642-se-pueden-hacer-funciones-con-varios-parametros)
 
 ## 1.1. Nota del autor
 
@@ -1359,7 +1366,7 @@ Las funciones en Python son componentes importantes en la programación que cuen
 
 Para definir una funcion en python, usamos la keyword `def`
 
-## Sintaxis
+## 6.1. Sintaxis
 
 ```py
 def nombre_funcion(parametros):
@@ -1367,7 +1374,7 @@ def nombre_funcion(parametros):
 	return variable_a_retornar
 ```
 
-## Funciones sin parametros
+## 6.2. Funciones sin parametros
 
 Para ejemplificar, vamos a hacer una funcion re sencilla, que cuando la llamemos imprima en la pantalla `Hola, que tal!`
 
@@ -1408,7 +1415,7 @@ imprimir_hora_actual()
 Hora actual: 07:41:19
 ```
 
-## Uso de `return`
+## 6.3. Uso de `return`
 
 Algo muy muy comun en las funciones es que retornen datos, para que nosotros los podamos almacenar en variables.
 Esto se hace usando la keyword return
@@ -1434,7 +1441,7 @@ print(f"Eu, la hora es: {hora}")
 Eu, la hora es: 07:41:19
 ```
 
-## Uso de parametros y argumentos
+## 6.4. Uso de parametros y argumentos
 
 Tambien podemos hacer funciones que reciban datos, y que hagan cosas con esos datos.
 Por ejemplo, podemos hacer una funcion que reciba un numero, y que retorne True si es mayor a 10, o False si es menor o igual a 10
@@ -1447,7 +1454,7 @@ def checkear_mayor_10(numero): # nuestra funcion recibe una variable llamada num
 	else: # Si el numero que nos pasaron es igual o menor a 10, retorno False
 		return False
 
-# Llamamos a checkear_mayor_10, pasandole 11 como argumento. 
+# Llamamos a checkear_mayor_10, pasandole 11 como argumento.
 # El valor que nos retorna lo guardamos en es_mayor
 es_mayor = checkear_mayor_10(11)
 print(es_mayor)
@@ -1458,7 +1465,7 @@ print(es_mayor)
 ```py
 Soy la funcion! recibi el numero: 11
 True
-``` 
+```
 
 Lo que sucede es lo siguiente. Cuando nosotros llamamos a `checkear_mayor_10` y le pasamos el 11 como argumento,
 la variable `numero` de nuestra funcion **adquiere un valor**, empieza a valer algo.
@@ -1467,8 +1474,7 @@ Creo que esta imagen lo explica bien
 
 ![funcionamiento funcion](../imagenes/funcionamiento_funcion.png)
 
-
-### Me perdí, cual era el parametro y cual era el argumento?
+### 6.4.1. Me perdí, cual era el parametro y cual era el argumento?
 
 Quedate tranqui, yo me la paso googleandolo cada dos por tres, porque yo tambien me olvido.
 
@@ -1477,3 +1483,14 @@ Quedate tranqui, yo me la paso googleandolo cada dos por tres, porque yo tambien
 - Un **argumento** es un valor pasado durante la llamada a una función
 
 ![Argumentos vs parametros](../imagenes/parametro_vs_argumento.png)
+
+### 6.4.2. Se pueden hacer funciones con varios parametros?
+
+Claro que se puede, solamente tenes que poner una coma. Por ejemplo, una funcion para sumar dos números
+
+```py
+def sumar(num1, num2): # Pongo num para no poner numero
+	return num1 + num2
+
+print(sumar(5,6))
+```

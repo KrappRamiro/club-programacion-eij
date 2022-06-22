@@ -40,6 +40,8 @@ Por: Krapp Ramiro
 		- [Ejercicio 2](#ejercicio-2-4)
 		- [Ejercicio 3](#ejercicio-3-3)
 		- [Ejercicio 4](#ejercicio-4-3)
+- [Funciones](#funciones)
+	- [Ejercicio 1:](#ejercicio-1-7)
 
 ## Nota del autor
 
