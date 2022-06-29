@@ -30,23 +30,23 @@ Por: Krapp Ramiro
 	- [`if`](#if)
 		- [Ejercicio 1](#ejercicio-1-3)
 		- [Ejercicio 2](#ejercicio-2-3)
-		- [Ejercicio 3](#ejercicio-3-2)
-		- [Ejercicio 4](#ejercicio-4-2)
+		- [Ejercicio 3 - Automatizador de patovica de boliche](#ejercicio-3---automatizador-de-patovica-de-boliche)
+		- [Ejercicio 4 - Ladrillos LEGO](#ejercicio-4---ladrillos-lego)
 	- [Listas](#listas)
 		- [Ejercicio 1 - El creador de equipos de futbol](#ejercicio-1---el-creador-de-equipos-de-futbol)
 	- [Diccionarios](#diccionarios)
-		- [Ejercicio 1](#ejercicio-1-4)
+		- [Ejercicio 1 -  Sistema de compra](#ejercicio-1----sistema-de-compra)
 	- [While](#while)
-		- [Ejercicio 1](#ejercicio-1-5)
+		- [Ejercicio 1 - Adivinador de numero](#ejercicio-1---adivinador-de-numero)
 	- [For](#for)
-		- [Ejercicio 1](#ejercicio-1-6)
-		- [Ejercicio 2](#ejercicio-2-4)
-		- [Ejercicio 3](#ejercicio-3-3)
-		- [Ejercicio 4](#ejercicio-4-3)
+		- [Ejercicio 1 - Checkeador de Juan Carlos](#ejercicio-1---checkeador-de-juan-carlos)
+		- [Ejercicio 2 - Checkeador de multiples Juan Carlos](#ejercicio-2---checkeador-de-multiples-juan-carlos)
+		- [Ejercicio 3 - Buscador de nombres y repeticiones](#ejercicio-3---buscador-de-nombres-y-repeticiones)
+		- [Ejercicio 4](#ejercicio-4-2)
 - [Funciones](#funciones)
-	- [Ejercicio 1:](#ejercicio-1-7)
-	- [Ejercicio 2:](#ejercicio-2-5)
-	- [Ejercicio 3](#ejercicio-3-4)
+	- [Ejercicio 1 - Saludador](#ejercicio-1---saludador)
+	- [Ejercicio 2 - Impresora de Hora (ja, rima)](#ejercicio-2---impresora-de-hora-ja-rima)
+	- [Ejercicio 3 - La calculadora](#ejercicio-3---la-calculadora)
 
 ## Nota del autor
 
@@ -473,7 +473,7 @@ print(f"Tenes {vida_jugador} puntos de vida")
 
 ---
 
-### Ejercicio 3
+### Ejercicio 3 - Automatizador de patovica de boliche
 
 Crea un programa que, preguntando la edad, checkee si una persona puede tomar
 bebidas alcohólicas o no
@@ -493,7 +493,7 @@ else:
 
 ---
 
-### Ejercicio 4
+### Ejercicio 4 - Ladrillos LEGO
 
 Los famosos ladrillos **LEGO** tienen un rango de edades permitidas, que van,
 en la mayoría de los casos, desde los 7 años hasta los 99 años.
@@ -577,7 +577,7 @@ else:
 
 ## Diccionarios
 
-### Ejercicio 1
+### Ejercicio 1 -  Sistema de compra
 
 Crear un sistema compra en el que, usando un diccionario, se pueda seleccionar
 un item a comprar.
@@ -619,7 +619,7 @@ else:
 
 ## While
 
-### Ejercicio 1
+### Ejercicio 1 - Adivinador de numero
 
 La siguiente fracción de código hace que numero_random sea igual a un número al azar del 1 al 20.
 Esto quiere decir que su valor cambia con cada ejecución del programa.
@@ -669,7 +669,7 @@ print(f"Te tomo {cantidad_intentos} intentos!")
 
 ## For
 
-### Ejercicio 1
+### Ejercicio 1 - Checkeador de Juan Carlos
 
 Hacer un código que, usando un for, checkee si en una lista de nombres de animales
 hay un perro llamado Juan Carlos
@@ -689,7 +689,7 @@ for perro in lista_perros:
 
 ---
 
-### Ejercicio 2
+### Ejercicio 2 - Checkeador de multiples Juan Carlos
 
 Modificar el código anterior, para que checkee si en una lista de nombres de animales
 hay **tres o más** perros llamados Juan Carlos
@@ -715,7 +715,7 @@ else:
 
 ---
 
-### Ejercicio 3
+### Ejercicio 3 - Buscador de nombres y repeticiones
 
 Modificar el código anterior, para que permita buscar cualquier nombre y cualquier
 cantidad de repeticiones del mismo
@@ -782,7 +782,7 @@ for item in numeros:
 
 # Funciones
 
-## Ejercicio 1:
+## Ejercicio 1 - Saludador
 
 Escribir una funcion que imprima un nombre pasado por parametro
 
@@ -800,7 +800,7 @@ saludar("Muller")
 
 ---
 
-## Ejercicio 2:
+## Ejercicio 2 - Impresora de Hora (ja, rima)
 
 Escribir una funcion que imprima la hora en un formato en especifico. (Para esta, vas a tener que googlear. Suerte.)
 
@@ -821,7 +821,7 @@ def imprimir_hora_actual(formato):
 
 ---
 
-## Ejercicio 3
+## Ejercicio 3 - La calculadora
 
 Escribir varias funciones que te permitan hacer una calculadora. Estas funciones deberían ser
 
