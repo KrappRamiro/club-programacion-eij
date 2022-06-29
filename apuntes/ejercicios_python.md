@@ -6,6 +6,7 @@ Por: Krapp Ramiro
 
 - [Ejercicios de Python del Club de Programacion](#ejercicios-de-python-del-club-de-programacion)
 	- [Nota del autor](#nota-del-autor)
+	- [Agradecimientos:](#agradecimientos)
 	- [Uso de `print()`](#uso-de-print)
 		- [Ejercicio 1](#ejercicio-1)
 		- [Ejercicio 2](#ejercicio-2)
@@ -81,6 +82,10 @@ _Ante cualquier problema, google es tu mejor amigo_
 1
 </details>
 -->
+
+## Agradecimientos:
+
+Gracias a Valentin Albero y a Francisco Longobardi por ayudarme en la corrección de errores de este documento
 
 ## Uso de `print()`
 

@@ -7,13 +7,14 @@ Por: Krapp Ramiro
 - [1. Apuntes del Club de Programacion](#1-apuntes-del-club-de-programacion)
 	- [1.1. Nota del autor](#11-nota-del-autor)
 	- [1.2. Nota sobre mayusculas y minusculas](#12-nota-sobre-mayusculas-y-minusculas)
-	- [1.3. Recomendacion personal:](#13-recomendacion-personal)
-	- [1.4. Cómo escribir y correr programas de Python en sus computadoras personales \[Windows\]](#14-cómo-escribir-y-correr-programas-de-python-en-sus-computadoras-personales-windows)
-		- [1.4.1. Instalacion de Visual Studio Code (vscode para los amigos)](#141-instalacion-de-visual-studio-code-vscode-para-los-amigos)
-		- [1.4.2. Instalacion de Python](#142-instalacion-de-python)
-		- [1.4.3. Instalación de Python en Visual Studio Code (vscode)](#143-instalación-de-python-en-visual-studio-code-vscode)
-		- [1.4.4. Correr los programas en Visual Studio Code (vscode)](#144-correr-los-programas-en-visual-studio-code-vscode)
-	- [1.5. Cómo escribir y correr programas de Python en las computadoras del colegio](#15-cómo-escribir-y-correr-programas-de-python-en-las-computadoras-del-colegio)
+	- [1.3. Agradecimientos:](#13-agradecimientos)
+	- [1.4. Recomendacion personal:](#14-recomendacion-personal)
+	- [1.5. Cómo escribir y correr programas de Python en sus computadoras personales \[Windows\]](#15-cómo-escribir-y-correr-programas-de-python-en-sus-computadoras-personales-windows)
+		- [1.5.1. Instalacion de Visual Studio Code (vscode para los amigos)](#151-instalacion-de-visual-studio-code-vscode-para-los-amigos)
+		- [1.5.2. Instalacion de Python](#152-instalacion-de-python)
+		- [1.5.3. Instalación de Python en Visual Studio Code (vscode)](#153-instalación-de-python-en-visual-studio-code-vscode)
+		- [1.5.4. Correr los programas en Visual Studio Code (vscode)](#154-correr-los-programas-en-visual-studio-code-vscode)
+	- [1.6. Cómo escribir y correr programas de Python en las computadoras del colegio](#16-cómo-escribir-y-correr-programas-de-python-en-las-computadoras-del-colegio)
 - [2. Conocimientos basicos](#2-conocimientos-basicos)
 	- [2.1. Comentarios:](#21-comentarios)
 	- [2.2. `print()`](#22-print)
@@ -123,12 +124,17 @@ O sea, si yo escribo `print()`, no va a ser lo mismo que `Print()`, `PRINT()` o 
 
 ---
 
-## 1.3. Recomendacion personal:
+
+## 1.3. Agradecimientos:
+
+Gracias a Valentin Albero y a Francisco Longobardi por ayudarme en la corrección de errores de este documento
+
+## 1.4. Recomendacion personal:
 
 Armar una carpeta llamada programacion, y adentro armar otra carpeta llamada python, y adentro
 de esa carpeta meter todos los archivos de programación en python.
 
-## 1.4. Cómo escribir y correr programas de Python en sus computadoras personales \[Windows\]
+## 1.5. Cómo escribir y correr programas de Python en sus computadoras personales \[Windows\]
 
 En esta sección se ven 4 cosas:
 
@@ -139,7 +145,7 @@ En esta sección se ven 4 cosas:
 
 Si lo único que te interesa es saber cómo correr el código, anda a la sección 1.4.4
 
-### 1.4.1. Instalacion de Visual Studio Code (vscode para los amigos)
+### 1.5.1. Instalacion de Visual Studio Code (vscode para los amigos)
 
 1. Primero, ir a La página de descarga del Visual Studio Code [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) y tocar en la opción que dice Windows, y descargar y ejecutar el archivo .exe que te descarga
 
@@ -177,7 +183,7 @@ Si lo único que te interesa es saber cómo correr el código, anda a la secció
 
 ![9](../imagenes/instalar_vscode_windows/editor-visual-code.png)
 
-### 1.4.2. Instalacion de Python
+### 1.5.2. Instalacion de Python
 
 1. Ir a la página de descarga de Python [https://www.python.org/downloads/](https://www.python.org/downloads/) y descargar la ultima version
 
@@ -193,7 +199,7 @@ Si lo único que te interesa es saber cómo correr el código, anda a la secció
 
 ![3](../imagenes/instalar_python_windows/3.png)
 
-### 1.4.3. Instalación de Python en Visual Studio Code (vscode)
+### 1.5.3. Instalación de Python en Visual Studio Code (vscode)
 
 1. Abrir Visual Studio Code, e ir a la pestaña de extensiones
 
@@ -216,7 +222,7 @@ Si lo único que te interesa es saber cómo correr el código, anda a la secció
 - Material Icon Theme
 - Atom One Dark Theme
 
-### 1.4.4. Correr los programas en Visual Studio Code (vscode)
+### 1.5.4. Correr los programas en Visual Studio Code (vscode)
 
 Para correr los programas, hay muchas opciones, la mas sencilla es tocar Ctrl+Shift+P, y escribir hasta que aparezca la opcion `Python: Run Python File in Terminal`
 
@@ -227,7 +233,7 @@ Para los que quieran saber, Ctrl+Shift+P abre la **command pallete**, una de las
 **más utiles** que existen en visual studio code, ya que nos permite acceder a
 todos los comandos que existen
 
-## 1.5. Cómo escribir y correr programas de Python en las computadoras del colegio
+## 1.6. Cómo escribir y correr programas de Python en las computadoras del colegio
 
 Para las computadoras del colegio, el paso a seguir es el siguiente
 
