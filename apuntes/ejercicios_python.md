@@ -45,6 +45,8 @@ Por: Krapp Ramiro
 		- [Ejercicio 4](#ejercicio-4-3)
 - [Funciones](#funciones)
 	- [Ejercicio 1:](#ejercicio-1-7)
+	- [Ejercicio 2:](#ejercicio-2-5)
+	- [Ejercicio 3](#ejercicio-3-4)
 
 ## Nota del autor
 
@@ -796,6 +798,10 @@ saludar("Muller")
 
 </details>
 
+---
+
+## Ejercicio 2:
+
 Escribir una funcion que imprima la hora en un formato en especifico. (Para esta, vas a tener que googlear. Suerte.)
 
 <details>
@@ -809,6 +815,73 @@ def imprimir_hora_actual(formato):
 
 	tiempo_legible = tiempo.strftime(formato) # Pasa la hora a un formato un poco más legible
 	print("fHora actual: {tiempo_legible}")
+```
+
+</details>
+
+---
+
+## Ejercicio 3
+
+Escribir varias funciones que te permitan hacer una calculadora. Estas funciones deberían ser
+
+- suma
+- resta
+- multiplicacion
+- division
+- porcentaje
+- raiz cuadrada
+- potencia
+
+Protip: Te conviene usar el modulo `math` para las raices cuadradas y las potencias
+
+<details>
+  <summary>Toca para ver la respuesta</summary>
+
+```py
+import math  # Usamos las funciones del modulo math, que nos van a simplificar la vida
+
+
+def sumar(num1, num2):
+    return num1 + num2
+
+
+def restar(num1, num2):
+    return num1 - num2
+
+
+def multiplicar(num1, num2):
+    return num1 * num2
+
+
+def dividir(dividendo, divisor):
+    if divisor == 0:
+        print("NO! No se puede dividir por 0!")
+        return
+    # Aca no puse un else, porque ya el return te sacaria de la funcion si divisor fuera 0, entonces bueno, no hace falta
+    return dividendo / divisor
+
+
+def calcular_porcentaje(num1, num2):
+    return (num1 / num2) * 100
+
+
+def calcular_raiz_cuadrada(numero):
+    if numero < 0:
+        # Te vas a preguntar por que este print usa '''texto''' y no "texto"
+        # Bueno, esto es porque existen strings que pueden ocupar varias lineas,
+        # se llaman multiline strings, aca un link que lo explica:
+        # https://www.w3schools.com/python/gloss_python_multi_line_strings.asp
+        print(''' No existen las raices cuadradas de los numeros menores a 0!
+        (mentira, pero son numeros imaginarios, pero ese es
+        otro tema de matematicas que se re va de enfoque.''')
+    # Este link explica bien que hace math.sqrt https://www.geeksforgeeks.org/python-math-function-sqrt/
+    return math.sqrt(numero)
+
+
+def calcular_potencia(base, exponente):
+    # Este link explica ben que hace math.pow https://www.geeksforgeeks.org/pow-in-python/
+    return math.pow(base, exponente)
 ```
 
 </details>
