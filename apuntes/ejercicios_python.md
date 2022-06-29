@@ -31,6 +31,8 @@ Por: Krapp Ramiro
 		- [Ejercicio 2](#ejercicio-2-3)
 		- [Ejercicio 3](#ejercicio-3-2)
 		- [Ejercicio 4](#ejercicio-4-2)
+	- [Listas](#listas)
+		- [Ejercicio 1 - El creador de equipos de futbol](#ejercicio-1---el-creador-de-equipos-de-futbol)
 	- [Diccionarios](#diccionarios)
 		- [Ejercicio 1](#ejercicio-1-4)
 	- [While](#while)
@@ -522,6 +524,50 @@ else:
 
 ---
 
+## Listas
+
+### Ejercicio 1 - El creador de equipos de futbol
+
+Crear un codigo que, teniendo una lista de jugadores de futbol, mezcle las personas que estan adentro de la lista y haga dos equipos de futbol.
+Además, que se fije si los equipos estan desbalanceados (o sea, si un equipo tiene más jugadores que otro)
+
+Protip: usar el módulo `random`
+
+<details>
+  <summary>Toca para ver la respuesta</summary>
+
+```py
+import random
+lista_personas = ["Juan", "Pepe", "Augusto", "Bruno",
+                  "Geronimo", "Valentin", "Elias", "Pedro", "Alan"]
+
+random.shuffle(lista_personas)  # Mezclo la lista de personas
+
+# Consigo el tamaño de la lista (o sea, la cantidad de personas), luego
+# lo divido por dos (para conseguir la mitad), y luego
+# para evitar numeros con coma, lo paso a un int()
+tamano_lista = int(len(lista_personas)/2)
+
+# Hago slicing para conseguir la primera mitad de las personas, y va a ser el team 1
+team_1 = lista_personas[:tamano_lista]
+# Hago slicing para conseguir la segunda mitad de las personas, y va a ser el team 2
+team_2 = lista_personas[tamano_lista:]
+
+# len() me tira el tamaño de una lista
+print(f"Equipo 1:\n{team_1} \nTamaño del equipo: {len(team_1)}\n")
+
+print(f"Equipo 2:\n{team_2} \nTamaño del equipo: {len(team_2)}")
+
+if len(team_1) > len(team_2):
+    print("Los equipos estan desbalanceados, team 1 tiene más jugadores")
+elif len(team_2) > len(team_1):
+    print("Los equipos estan desbalanceados, team 2 tiene más jugadores")
+else:
+    print("Los equipos estan balanceados")
+```
+
+</details>
+
 ## Diccionarios
 
 ### Ejercicio 1
@@ -538,7 +584,6 @@ objetos = {
     "zapatillas": 3500
 }
 ```
-
 
 <details>
   <summary>Toca para ver la respuesta</summary>
@@ -725,6 +770,7 @@ for item in numeros:
     elif item % 5 == 0:
         print(item)
 ```
+
 </details>
 
 # Funciones
@@ -742,8 +788,8 @@ def saludar(nombre):
 
 saludar("Muller")
 ```
-</details>
 
+</details>
 
 Escribir una funcion que imprima la hora en un formato en especifico. (Para esta, vas a tener que googlear. Suerte.)
 
@@ -759,4 +805,5 @@ def imprimir_hora_actual(formato):
 	tiempo_legible = tiempo.strftime(formato) # Pasa la hora a un formato un poco más legible
 	print("fHora actual: {tiempo_legible}")
 ```
+
 </details>
